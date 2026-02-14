@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:fh="http://purl.org/syndication/history/1.0" xmlns:georss="http://www.georss.org/georss" xmlns:lwp="http://www.cbe-world.com/lwp" xmlns:live="http://www.cbe-world.com/lwp/live" > 
+<channel>
+<fh:incremental>false</fh:incremental>
+<title>city_info.xml</title>
+<link>http://www.cbe-world.com/lwp/live_channel</link>
+<description>Live channel all cities</description>
+<ttl>90</ttl>
+
+<live:text id="more">More News</live:text>
+<live:text id="weather">Weather Forecast</live:text>
+
+
+<item><title>エラー: サーバーに接続できませんでした</title>
+<live:item>エラー: サーバーに接続できませんでした</live:item>
+<georss:point>13.75 100.517</georss:point>
+<live:panel><live:name>バンコク</live:name><live:subname pattern="celsius"> </live:subname> <live:subname pattern="fahrenheit"> </live:subname></live:panel>
+</item>
+<item><title>エラー: サーバーに接続できませんでした</title>
+<live:item>エラー: サーバーに接続できませんでした</live:item>
+<georss:point>39.9 116.413</georss:point>
+<live:panel><live:name>北京</live:name><live:subname pattern="celsius"> </live:subname> <live:subname pattern="fahrenheit"> </live:subname></live:panel>
+</item>
+<item><title>エラー: サーバーに接続できませんでした</title>
+<live:item>エラー: サーバーに接続できませんでした</live:item>
+<georss:point>52.517 13.4115</georss:point>
+<live:panel><live:name>ベルリン</live:name><live:subname pattern="celsius"> </live:subname> <live:subname pattern="fahrenheit"> </live:subname></live:panel>
+</item>
+<item><title>エラー: サーバーに接続できませんでした</title>
+<live:item>エラー: サーバーに接続できませんでした</live:item>
+<georss:point>-34.613 -58.4173</georss:point>
+<live:panel><live:name>ブエノスアイレス</live:name><live:subname pattern="celsius"> </live:subname> <live:subname pattern="fahrenheit"> </live:subname></live:panel>
+</item>
+<item><title>エラー: サーバーに接続できませんでした</title>
+<live:item>エラー: サーバーに接続できませんでした</live:item>
+<georss:point>30.05 31.227</georss:point>
+<live:panel><live:name>カイロ</live:name><live:subname pattern="celsius"> </live:subname> <live:subname pattern="fahrenheit"> </live:subname></live:panel>
+</item>
+<item><title>エラー: サーバーに接続できませんでした</title>
+<live:item>エラー: サーバーに接続できませんでした</live:item>
+<georss:point>41.865 -87.6718</georss:point>
+<live:panel><live:name>シカゴ</live:name><live:subname pattern="celsius"> </live:subname> <live:subname pattern="fahrenheit"> </live:subname></live:panel>
+</item>
+<item><title>エラー: サーバーに接続できませんでした</title>
+<live:item>エラー: サーバーに接続できませんでした</live:item>
+<georss:point>23.723 90.409</georss:point>
+<live:panel><live:name>ダッカ</live:name><live:subname pattern="celsius"> </live:subname> <live:subname pattern="fahrenheit"> </live:subname></live:panel>
+</item>
+<item><title>エラー: サーバーに接続できませんでした</title>
+<live:item>エラー: サーバーに接続できませんでした</live:item>
+<georss:point>60.176 24.934</georss:point>
+<live:panel><live:name>ヘルシンキ</live:name><live:subname pattern="celsius"> </live:subname> <live:subname pattern="fahrenheit"> </live:subname></live:panel>
+</item>
+<item><title>エラー: サーバーに接続できませんでした</title>
+<live:item>エラー: サーバーに接続できませんでした</live:item>
+<georss:point>22.283 114.15</georss:point>
+<live:panel><live:name>香港</live:name><live:subname pattern="celsius"> </live:subname> <live:subname pattern="fahrenheit"> </live:subname></live:panel>
+</item>
+<item><title>エラー: サーバーに接続できませんでした</title>
+<live:item>エラー: サーバーに接続できませんでした</live:item>
+<georss:point>-26.1951 28.0339</georss:point>
+<live:panel><live:name>ヨハネスブルグ</live:name><live:subname pattern="celsius"> </live:subname> <live:subname pattern="fahrenheit"> </live:subname></live:panel>
+</item>
+<item><title>エラー: サーバーに接続できませんでした</title>
+<live:item>エラー: サーバーに接続できませんでした</live:item>
+<georss:point>-12.0931 -77.0465</georss:point>
+<live:panel><live:name>リマ</live:name><live:subname pattern="celsius"> </live:subname> <live:subname pattern="fahrenheit"> </live:subname></live:panel>
+</item>
+<item><title>エラー: サーバーに接続できませんでした</title>
+<live:item>エラー: サーバーに接続できませんでした</live:item>
+<georss:point>51.5002 -0.1262</georss:point>
+<live:panel><live:name>ロンドン</live:name><live:subname pattern="celsius"> </live:subname> <live:subname pattern="fahrenheit"> </live:subname></live:panel>
+</item>
+<item><title>エラー: サーバーに接続できませんでした</title>
+<live:item>エラー: サーバーに接続できませんでした</live:item>
+<georss:point>34.0452 -118.284</georss:point>
+<live:panel><live:name>ロサンゼルス</live:name><live:subname pattern="celsius"> </live:subname> <live:subname pattern="fahrenheit"> </live:subname></live:panel>
+</item>
+<item><title>エラー: サーバーに接続できませんでした</title>
+<live:item>エラー: サーバーに接続できませんでした</live:item>
+<georss:point>19.4271 -99.1276</georss:point>
+<live:panel><live:name>メキシコシティ</live:name><live:subname pattern="celsius"> </live:subname> <live:subname pattern="fahrenheit"> </live:subname></live:panel>
+</item>
+<item><title>エラー: サーバーに接続できませんでした</title>
+<live:item>エラー: サーバーに接続できませんでした</live:item>
+<georss:point>55.75579 37.6176</georss:point>
+<live:panel><live:name>モスクワ</live:name><live:subname pattern="celsius"> </live:subname> <live:subname pattern="fahrenheit"> </live:subname></live:panel>
+</item>
+<item><title>エラー: サーバーに接続できませんでした</title>
+<live:item>エラー: サーバーに接続できませんでした</live:item>
+<georss:point>40.7488 -73.9846</georss:point>
+<live:panel><live:name>ニューヨーク</live:name><live:subname pattern="celsius"> </live:subname> <live:subname pattern="fahrenheit"> </live:subname></live:panel>
+</item>
+<item><title>エラー: サーバーに接続できませんでした</title>
+<live:item>エラー: サーバーに接続できませんでした</live:item>
+<georss:point>48.8542 2.34486</georss:point>
+<live:panel><live:name>パリ</live:name><live:subname pattern="celsius"> </live:subname> <live:subname pattern="fahrenheit"> </live:subname></live:panel>
+</item>
+<item><title>エラー: サーバーに接続できませんでした</title>
+<live:item>エラー: サーバーに接続できませんでした</live:item>
+<georss:point>37.7002 -122.406</georss:point>
+<live:panel><live:name>サンフランシスコ</live:name><live:subname pattern="celsius"> </live:subname> <live:subname pattern="fahrenheit"> </live:subname></live:panel>
+</item>
+<item><title>エラー: サーバーに接続できませんでした</title>
+<live:item>エラー: サーバーに接続できませんでした</live:item>
+<georss:point>37.5139 127</georss:point>
+<live:panel><live:name>ソウル</live:name><live:subname pattern="celsius"> </live:subname> <live:subname pattern="fahrenheit"> </live:subname></live:panel>
+</item>
+<item><title>エラー: サーバーに接続できませんでした</title>
+<live:item>エラー: サーバーに接続できませんでした</live:item>
+<georss:point>1.293 103.856</georss:point>
+<live:panel><live:name>シンガポール</live:name><live:subname pattern="celsius"> </live:subname> <live:subname pattern="fahrenheit"> </live:subname></live:panel>
+</item>
+<item><title>エラー: サーバーに接続できませんでした</title>
+<live:item>エラー: サーバーに接続できませんでした</live:item>
+<georss:point>-33.883 151.217</georss:point>
+<live:panel><live:name>シドニー</live:name><live:subname pattern="celsius"> </live:subname> <live:subname pattern="fahrenheit"> </live:subname></live:panel>
+</item>
+<item><title>エラー: サーバーに接続できませんでした</title>
+<live:item>エラー: サーバーに接続できませんでした</live:item>
+<georss:point>35.672 51.424</georss:point>
+<live:panel><live:name>テヘラン</live:name><live:subname pattern="celsius"> </live:subname> <live:subname pattern="fahrenheit"> </live:subname></live:panel>
+</item>
+<item><title>エラー: サーバーに接続できませんでした</title>
+<live:item>エラー: サーバーに接続できませんでした</live:item>
+<georss:point>35.7 139.767</georss:point>
+<live:panel><live:name>東京</live:name><live:subname pattern="celsius"> </live:subname> <live:subname pattern="fahrenheit"> </live:subname></live:panel>
+</item>
+<item><title>エラー: サーバーに接続できませんでした</title>
+<live:item>エラー: サーバーに接続できませんでした</live:item>
+<georss:point>38.9048 -77.0354</georss:point>
+<live:panel><live:name>ワシントン</live:name><live:subname pattern="celsius"> </live:subname> <live:subname pattern="fahrenheit"> </live:subname></live:panel>
+</item>
+<item><title>エラー: サーバーに接続できませんでした</title>
+<live:item>エラー: サーバーに接続できませんでした</live:item>
+<georss:point>44.433 26.0978</georss:point>
+<live:panel><live:name>ブカレスト</live:name><live:subname pattern="celsius"> </live:subname> <live:subname pattern="fahrenheit"> </live:subname></live:panel>
+</item>
+<item><title>エラー: サーバーに接続できませんでした</title>
+<live:item>エラー: サーバーに接続できませんでした</live:item>
+<georss:point>-33.4691 -70.6419</georss:point>
+<live:panel><live:name>サンティアゴ</live:name><live:subname pattern="celsius"> </live:subname> <live:subname pattern="fahrenheit"> </live:subname></live:panel>
+</item>
+<item><title>エラー: サーバーに接続できませんでした</title>
+<live:item>エラー: サーバーに接続できませんでした</live:item>
+<georss:point>9.933 -84.083</georss:point>
+<live:panel><live:name>サンホセ</live:name><live:subname pattern="celsius"> </live:subname> <live:subname pattern="fahrenheit"> </live:subname></live:panel>
+</item>
+<item><title>エラー: サーバーに接続できませんでした</title>
+<live:item>エラー: サーバーに接続できませんでした</live:item>
+<georss:point>36.763 3.051</georss:point>
+<live:panel><live:name>アルジェ</live:name><live:subname pattern="celsius"> </live:subname> <live:subname pattern="fahrenheit"> </live:subname></live:panel>
+</item>
+<item><title>エラー: サーバーに接続できませんでした</title>
+<live:item>エラー: サーバーに接続できませんでした</live:item>
+<georss:point>24.672 46.713</georss:point>
+<live:panel><live:name>リヤド</live:name><live:subname pattern="celsius"> </live:subname> <live:subname pattern="fahrenheit"> </live:subname></live:panel>
+</item>
+<item><title>エラー: サーバーに接続できませんでした</title>
+<live:item>エラー: サーバーに接続できませんでした</live:item>
+<georss:point>33.809 -84.3548</georss:point>
+<live:panel><live:name>アトランタ</live:name><live:subname pattern="celsius"> </live:subname> <live:subname pattern="fahrenheit"> </live:subname></live:panel>
+</item>
+<item><title>エラー: サーバーに接続できませんでした</title>
+<live:item>エラー: サーバーに接続できませんでした</live:item>
+<georss:point>29.7599 -95.393</georss:point>
+<live:panel><live:name>ヒューストン</live:name><live:subname pattern="celsius"> </live:subname> <live:subname pattern="fahrenheit"> </live:subname></live:panel>
+</item>
+</channel></rss>

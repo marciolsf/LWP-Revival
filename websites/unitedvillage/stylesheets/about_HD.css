@@ -1,0 +1,93 @@
+@charset "utf-8";
+
+/* --------------------------------
+FILE NAME    ÅFabout_hd.css
+LAST UPDATE  ÅF2009.04.10
+-------------------------------- */
+
+body,div,p,dl,dt,dd,ul,ol,li,table,tr,th,td,h1,h2,h3,h4,h5,h6 {
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+body {
+	background: #000000;
+	text-align: center;
+	color: #dddddd;
+}
+
+ul,li {
+	list-style-type: none;
+}
+
+img {
+	font-size: 0;
+	border: none;
+	vertical-align: bottom;
+}
+
+/* -- header -- */
+
+#header {
+	width: 760px;
+	padding: 10px 0 20px 0;
+	margin: 0 auto;
+}
+
+#header:after {
+	content: "";
+	clear: both;
+	height: 0;
+	display: block;
+	visibility: hidden;
+}
+
+h1,h2 {
+	float: left;
+}
+
+h1 {
+	margin-right: 20px;
+}
+
+/* -- logo -- */
+
+#logo {
+	width: 100%;
+	padding: 20px 0;
+	background: #151515;
+	margin-bottom: 40px;
+}
+
+/* -- text -- */
+
+#text_about {
+	width: 760px;
+	margin: 0 auto 60px auto;
+	font-size: 18px;
+	line-height: 28px;
+	text-align: left;
+}
+
+#text_terms {
+	width: 760px;
+	margin: 0 auto 60px auto;
+	font-size: 16px;
+	line-height: 24px;
+	text-align: left;
+}
+
+#text_about strong {
+	font-weight: bold;
+}
+
+/* -- btn -- */
+
+#btn {
+	width: 760px;
+	margin: 0 auto 60px auto;
+}
+
+
+/* [EOF] CSS */

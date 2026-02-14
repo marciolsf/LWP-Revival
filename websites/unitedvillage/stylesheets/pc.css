@@ -1,0 +1,146 @@
+@charset "utf-8";
+
+/* --------------------------------
+FILE NAME    Fpc.css
+LAST UPDATE  F2009.04.01
+-------------------------------- */
+
+body {
+	font-size: 16px;
+	line-height:1em;
+}
+
+.copyright {
+	font-size: 14px;
+}
+
+a:link{text-decoration: none; color:#dddddd;}
+a:visited{text-decoration: none; color:#dddddd;}
+a:active{text-decoration: none; color:#dddddd;}
+a:hover{text-decoration: none; color:#aaaaaa;}
+
+.line {
+	clear: both;
+	height: 10px;
+	margin: 0 10px;
+	background: #000000;
+	font-size: 0;
+}
+
+.clear {
+	clear: both;
+	height: 0;
+	font-size: 0;
+}
+
+/* -- header -- */
+
+#header {
+	width: 760px;
+	padding: 10px 0 30px 0;
+}
+
+h1 {
+	margin-right: 15px;
+}
+
+#header .header_btn {
+	margin-top: 17px;
+	float: right;
+}
+
+/* -- contents -- */
+
+#contents {
+	width: 760px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+#contents h3 {
+	margin-bottom: 20px;
+}
+
+#contents p {
+	padding: 0 10px 30px 10px;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+#contents #contentsimage {
+	margin-bottom: 30px;
+}
+
+#contents #contentsimage .tab {
+	margin-right: 5px;
+	padding: 10px 20px;
+	background: #151515;
+	border-top: #0178b6 solid 1px;
+	font-size: 14px;
+	line-height: 100%;
+	float: left;
+}
+
+#contents #contentsimage .tab_off {
+	margin-right: 5px;
+	padding: 10px 20px;
+	background: #0d0d0d;
+	border-top: #082c3f solid 1px;
+	font-size: 14px;
+	line-height: 100%;
+	color: #aaaaaa;
+	float: left;
+}
+
+#contents #contentsimage #photoarea {
+	background: #151515;
+}
+
+#contents #contentsimage #photoarea li {
+	width: 365px;
+	margin: 15px 0 15px 10px;
+	float: left;
+	text-align: center;
+}
+
+#contents #contentsimage #photoarea .title {
+	margin-bottom: 10px;
+	font-size: 14px;
+	line-height: 100%;
+}
+
+#contents #contentsimage #photoarea img {
+	margin-bottom: 10px;
+}
+
+#contents #contentsimage #photoarea .copy {
+	font-size: 10px;
+	color: #666666;
+	line-height: 100%;
+}
+
+/* -- footer -- */
+
+#footer {
+	width: 760px;
+	font-size: 12px;
+	padding: 0 0 60px 0;
+}
+
+#footer #terms {
+	float: left;
+	font-size: 10px;
+}
+
+#footer #terms a:link{text-decoration: underline; color:#dddddd;}
+#footer #terms a:visited{text-decoration: underline; color:#dddddd;}
+#footer #terms a:active{text-decoration: underline; color:#dddddd;}
+#footer #terms a:hover{text-decoration: underline; color:#aaaaaa;}
+
+#footer #cc {
+	float: right;
+	font-size: 10px;
+}
+
+
+/* [EOF] CSS */

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:fh="http://purl.org/syndication/history/1.0" xmlns:georss="http://www.georss.org/georss" xmlns:live="http://www.cbe-world.com/lwp/live" xmlns:lwp="http://www.cbe-world.com/lwp" version="2.0">
+  <channel>
+    <fh:incremental>true</fh:incremental>
+    <title>city_info.xml</title>
+    <link>http://www.cbe-world.com/lwp/live_channel</link>
+    <description>channel all cites</description>
+    <pubDate>Tue, 26 May 2009 01:28:46 +0000</pubDate>
+    <ttl>1</ttl>
+    <item><title>Error: Could not connect to server.</title>
+    <live:item>Error: Could not connect to server.</live:item>
+    <georss:point>46.95 7.45</georss:point>
+    <live:panel><live:name>Bern</live:name><live:subname pattern="celsius"> </live:subname> <live:subname pattern="fahrenheit"> </live:subname></live:panel>
+    </item>
+    <item><title>Error: Could not connect to server.</title>
+    <live:item>Error: Could not connect to server.</live:item>
+    <georss:point>25.0231 7.45</georss:point>
+    <live:panel><live:name>Chuxi_Tulou_Cluster</live:name><live:subname pattern="celsius"> </live:subname> <live:subname pattern="fahrenheit"> </live:subname></live:panel>
+    </item>
+    <item><title>Error: Could not connect to server.</title>
+    <live:item>Error: Could not connect to server.</live:item>
+    <georss:point>42.39 18.05</georss:point>
+    <live:panel><live:name>Dubrovnik</live:name><live:subname pattern="celsius"> </live:subname> <live:subname pattern="fahrenheit"> </live:subname></live:panel>
+    </item>
+    <item><title>Error: Could not connect to server.</title>
+    <live:item>Error: Could not connect to server.</live:item>
+    <georss:point>46.35, 9.83333</georss:point>
+    <live:panel><live:name>St._Moritz</live:name><live:subname pattern="celsius"> </live:subname> <live:subname pattern="fahrenheit"> </live:subname></live:panel>
+    </item>
+    <item><title>Error: Could not connect to server.</title>
+    <live:item>Error: Could not connect to server.</live:item>
+    <georss:point>48.38 -1.3</georss:point>
+    <live:panel><live:name>Monst_Saint-Michel</live:name><live:subname pattern="celsius"> </live:subname> <live:subname pattern="fahrenheit"> </live:subname></live:panel>
+    </item>
+    <item><title>Error: Could not connect to server.</title>
+    <live:item>Error: Could not connect to server.</live:item>
+    <georss:point>40.29 16.36</georss:point>
+    <live:panel><live:name>Sassi</live:name><live:subname pattern="celsius"> </live:subname> <live:subname pattern="fahrenheit"> </live:subname></live:panel>
+    </item>
+    <item><title>Error: Could not connect to server.</title>
+    <live:item>Error: Could not connect to server.</live:item>
+    <georss:point>43.5081 16.4399</georss:point>
+    <live:panel><live:name>Split</live:name><live:subname pattern="celsius"> </live:subname> <live:subname pattern="fahrenheit"> </live:subname></live:panel>
+    </item>
+    <item><title>Error: Could not connect to server.</title>
+    <live:item>Error: Could not connect to server.</live:item>
+    <georss:point>33.5 135.46</georss:point>
+    <live:panel><live:name>Yoshino</live:name><live:subname pattern="celsius"> </live:subname> <live:subname pattern="fahrenheit"> </live:subname></live:panel>
+    </item>
+  </channel>
+</rss>
+

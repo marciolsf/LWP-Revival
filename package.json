@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "adm-zip": "^0.5.16",
+    "axios": "^1.13.5",
+    "express": "^5.2.1",
+    "rss-parser": "^3.13.0",
+    "sharp": "^0.34.5"
+  },
+  "name": "mock-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lwp-server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
