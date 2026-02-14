@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:lwp="http://www.cbe-world.com/lwp">
+    <channel>
+        <title>channel_list.xml</title>
+        <link>http://www.cbe-world.com/lwp/channel_list</link>
+        <description>LWP 1.1 channel list</description>
+        <pubDate>Tue, 09 Feb 2010 12:20:01 +0000</pubDate>
+        <ttl>720</ttl>
+        <item>
+            <title>Live</title>
+            <lwp:channelId>FLWP00001</lwp:channelId>
+            <lwp:plugin name="Live" url="file://%s/data/plugins/live/live.xml">
+                <lwp:arg>http://www.k2.cbe-world.com/acfs/noauth/lwp/FLWP00001/eu/en/city_info.xml.zip</lwp:arg>
+                <lwp:arg>http://www.k2.cbe-world.com/acfs/noauth/lwp/FLWP00001/eu/en/city_diff.xml.zip</lwp:arg>
+                <lwp:arg>http://www.k2.cbe-world.com/acfs/noauth/lwp/FLWP00001/cloud.xml.zip</lwp:arg>
+            </lwp:plugin>
+            <lwp:about url="http://www.playstation.com/life/livech/about/"/>
+            <lwp:reqver>01.00</lwp:reqver>
+            <lwp:parental level="0" age="0"/>
+        </item>
+        <item>
+            <title>PSN Game Trailers</title>
+            <lwp:channelId>FBVL00001</lwp:channelId>
+            <lwp:plugin name="Bivl">
+                <lwp:arg>sid:1923</lwp:arg>
+                <lwp:arg>psnStore:game</lwp:arg>
+            </lwp:plugin>
+            <lwp:providerName>Sony Computer Entertainment America</lwp:providerName>
+            <lwp:reqver>01.20</lwp:reqver>
+            <lwp:parental level="0" age="0"/>
+        </item>
+        <item>
+            <title>PSN Movie and TV Trailers</title>
+            <lwp:channelId>FBVL00002</lwp:channelId>
+            <lwp:plugin name="Bivl">
+                <lwp:arg>sid:1925</lwp:arg>
+                <lwp:arg>psnStore:video</lwp:arg>
+            </lwp:plugin>
+            <lwp:providerName>Sony Computer Entertainment America</lwp:providerName>
+            <lwp:reqver>01.20</lwp:reqver>
+            <lwp:parental level="0" age="0"/>
+        </item>
+        <item>
+            <title>Alpha Clock Channel</title>
+            <lwp:channelId>FALPL0001</lwp:channelId>
+            <lwp:plugin>
+                <lwp:arg>https://www.k2.cbe-world.com/tcfs/lwp/FALPL0001/info/eu/en/globe.xml.zip</lwp:arg>
+            </lwp:plugin>
+            <lwp:about url="http://www.sony.net/united/clock/lwp/about/"/>
+            <lwp:providerName>Sony Corporation</lwp:providerName>
+            <lwp:asset url="https://www.k2.cbe-world.com/tcfs/lwp/FALPL0001/FALPL0001.zip" pubDate="Mon, 27 Jul 2009 12:00:00 +0000" version="00.03"/>
+            <lwp:contentPubDate url="https://www.k2.cbe-world.com/tcfs/lwp/FALPL0001/contentPubDate.xml"/>
+            <lwp:reqver>01.10</lwp:reqver>
+            <lwp:parental level="0" age="0"/>
+        </item>
+        <item>
+            <title>United Village</title>
+            <lwp:channelId>FUNVL0001</lwp:channelId>
+            <lwp:plugin>
+                <lwp:arg>https://www.k2.cbe-world.com/acfs/noauth/lwp/FUNVL0001/info/eu/en/globe.xml.zip</lwp:arg>
+            </lwp:plugin>
+            <lwp:about url="http://www.united-village.net/site/en/%R/"/>
+            <lwp:providerName>United Village</lwp:providerName>
+            <lwp:asset url="https://www.k2.cbe-world.com/acfs/noauth/lwp/FUNVL0001/FUNVL0001.zip" pubDate="Thu, 07 May 2009 16:02:00 +0000" version="00.05"/>
+            <lwp:contentPubDate url="https://www.k2.cbe-world.com/acfs/noauth/lwp/FUNVL0001/contentPubDate.xml"/>
+            <lwp:reqver>01.00</lwp:reqver>
+            <lwp:parental level="0" age="0"/>
+        </item>
+        <item>
+            <title>Folding@home</title>
+            <lwp:channelId>FLWP00002</lwp:channelId>
+            <lwp:plugin name="Fah" url="file://%s/data/plugins/fah/fah.xml"/>
+            <lwp:about url="http://www.scei.co.jp/folding/about/"/>
+            <lwp:reqver>01.00</lwp:reqver>
+            <lwp:parental level="0" age="0"/>
+        </item>
+    </channel>
+</rss>

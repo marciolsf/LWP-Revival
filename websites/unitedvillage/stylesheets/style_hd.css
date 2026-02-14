@@ -1,0 +1,149 @@
+@charset "utf-8";
+
+/* --------------------------------
+ FILE NAME    : style_HD.css
+ DESCRIPTION  : Remade by zungle, missing file
+ -------------------------------- */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px; /* Larger font for TV viewing */
+    line-height: 1.5;
+    background-color: #000000;
+}
+
+/* -- Container Widths -- */
+#header,
+#mainphoto ul,
+#information,
+#photo_area ul,
+#footer {
+width: 960px; /* Standard safe-area width for PS3 HD */
+margin: 0 auto;
+}
+
+/* -- Header -- */
+#header {
+padding: 30px 0;
+height: 60px;
+text-align: left;
+}
+
+#header h1 {
+margin-right: 20px;
+}
+
+#header h2 {
+margin-top: 15px; /* Alignment for the title image */
+}
+
+/* -- Main Photo Section -- */
+#mainphoto {
+padding: 20px 0;
+background-color: #151515;
+border-top: 1px solid #333;
+border-bottom: 1px solid #333;
+}
+
+#mainphoto img {
+width: 960px; /* Forces main image to fit container */
+height: auto;
+border: 1px solid #444;
+}
+
+#mainphoto li.caption {
+font-weight: bold;
+color: #ffffff;
+font-size: 22px;
+}
+
+#mainphoto li.copyright {
+font-size: 14px;
+color: #888888;
+padding-top: 5px;
+}
+
+/* -- Information / Introduction Section -- */
+#information {
+padding: 40px 0;
+border-bottom: 1px solid #222;
+}
+
+#information #introduction {
+width: 620px;
+color: #cccccc;
+font-size: 18px;
+}
+
+#information #introduction strong {
+display: block;
+margin-top: 20px;
+color: #ffffff;
+font-size: 20px;
+}
+
+#information #supplier {
+width: 300px;
+font-size: 14px;
+color: #999999;
+}
+
+#information #supplier p {
+margin-bottom: 20px;
+line-height: 1.4;
+}
+
+/* -- Photo Grid Area -- */
+#photo_area {
+padding: 40px 0;
+}
+
+#photo_area ul {
+padding-bottom: 20px;
+}
+
+#photo_area li {
+width: 465px; /* Two columns with margin */
+margin-right: 15px;
+margin-left: 0;
+text-align: left;
+}
+
+#photo_area li:last-child {
+margin-right: 0;
+}
+
+#photo_area .photo img {
+width: 465px;
+height: auto;
+border: 1px solid #333;
+}
+
+#photo_area .caption {
+font-size: 16px;
+color: #dddddd;
+margin-top: 5px;
+}
+
+#photo_area .copyright {
+font-size: 12px;
+color: #666666;
+}
+
+#photo_area .line {
+margin: 20px 0;
+background-color: #222;
+}
+
+/* -- Footer -- */
+#footer {
+padding: 30px 0 50px 0;
+font-size: 14px;
+border-top: 1px solid #222;
+}
+
+#footer img {
+vertical-align: middle;
+margin-right: 10px;
+opacity: 0.7;
+}

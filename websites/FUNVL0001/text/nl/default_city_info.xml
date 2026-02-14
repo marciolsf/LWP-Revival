@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:fh="http://purl.org/syndication/history/1.0" xmlns:georss="http://www.georss.org/georss" xmlns:lwp="http://www.cbe-world.com/lwp" xmlns:live="http://www.cbe-world.com/lwp/live" > 
+<channel>
+<fh:incremental>false</fh:incremental>
+<title>city_info.xml</title>
+<link>http://www.cbe-world.com/lwp/live_channel</link>
+<description>Live channel all cities</description>
+<ttl>90</ttl>
+
+<live:text id="more">More News</live:text>
+<live:text id="weather">Weather Forecast</live:text>
+
+
+<item><title>Een fout: Kon geen verbinding met server maken.</title>
+<live:item>Een fout: Kon geen verbinding met server maken.</live:item>
+<georss:point>13.75 100.517</georss:point>
+<live:panel><live:name>Bangkok</live:name><live:subname pattern="celsius"> </live:subname> <live:subname pattern="fahrenheit"> </live:subname></live:panel>
+</item>
+<item><title>Een fout: Kon geen verbinding met server maken.</title>
+<live:item>Een fout: Kon geen verbinding met server maken.</live:item>
+<georss:point>39.9 116.413</georss:point>
+<live:panel><live:name>Beijing</live:name><live:subname pattern="celsius"> </live:subname> <live:subname pattern="fahrenheit"> </live:subname></live:panel>
+</item>
+<item><title>Een fout: Kon geen verbinding met server maken.</title>
+<live:item>Een fout: Kon geen verbinding met server maken.</live:item>
+<georss:point>52.517 13.4115</georss:point>
+<live:panel><live:name>Berlijn</live:name><live:subname pattern="celsius"> </live:subname> <live:subname pattern="fahrenheit"> </live:subname></live:panel>
+</item>
+<item><title>Een fout: Kon geen verbinding met server maken.</title>
+<live:item>Een fout: Kon geen verbinding met server maken.</live:item>
+<georss:point>-34.613 -58.4173</georss:point>
+<live:panel><live:name>Buenos Aires</live:name><live:subname pattern="celsius"> </live:subname> <live:subname pattern="fahrenheit"> </live:subname></live:panel>
+</item>
+<item><title>Een fout: Kon geen verbinding met server maken.</title>
+<live:item>Een fout: Kon geen verbinding met server maken.</live:item>
+<georss:point>30.05 31.227</georss:point>
+<live:panel><live:name>Caïro</live:name><live:subname pattern="celsius"> </live:subname> <live:subname pattern="fahrenheit"> </live:subname></live:panel>
+</item>
+<item><title>Een fout: Kon geen verbinding met server maken.</title>
+<live:item>Een fout: Kon geen verbinding met server maken.</live:item>
+<georss:point>41.865 -87.6718</georss:point>
+<live:panel><live:name>Chicago</live:name><live:subname pattern="celsius"> </live:subname> <live:subname pattern="fahrenheit"> </live:subname></live:panel>
+</item>
+<item><title>Een fout: Kon geen verbinding met server maken.</title>
+<live:item>Een fout: Kon geen verbinding met server maken.</live:item>
+<georss:point>23.723 90.409</georss:point>
+<live:panel><live:name>Dhaka</live:name><live:subname pattern="celsius"> </live:subname> <live:subname pattern="fahrenheit"> </live:subname></live:panel>
+</item>
+<item><title>Een fout: Kon geen verbinding met server maken.</title>
+<live:item>Een fout: Kon geen verbinding met server maken.</live:item>
+<georss:point>60.176 24.934</georss:point>
+<live:panel><live:name>Helsinki</live:name><live:subname pattern="celsius"> </live:subname> <live:subname pattern="fahrenheit"> </live:subname></live:panel>
+</item>
+<item><title>Een fout: Kon geen verbinding met server maken.</title>
+<live:item>Een fout: Kon geen verbinding met server maken.</live:item>
+<georss:point>22.283 114.15</georss:point>
+<live:panel><live:name>Hongkong</live:name><live:subname pattern="celsius"> </live:subname> <live:subname pattern="fahrenheit"> </live:subname></live:panel>
+</item>
+<item><title>Een fout: Kon geen verbinding met server maken.</title>
+<live:item>Een fout: Kon geen verbinding met server maken.</live:item>
+<georss:point>-26.1951 28.0339</georss:point>
+<live:panel><live:name>Johannesburg</live:name><live:subname pattern="celsius"> </live:subname> <live:subname pattern="fahrenheit"> </live:subname></live:panel>
+</item>
+<item><title>Een fout: Kon geen verbinding met server maken.</title>
+<live:item>Een fout: Kon geen verbinding met server maken.</live:item>
+<georss:point>-12.0931 -77.0465</georss:point>
+<live:panel><live:name>Lima</live:name><live:subname pattern="celsius"> </live:subname> <live:subname pattern="fahrenheit"> </live:subname></live:panel>
+</item>
+<item><title>Een fout: Kon geen verbinding met server maken.</title>
+<live:item>Een fout: Kon geen verbinding met server maken.</live:item>
+<georss:point>51.5002 -0.1262</georss:point>
+<live:panel><live:name>Londen</live:name><live:subname pattern="celsius"> </live:subname> <live:subname pattern="fahrenheit"> </live:subname></live:panel>
+</item>
+<item><title>Een fout: Kon geen verbinding met server maken.</title>
+<live:item>Een fout: Kon geen verbinding met server maken.</live:item>
+<georss:point>34.0452 -118.284</georss:point>
+<live:panel><live:name>Los Engelen</live:name><live:subname pattern="celsius"> </live:subname> <live:subname pattern="fahrenheit"> </live:subname></live:panel>
+</item>
+<item><title>Een fout: Kon geen verbinding met server maken.</title>
+<live:item>Een fout: Kon geen verbinding met server maken.</live:item>
+<georss:point>19.4271 -99.1276</georss:point>
+<live:panel><live:name>Mexico City</live:name><live:subname pattern="celsius"> </live:subname> <live:subname pattern="fahrenheit"> </live:subname></live:panel>
+</item>
+<item><title>Een fout: Kon geen verbinding met server maken.</title>
+<live:item>Een fout: Kon geen verbinding met server maken.</live:item>
+<georss:point>55.75579 37.6176</georss:point>
+<live:panel><live:name>Moskou</live:name><live:subname pattern="celsius"> </live:subname> <live:subname pattern="fahrenheit"> </live:subname></live:panel>
+</item>
+<item><title>Een fout: Kon geen verbinding met server maken.</title>
+<live:item>Een fout: Kon geen verbinding met server maken.</live:item>
+<georss:point>40.7488 -73.9846</georss:point>
+<live:panel><live:name>New York</live:name><live:subname pattern="celsius"> </live:subname> <live:subname pattern="fahrenheit"> </live:subname></live:panel>
+</item>
+<item><title>Een fout: Kon geen verbinding met server maken.</title>
+<live:item>Een fout: Kon geen verbinding met server maken.</live:item>
+<georss:point>48.8542 2.34486</georss:point>
+<live:panel><live:name>Parijs</live:name><live:subname pattern="celsius"> </live:subname> <live:subname pattern="fahrenheit"> </live:subname></live:panel>
+</item>
+<item><title>Een fout: Kon geen verbinding met server maken.</title>
+<live:item>Een fout: Kon geen verbinding met server maken.</live:item>
+<georss:point>37.7002 -122.406</georss:point>
+<live:panel><live:name>San Francisco</live:name><live:subname pattern="celsius"> </live:subname> <live:subname pattern="fahrenheit"> </live:subname></live:panel>
+</item>
+<item><title>Een fout: Kon geen verbinding met server maken.</title>
+<live:item>Een fout: Kon geen verbinding met server maken.</live:item>
+<georss:point>37.5139 127</georss:point>
+<live:panel><live:name>Seoul</live:name><live:subname pattern="celsius"> </live:subname> <live:subname pattern="fahrenheit"> </live:subname></live:panel>
+</item>
+<item><title>Een fout: Kon geen verbinding met server maken.</title>
+<live:item>Een fout: Kon geen verbinding met server maken.</live:item>
+<georss:point>1.293 103.856</georss:point>
+<live:panel><live:name>Singapore</live:name><live:subname pattern="celsius"> </live:subname> <live:subname pattern="fahrenheit"> </live:subname></live:panel>
+</item>
+<item><title>Een fout: Kon geen verbinding met server maken.</title>
+<live:item>Een fout: Kon geen verbinding met server maken.</live:item>
+<georss:point>-33.883 151.217</georss:point>
+<live:panel><live:name>Sydney</live:name><live:subname pattern="celsius"> </live:subname> <live:subname pattern="fahrenheit"> </live:subname></live:panel>
+</item>
+<item><title>Een fout: Kon geen verbinding met server maken.</title>
+<live:item>Een fout: Kon geen verbinding met server maken.</live:item>
+<georss:point>35.672 51.424</georss:point>
+<live:panel><live:name>Teheran</live:name><live:subname pattern="celsius"> </live:subname> <live:subname pattern="fahrenheit"> </live:subname></live:panel>
+</item>
+<item><title>Een fout: Kon geen verbinding met server maken.</title>
+<live:item>Een fout: Kon geen verbinding met server maken.</live:item>
+<georss:point>35.7 139.767</georss:point>
+<live:panel><live:name>Tokio</live:name><live:subname pattern="celsius"> </live:subname> <live:subname pattern="fahrenheit"> </live:subname></live:panel>
+</item>
+<item><title>Een fout: Kon geen verbinding met server maken.</title>
+<live:item>Een fout: Kon geen verbinding met server maken.</live:item>
+<georss:point>38.9048 -77.0354</georss:point>
+<live:panel><live:name>Washington</live:name><live:subname pattern="celsius"> </live:subname> <live:subname pattern="fahrenheit"> </live:subname></live:panel>
+</item>
+<item><title>Een fout: Kon geen verbinding met server maken.</title>
+<live:item>Een fout: Kon geen verbinding met server maken.</live:item>
+<georss:point>44.433 26.0978</georss:point>
+<live:panel><live:name>Boekarest</live:name><live:subname pattern="celsius"> </live:subname> <live:subname pattern="fahrenheit"> </live:subname></live:panel>
+</item>
+<item><title>Een fout: Kon geen verbinding met server maken.</title>
+<live:item>Een fout: Kon geen verbinding met server maken.</live:item>
+<georss:point>-33.4691 -70.6419</georss:point>
+<live:panel><live:name>Santiago</live:name><live:subname pattern="celsius"> </live:subname> <live:subname pattern="fahrenheit"> </live:subname></live:panel>
+</item>
+<item><title>Een fout: Kon geen verbinding met server maken.</title>
+<live:item>Een fout: Kon geen verbinding met server maken.</live:item>
+<georss:point>9.933 -84.083</georss:point>
+<live:panel><live:name>San Jose</live:name><live:subname pattern="celsius"> </live:subname> <live:subname pattern="fahrenheit"> </live:subname></live:panel>
+</item>
+<item><title>Een fout: Kon geen verbinding met server maken.</title>
+<live:item>Een fout: Kon geen verbinding met server maken.</live:item>
+<georss:point>36.763 3.051</georss:point>
+<live:panel><live:name>Algiers</live:name><live:subname pattern="celsius"> </live:subname> <live:subname pattern="fahrenheit"> </live:subname></live:panel>
+</item>
+<item><title>Een fout: Kon geen verbinding met server maken.</title>
+<live:item>Een fout: Kon geen verbinding met server maken.</live:item>
+<georss:point>24.672 46.713</georss:point>
+<live:panel><live:name>Riyadh</live:name><live:subname pattern="celsius"> </live:subname> <live:subname pattern="fahrenheit"> </live:subname></live:panel>
+</item>
+<item><title>Een fout: Kon geen verbinding met server maken.</title>
+<live:item>Een fout: Kon geen verbinding met server maken.</live:item>
+<georss:point>33.809 -84.3548</georss:point>
+<live:panel><live:name>Atlanta</live:name><live:subname pattern="celsius"> </live:subname> <live:subname pattern="fahrenheit"> </live:subname></live:panel>
+</item>
+<item><title>Een fout: Kon geen verbinding met server maken.</title>
+<live:item>Een fout: Kon geen verbinding met server maken.</live:item>
+<georss:point>29.7599 -95.393</georss:point>
+<live:panel><live:name>Houston</live:name><live:subname pattern="celsius"> </live:subname> <live:subname pattern="fahrenheit"> </live:subname></live:panel>
+</item>
+</channel></rss>

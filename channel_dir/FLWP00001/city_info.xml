@@ -1,0 +1,1205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:fh="http://purl.org/syndication/history/1.0" xmlns:georss="http://www.georss.org/georss" xmlns:live="http://www.cbe-world.com/lwp/live" xmlns:lwp="http://www.cbe-world.com/lwp" version="2.0">
+  <channel>
+    <fh:incremental>false</fh:incremental>
+    <title>city_info.xml</title>
+    <link>http://www.cbe-world.com/lwp/live_channel</link>
+    <description>Live channel all cities</description>
+    <pubDate>Tue, 9 Feb 2010 13:15:17 +0000</pubDate>
+    <ttl>90</ttl>
+    <live:pic id="0" pubDate="Mon, 16 Jun 2008 16:26:22 +0000" ttl="0" type="image/png" url="file://%s/data/world/weather/%r/0.png"/>
+    <live:pic id="1" pubDate="Mon, 16 Jun 2008 16:26:22 +0000" ttl="0" type="image/png" url="file://%s/data/world/weather/%r/01.png"/>
+    <live:pic id="2" pubDate="Mon, 16 Jun 2008 16:26:22 +0000" ttl="0" type="image/png" url="file://%s/data/world/weather/%r/02.png"/>
+    <live:pic id="3" pubDate="Mon, 16 Jun 2008 16:26:22 +0000" ttl="0" type="image/png" url="file://%s/data/world/weather/%r/03.png"/>
+    <live:pic id="4" pubDate="Mon, 16 Jun 2008 16:26:22 +0000" ttl="0" type="image/png" url="file://%s/data/world/weather/%r/04.png"/>
+    <live:pic id="5" pubDate="Mon, 16 Jun 2008 16:26:22 +0000" ttl="0" type="image/png" url="file://%s/data/world/weather/%r/05.png"/>
+    <live:pic id="6" pubDate="Mon, 16 Jun 2008 16:26:22 +0000" ttl="0" type="image/png" url="file://%s/data/world/weather/%r/06.png"/>
+    <live:pic id="7" pubDate="Mon, 16 Jun 2008 16:26:22 +0000" ttl="0" type="image/png" url="file://%s/data/world/weather/%r/07.png"/>
+    <live:pic id="8" pubDate="Mon, 16 Jun 2008 16:26:22 +0000" ttl="0" type="image/png" url="file://%s/data/world/weather/%r/08.png"/>
+    <live:pic id="9" pubDate="Mon, 16 Jun 2008 16:26:22 +0000" ttl="0" type="image/png" url="file://%s/data/world/weather/%r/09.png"/>
+    <live:pic id="10" pubDate="Mon, 16 Jun 2008 16:26:22 +0000" ttl="0" type="image/png" url="file://%s/data/world/weather/%r/10.png"/>
+    <live:pic id="11" pubDate="Mon, 16 Jun 2008 16:26:22 +0000" ttl="0" type="image/png" url="file://%s/data/world/weather/%r/11.png"/>
+    <live:pic id="12" pubDate="Mon, 16 Jun 2008 16:26:22 +0000" ttl="0" type="image/png" url="file://%s/data/world/weather/%r/12.png"/>
+    <live:pic id="13" pubDate="Mon, 16 Jun 2008 16:26:22 +0000" ttl="0" type="image/png" url="file://%s/data/world/weather/%r/13.png"/>
+    <live:pic id="14" pubDate="Mon, 16 Jun 2008 16:26:22 +0000" ttl="0" type="image/png" url="file://%s/data/world/weather/%r/14.png"/>
+    <live:pic id="15" pubDate="Mon, 16 Jun 2008 16:26:22 +0000" ttl="0" type="image/png" url="file://%s/data/world/weather/%r/15.png"/>
+    <live:pic id="16" pubDate="Mon, 16 Jun 2008 16:26:22 +0000" ttl="0" type="image/png" url="file://%s/data/world/weather/%r/16.png"/>
+    <live:pic id="17" pubDate="Mon, 16 Jun 2008 16:26:22 +0000" ttl="0" type="image/png" url="file://%s/data/world/weather/%r/17.png"/>
+    <live:pic id="18" pubDate="Mon, 16 Jun 2008 16:26:22 +0000" ttl="0" type="image/png" url="file://%s/data/world/weather/%r/18.png"/>
+    <live:pic id="19" pubDate="Mon, 16 Jun 2008 16:26:22 +0000" ttl="0" type="image/png" url="file://%s/data/world/weather/%r/19.png"/>
+    <live:pic id="20" pubDate="Mon, 16 Jun 2008 16:26:22 +0000" ttl="0" type="image/png" url="file://%s/data/world/weather/%r/20.png"/>
+    <live:pic id="21" pubDate="Mon, 16 Jun 2008 16:26:22 +0000" ttl="0" type="image/png" url="file://%s/data/world/weather/%r/21.png"/>
+    <live:pic id="22" pubDate="Mon, 16 Jun 2008 16:26:22 +0000" ttl="0" type="image/png" url="file://%s/data/world/weather/%r/22.png"/>
+    <live:pic id="23" pubDate="Mon, 16 Jun 2008 16:26:22 +0000" ttl="0" type="image/png" url="file://%s/data/world/weather/%r/23.png"/>
+    <live:pic id="24" pubDate="Mon, 16 Jun 2008 16:26:22 +0000" ttl="0" type="image/png" url="file://%s/data/world/weather/%r/24.png"/>
+    <live:pic id="25" pubDate="Mon, 16 Jun 2008 16:26:22 +0000" ttl="0" type="image/png" url="file://%s/data/world/weather/%r/25.png"/>
+    <live:pic id="26" pubDate="Mon, 16 Jun 2008 16:26:22 +0000" ttl="0" type="image/png" url="file://%s/data/world/weather/%r/26.png"/>
+    <live:pic id="27" pubDate="Mon, 16 Jun 2008 16:26:22 +0000" ttl="0" type="image/png" url="file://%s/data/world/weather/%r/27.png"/>
+    <live:pic id="28" pubDate="Mon, 16 Jun 2008 16:26:22 +0000" ttl="0" type="image/png" url="file://%s/data/world/weather/%r/28.png"/>
+    <live:pic id="29" pubDate="Mon, 16 Jun 2008 16:26:22 +0000" ttl="0" type="image/png" url="file://%s/data/world/weather/%r/29.png"/>
+    <live:pic id="30" pubDate="Mon, 16 Jun 2008 16:26:22 +0000" ttl="0" type="image/png" url="file://%s/data/world/weather/%r/30.png"/>
+    <live:pic id="31" pubDate="Mon, 16 Jun 2008 16:26:22 +0000" ttl="0" type="image/png" url="file://%s/data/world/weather/%r/31.png"/>
+    <live:pic id="32" pubDate="Mon, 16 Jun 2008 16:26:22 +0000" ttl="0" type="image/png" url="file://%s/data/world/weather/%r/32.png"/>
+    <live:pic id="33" pubDate="Mon, 16 Jun 2008 16:26:22 +0000" ttl="0" type="image/png" url="file://%s/data/world/weather/%r/33.png"/>
+    <live:pic id="34" pubDate="Mon, 16 Jun 2008 16:26:22 +0000" ttl="0" type="image/png" url="file://%s/data/world/weather/%r/34.png"/>
+    <live:pic id="35" pubDate="Mon, 16 Jun 2008 16:26:22 +0000" ttl="0" type="image/png" url="file://%s/data/world/weather/%r/35.png"/>
+    <live:pic id="36" pubDate="Mon, 16 Jun 2008 16:26:22 +0000" ttl="0" type="image/png" url="file://%s/data/world/weather/%r/36.png"/>
+    <live:pic id="37" pubDate="Mon, 16 Jun 2008 16:26:22 +0000" ttl="0" type="image/png" url="file://%s/data/world/weather/%r/37.png"/>
+    <live:pic id="38" pubDate="Mon, 16 Jun 2008 16:26:22 +0000" ttl="0" type="image/png" url="file://%s/data/world/weather/%r/38.png"/>
+    <live:pic id="39" pubDate="Mon, 16 Jun 2008 16:26:22 +0000" ttl="0" type="image/png" url="file://%s/data/world/weather/%r/39.png"/>
+    <live:pic id="40" pubDate="Mon, 16 Jun 2008 16:26:22 +0000" ttl="0" type="image/png" url="file://%s/data/world/weather/%r/40.png"/>
+    <live:pic id="41" pubDate="Mon, 16 Jun 2008 16:26:22 +0000" ttl="0" type="image/png" url="file://%s/data/world/weather/%r/41.png"/>
+    <live:pic id="42" pubDate="Mon, 16 Jun 2008 16:26:22 +0000" ttl="0" type="image/png" url="file://%s/data/world/weather/%r/42.png"/>
+    <live:pic id="43" pubDate="Mon, 16 Jun 2008 16:26:22 +0000" ttl="0" type="image/png" url="file://%s/data/world/weather/%r/43.png"/>
+    <live:pic id="44" pubDate="Mon, 16 Jun 2008 16:26:22 +0000" ttl="0" type="image/png" url="file://%s/data/world/weather/%r/44.png"/>
+    <live:pic id="45" pubDate="Mon, 16 Jun 2008 16:26:22 +0000" ttl="0" type="image/png" url="file://%s/data/world/weather/%r/45.png"/>
+    <live:pic id="46" pubDate="Mon, 16 Jun 2008 16:26:22 +0000" ttl="0" type="image/png" url="file://%s/data/world/weather/%r/46.png"/>
+    <live:pic id="47" pubDate="Mon, 16 Jun 2008 16:26:22 +0000" ttl="0" type="image/png" url="file://%s/data/world/weather/%r/47.png"/>
+    <live:pic id="copyright" pubDate="Mon, 16 Jun 2008 20:18:16 +0000" ttl="0" type="image/png" url="file://%s/data/plugins/live/%r/copyright.png"/>
+    <live:copyright pic="copyright"/>
+    <live:pic id="copyright2" pubDate="Mon, 16 Jun 2008 20:18:16 +0000" ttl="0" type="image/png" url="file://%s/data/plugins/live/%r/Google.png"/>
+    <live:copyright pic="copyright2"/>
+    <live:pic id="copyright3" pubDate="Mon, 16 Jun 2008 20:18:16 +0000" ttl="0" type="image/png" url="file://%s/data/plugins/live/%r/WeatherChannel.png"/>
+    <live:copyright pic="copyright3"/>
+    <live:text id="more">More News</live:text>
+    <live:text id="weather">Weather Forecast</live:text>
+    <item>
+      <title>Amsterdam News</title>
+      <georss:point>52.35 4.917</georss:point>
+      <live:cityId>NLXX0002</live:cityId>
+      <live:timezone>+0100</live:timezone>
+      <live:panel offsetx="0.0" offsety="0.0" pic="28">
+        <live:name>Amsterdam</live:name>
+        <live:subname pattern="celsius">-2℃</live:subname>
+        <live:subname pattern="fahrenheit">28℉</live:subname>
+      </live:panel>
+      <live:media>
+        <live:thumbnail guid="2609cfdb1bcf70bc3afb871256cbd167" pubDate="Tue, 9 Feb 2010 11:30:11 +0000" ttl="300" type="image/jpeg" url="https://www.k2.cbe-world.com/acfs/noauth/lwp/FLWP00001/247012481191373754ed3b06249d445a93fb4cbe90071dcb/Amsterdam_s.jpg"/>
+      </live:media>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5gbIJ7NLNm1NZGn_XppdfQoFjKfyw">Three Iranians arrested in Malaysia for drug smuggling</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5hiAqsmS_ezlOG-5naf3_m_Y0y7_A">Govt seeks to allay fears over body scanners</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5h5GV4jU4Ek6ZudekzdNaCZFjCc6A">Latvia wants better terms Russia's Gazprom: ministry</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5gBtlEvUfL7Jc9ItufLNaj8PktRSA">Luck or divine intervention? Haitian voodoo heritage intact</live:item>
+      <live:item text="more" url="http://news.google.com/news?ned=us&amp;hl=en&amp;ned=us&amp;q=Amsterdam"/>
+    </item>
+    <item>
+      <title>Atlanta News</title>
+      <georss:point>33.809 -84.3548</georss:point>
+      <live:cityId>USGA0028</live:cityId>
+      <live:timezone>-0500</live:timezone>
+      <live:panel offsetx="0.0" offsety="0.0" pic="26">
+        <live:name>Atlanta</live:name>
+        <live:subname pattern="celsius">4℃</live:subname>
+        <live:subname pattern="fahrenheit">40℉</live:subname>
+      </live:panel>
+      <live:media>
+        <live:thumbnail guid="1f6ca5912ac984bf2b94faf8e848878a" pubDate="Tue, 9 Feb 2010 12:45:09 +0000" ttl="300" type="image/jpeg" url="https://www.k2.cbe-world.com/acfs/noauth/lwp/FLWP00001/2470124811913737292763b53d594ba3bbe7c615462be728/Atlanta_s.jpg"/>
+      </live:media>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5jrXB1zfmTjgmw9rZXsehlD6Ia0QQ">Toyota pulls ads from US TV network: report</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5gxKCDDG8lqs1XXiFaWsW27nf4z-Q">JAL to stay with American Airlines: reports</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5hxL1yh1940_FR7e4nZAb5UiAnc2A">Chinese firm adopts much-loved panda for 60000 dollars</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5gjFJjBGIDP2J1zBcxOA3cuYTkAuw">New Orleans elects first white mayor in 32 years</live:item>
+      <live:item text="more" url="http://news.google.com/news?ned=us&amp;hl=en&amp;ned=us&amp;q=Atlanta"/>
+    </item>
+    <item>
+      <title>Auckland News</title>
+      <georss:point>-36.867 174.767</georss:point>
+      <live:cityId>NZXX0003</live:cityId>
+      <live:timezone>+1300</live:timezone>
+      <live:panel offsetx="0.0" offsety="0.0" pic="29">
+        <live:name>Auckland</live:name>
+        <live:subname pattern="celsius">19℃</live:subname>
+        <live:subname pattern="fahrenheit">66℉</live:subname>
+      </live:panel>
+      <live:media>
+        <live:thumbnail pubDate="Fri, 15 Jan 2010 12:00:21 +0000" type="image/jpeg" url="file://%s/data/plugins/live/NoImage_Thumb.jpg"/>
+      </live:media>
+      <live:item text="more" url="http://news.google.com/news?ned=us&amp;hl=en&amp;ned=us&amp;q=Auckland"/>
+    </item>
+    <item>
+      <title>Bangkok News</title>
+      <georss:point>13.75 100.517</georss:point>
+      <live:cityId>THXX0002</live:cityId>
+      <live:timezone>+0700</live:timezone>
+      <live:panel offsetx="0.0" offsety="0.0" pic="29">
+        <live:name>Bangkok</live:name>
+        <live:subname pattern="celsius">29℃</live:subname>
+        <live:subname pattern="fahrenheit">84℉</live:subname>
+      </live:panel>
+      <live:media>
+        <live:thumbnail pubDate="Tue, 9 Feb 2010 13:15:17 +0000" type="image/jpeg" url="file://%s/data/plugins/live/NoImage_Thumb.jpg"/>
+      </live:media>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5gU8--TsWaHKX6jvs-6yJsVpJ-kkw">Thailand deploys 20000 forces on Thaksin ruling</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5hCW2KDoLhFctew_IQnBPgg4Sy8vA">India's Bhullar wins Asian Tour opener</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5hgUyTWanDO028nqQ9V_-Jmuh8LEQ">Diehard Thaksin loyalist paints rural Thailand red</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5gDHBANUucpBxc43BdvwjKP1BsEQA">Laos 'moving toward' Hmong access: US diplomat</live:item>
+      <live:item text="more" url="http://news.google.com/news?ned=us&amp;hl=en&amp;ned=us&amp;q=Bangkok"/>
+    </item>
+    <item>
+      <title>Beijing News</title>
+      <georss:point>39.9 116.413</georss:point>
+      <live:cityId>CHXX0008</live:cityId>
+      <live:timezone>+0800</live:timezone>
+      <live:panel offsetx="0.0" offsety="0.0" pic="31">
+        <live:name>Beijing</live:name>
+        <live:subname pattern="celsius">1℃</live:subname>
+        <live:subname pattern="fahrenheit">34℉</live:subname>
+      </live:panel>
+      <live:media>
+        <live:thumbnail guid="bcdc8ba896ea44b22e6fafad2c1d3a13" pubDate="Tue, 9 Feb 2010 10:30:12 +0000" ttl="300" type="image/jpeg" url="https://www.k2.cbe-world.com/acfs/noauth/lwp/FLWP00001/24701248119137374eedb775195e4adc9c9491cf1b48cd65/Beijing_s.jpg"/>
+      </live:media>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5ihR2U47oiY9ytrKkYgFMqJgCh-QQ">China points to farms as major pollution risk</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5ih8FyV3sdjLGNTebj13txpRbBR2A">Wildlife group, stars urge Indians to save tiger</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5i6nASAyOUvMQY1D47Q464alIKU7Q">Australian miner admits China firm name mix-up</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5jGxtKRZlq-fGbp83ibPWpGLk19Gg">Wildlife group, stars urge Indians to save the tiger</live:item>
+      <live:item text="more" url="http://news.google.com/news?ned=us&amp;hl=en&amp;ned=us&amp;q=Beijing"/>
+    </item>
+    <item>
+      <title>Berlin News</title>
+      <georss:point>52.517 13.4115</georss:point>
+      <live:cityId>GMXX0007</live:cityId>
+      <live:timezone>+0100</live:timezone>
+      <live:panel offsetx="0.0" offsety="0.0" pic="28">
+        <live:name>Berlin</live:name>
+        <live:subname pattern="celsius">-4℃</live:subname>
+        <live:subname pattern="fahrenheit">25℉</live:subname>
+      </live:panel>
+      <live:media>
+        <live:thumbnail guid="465958065fb18f7ad3c6fe87fd03d4be" pubDate="Tue, 9 Feb 2010 11:30:12 +0000" ttl="300" type="image/jpeg" url="https://www.k2.cbe-world.com/acfs/noauth/lwp/FLWP00001/247012481191373754ed3b06249d445a93fb4cbe90071dcb/Berlin_s.jpg"/>
+      </live:media>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5hJ9EbI2ZdIGLw1Qszbch4pXa_bKw">Berlin film festival rolls out 3-D red carpet</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5gYIIMcVr1SD-itSZGozAR3vZatIQ">Berlin film fest looks back at 60 years of scandal</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5gTvGj0gECxj0YppfkyqbCp2U-nUg">SAP names two new co-CEOs</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5iz7X6cDy6CsH3u5V0Sm0zc01Yu3Q">Kostner to finish season as Wolfsburg coach</live:item>
+      <live:item text="more" url="http://news.google.com/news?ned=us&amp;hl=en&amp;ned=us&amp;q=Berlin"/>
+    </item>
+    <item>
+      <title>Budapest News</title>
+      <georss:point>47.4984 19.083</georss:point>
+      <live:cityId>HUXX0002</live:cityId>
+      <live:timezone>+0100</live:timezone>
+      <live:panel offsetx="0.0" offsety="0.0" pic="28">
+        <live:name>Budapest</live:name>
+        <live:subname pattern="celsius">-2℃</live:subname>
+        <live:subname pattern="fahrenheit">28℉</live:subname>
+      </live:panel>
+      <live:media>
+        <live:thumbnail guid="70e06172818bae516e3995d5e091c127" pubDate="Tue, 9 Feb 2010 11:30:13 +0000" ttl="300" type="image/jpeg" url="https://www.k2.cbe-world.com/acfs/noauth/lwp/FLWP00001/247012481191373754ed3b06249d445a93fb4cbe90071dcb/Budapest_s.jpg"/>
+      </live:media>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5gTp-5tg4krNxm3_f7d6IX0vta66g">Vienna Opera Ball to pay tribute to Chopin</live:item>
+      <live:item text="more" url="http://news.google.com/news?ned=us&amp;hl=en&amp;ned=us&amp;q=Budapest"/>
+    </item>
+    <item>
+      <title>Buenos Aires News</title>
+      <georss:point>-34.613 -58.4173</georss:point>
+      <live:cityId>ARBA0009</live:cityId>
+      <live:timezone>-0200</live:timezone>
+      <live:panel offsetx="0.0" offsety="0.0" pic="34">
+        <live:name>Buenos Aires</live:name>
+        <live:subname pattern="celsius">26℃</live:subname>
+        <live:subname pattern="fahrenheit">79℉</live:subname>
+      </live:panel>
+      <live:media>
+        <live:thumbnail pubDate="Tue, 9 Feb 2010 13:15:17 +0000" type="image/jpeg" url="file://%s/data/plugins/live/NoImage_Thumb.jpg"/>
+      </live:media>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5j-o9HPlhqsi4DDevyeHyddy8-3rA">Argentine ex-president undergoes emergency surgery</live:item>
+      <live:item text="more" url="http://news.google.com/news?ned=us&amp;hl=en&amp;ned=us&amp;q=Buenos+Aires"/>
+    </item>
+    <item>
+      <title>Cairo News</title>
+      <georss:point>30.05 31.227</georss:point>
+      <live:cityId>EGXX0004</live:cityId>
+      <live:timezone>+0200</live:timezone>
+      <live:panel offsetx="0.0" offsety="0.0" pic="34">
+        <live:name>Cairo</live:name>
+        <live:subname pattern="celsius">23℃</live:subname>
+        <live:subname pattern="fahrenheit">73℉</live:subname>
+      </live:panel>
+      <live:media>
+        <live:thumbnail type="image/png" url="http://www.k2.cbe-world.com/websites/abc.png"/>
+      </live:media>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5hkb5B4pBBf9fxPugAwFe0xxZgsdw">UN urges Egypt, Arab League to press Israel on Gaza</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5hQKLY7JWnWHRYCjnKCjVjalgqn4g">Egypt arrests Muslim Brotherhood leaders in dawn raid</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5gTrfsz9V5Z_3JeXTDeR2cawdW_Mg">Egypt steps up security on Gaza sea border</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5h7VEIl-bNMdvr-cBDW5xMZs7DY9A">Egypt envoy back in Algiers after football row</live:item>
+      <live:item text="more" url="http://news.google.com/news?ned=us&amp;hl=en&amp;ned=us&amp;q=Cairo"/>
+    </item>
+    <item>
+      <title>Chicago News</title>
+      <georss:point>41.865 -87.6718</georss:point>
+      <live:cityId>USIL0225</live:cityId>
+      <live:timezone>-0600</live:timezone>
+      <live:panel offsetx="0.0" offsety="0.0" pic="14">
+        <live:name>Chicago</live:name>
+        <live:subname pattern="celsius">-5℃</live:subname>
+        <live:subname pattern="fahrenheit">23℉</live:subname>
+      </live:panel>
+      <live:media>
+        <live:thumbnail guid="230814a040462006e595c056e4e488f9" pubDate="Tue, 9 Feb 2010 12:30:11 +0000" ttl="300" type="image/jpeg" url="https://www.k2.cbe-world.com/acfs/noauth/lwp/FLWP00001/2470124811913737e6f69583b30f4338a96c97c93169f63b/Chicago_s.jpg"/>
+      </live:media>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5i3eCfSb9tgdSh_uHaYBqgVWQ66Lg">White House vows 'multiple' attacks on Asian carp</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5i7Ym4kQATnKDzrBWi_tlCq1TTy6w">US speed skating star Davis sings Japan's praises</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5jbs495DsHit0JpCX2VLQN4KYnSgw">France vaunts '40 virtues' of Armagnac</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5gwprXcci4zfAWtU8jSIfeswFRStg">Powerful blizzard delivers punch to capital</live:item>
+      <live:item text="more" url="http://news.google.com/news?ned=us&amp;hl=en&amp;ned=us&amp;q=Chicago"/>
+    </item>
+    <item>
+      <title>Delhi News</title>
+      <georss:point>28.667 77.217</georss:point>
+      <live:cityId>INXX0038</live:cityId>
+      <live:timezone>+0530</live:timezone>
+      <live:panel offsetx="0.0" offsety="0.0" pic="21">
+        <live:name>Delhi</live:name>
+        <live:subname pattern="celsius">21℃</live:subname>
+        <live:subname pattern="fahrenheit">70℉</live:subname>
+      </live:panel>
+      <live:media>
+        <live:thumbnail pubDate="Tue, 9 Feb 2010 13:15:17 +0000" type="image/jpeg" url="file://%s/data/plugins/live/NoImage_Thumb.jpg"/>
+      </live:media>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5iVjK60XsLIy5fr0a9_Mr4g7hvtZw">India car sales hit record high lifted by recovery</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5hVz1smV5iJBYZGiV_WWKvv5OiPiw">India's top tycoon denies bid for Liverpool</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5istF5_zJ6RPeeKVMmDCzDHC44Lsg">India's top tycoon denies bid for Liverpool FC</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5j-h30I5WlRJ5gc3dz5KL7pZ9IpVw">India's Ambani group denies bid for Liverpool</live:item>
+      <live:item text="more" url="http://news.google.com/news?ned=us&amp;hl=en&amp;ned=us&amp;q=Delhi"/>
+    </item>
+    <item>
+      <title>Denver News</title>
+      <georss:point>39.7551 -104.988</georss:point>
+      <live:cityId>USCO0105</live:cityId>
+      <live:timezone>-0700</live:timezone>
+      <live:panel offsetx="0.0" offsety="0.0" pic="33">
+        <live:name>Denver</live:name>
+        <live:subname pattern="celsius">-11℃</live:subname>
+        <live:subname pattern="fahrenheit">12℉</live:subname>
+      </live:panel>
+      <live:media>
+        <live:thumbnail guid="12f61c4dda69e488af6a015a3a08aea1" pubDate="Tue, 9 Feb 2010 09:30:13 +0000" ttl="300" type="image/jpeg" url="https://www.k2.cbe-world.com/acfs/noauth/lwp/FLWP00001/2470124811913737e6f69583b30f4338a96c97c93169f63b/Denver_s.jpg"/>
+      </live:media>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5iasu8WkuuyDsyz0AvJRkg60K7tkQ">Jackson claims Lakers milestone but Bryant hurting</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5gB_3x6lMZLCMxfLXv7Fv4txfE39w">49ers legend hoping he's the Rice man for the Hall of Fame</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5gO2Y0Lyw_JVT1Pwv9wb_HBnMo1lQ">Parker sidelined by sprained left ankle</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5ib7oGv-RPX-ycc_cWgyv1VQus5fA">Rockies, Street confirm 22.5 million-dollar deal</live:item>
+      <live:item text="more" url="http://news.google.com/news?ned=us&amp;hl=en&amp;ned=us&amp;q=Denver"/>
+    </item>
+    <item>
+      <title>Dubai News</title>
+      <georss:point>25.2711 55.3074</georss:point>
+      <live:cityId>AEXX0004</live:cityId>
+      <live:timezone>+0400</live:timezone>
+      <live:panel offsetx="0.0" offsety="0.0" pic="32">
+        <live:name>Dubai</live:name>
+        <live:subname pattern="celsius">22℃</live:subname>
+        <live:subname pattern="fahrenheit">72℉</live:subname>
+      </live:panel>
+      <live:media>
+        <live:thumbnail pubDate="Fri, 15 Jan 2010 11:45:27 +0000" type="image/jpeg" url="file://%s/data/plugins/live/NoImage_Thumb.jpg"/>
+      </live:media>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5h94gxI2yk280wv1pevxMU90bQfMQ">Canadian military commander charged in two murders</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5j6IK06Vaidc_cTMrjo22UbF4t8tg">Boeing sets first flight of new version of 747 jumbo jet</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5jhi2bYVNmHCELwJ8qli_Jh_VgaTw">Al-Qaeda offshoot urges more US attacks</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5hT8iX931GU_m6mRmPnovSWw1-UPg">FTSE slightly higher in midday trade</live:item>
+      <live:item text="more" url="http://news.google.com/news?ned=us&amp;hl=en&amp;ned=us&amp;q=Dubai"/>
+    </item>
+    <item>
+      <title>Dublin News</title>
+      <georss:point>53.333 -6.25</georss:point>
+      <live:cityId>EIXX0014</live:cityId>
+      <live:timezone>+0000</live:timezone>
+      <live:panel offsetx="0.0" offsety="0.0" pic="28">
+        <live:name>Dublin</live:name>
+        <live:subname pattern="celsius">4℃</live:subname>
+        <live:subname pattern="fahrenheit">39℉</live:subname>
+      </live:panel>
+      <live:media>
+        <live:thumbnail pubDate="Wed, 20 Jan 2010 13:00:14 +0000" type="image/jpeg" url="file://%s/data/plugins/live/NoImage_Thumb.jpg"/>
+      </live:media>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5joEMLDY3rNnZTbNqL7QxqgARDFdQ">England 6 Nations win excites Easter</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5gLg5F4ze22IuEuraSswj_EtHne4Q">Flat Irish still good enough to trounce Italians in Six Nations</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5hTdg5ZsveZIx9z67wdngX78SVVwQ">Ireland look to make most of Italy Six Nations opener</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5hFxjmDSYcpn3xuQS-ePyYxePGRRA">Ireland call up Cullen for injured O'Callaghan</live:item>
+      <live:item text="more" url="http://news.google.com/news?ned=us&amp;hl=en&amp;ned=us&amp;q=Dublin"/>
+    </item>
+    <item>
+      <title>Hanoi News</title>
+      <georss:point>21.033 105.85</georss:point>
+      <live:cityId>VMXX0006</live:cityId>
+      <live:timezone>+0700</live:timezone>
+      <live:panel offsetx="0.0" offsety="0.0" pic="29">
+        <live:name>Hanoi</live:name>
+        <live:subname pattern="celsius">26℃</live:subname>
+        <live:subname pattern="fahrenheit">79℉</live:subname>
+      </live:panel>
+      <live:media>
+        <live:thumbnail pubDate="Tue, 9 Feb 2010 13:15:17 +0000" type="image/jpeg" url="file://%s/data/plugins/live/NoImage_Thumb.jpg"/>
+      </live:media>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5hmZovU1xyUhaoyunaQOdyg9Dw65Q">Imprisoned Vietnam priest in worsening health: sister</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5iHGIkEWDAc6NjLE-NeB1UsYskr2Q">Lunar New Year tradition blossoms in Vietnam</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5gYIIMcVr1SD-itSZGozAR3vZatIQ">Berlin film fest looks back at 60 years of scandal</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5hsgHBVWKqf5pGEyGXODWRuEoJoCw">Eight Vietnamese reported drowned</live:item>
+      <live:item text="more" url="http://news.google.com/news?ned=us&amp;hl=en&amp;ned=us&amp;q=Hanoi"/>
+    </item>
+    <item>
+      <title>Hawaii News</title>
+      <georss:point>21.3084 -157.846</georss:point>
+      <live:cityId>USHI0026</live:cityId>
+      <live:timezone>-1000</live:timezone>
+      <live:panel offsetx="0.0" offsety="0.0" pic="29">
+        <live:name>Hawaii</live:name>
+        <live:subname pattern="celsius">23℃</live:subname>
+        <live:subname pattern="fahrenheit">73℉</live:subname>
+      </live:panel>
+      <live:media>
+        <live:thumbnail guid="52f3d6c59839046f749c87cf50fd7854" pubDate="Tue, 9 Feb 2010 12:30:14 +0000" ttl="300" type="image/jpeg" url="https://www.k2.cbe-world.com/acfs/noauth/lwp/FLWP00001/2470124811913737e6f69583b30f4338a96c97c93169f63b/Hawaii_s.jpg"/>
+      </live:media>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5g_laydnHWNzIuXva15rVeHPrRkNg">Obama pleads for return of 'civility' in US politics</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5j8VHDHuMAdYkv7npCdzsUjI5eD0Q">Obama aunt fights deportation before US court</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5gntHySkpJbOEO0IpX1FCLdVZUZYQ">New technique helps search for another Earth</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5gsxRs7btEjFqQEkNUeju9S7yHTSA">Americans beat Nationals to level Pro Bowl rivalry</live:item>
+      <live:item text="more" url="http://news.google.com/news?ned=us&amp;hl=en&amp;ned=us&amp;q=Hawaii"/>
+    </item>
+    <item>
+      <title>Helsinki News</title>
+      <georss:point>60.176 24.934</georss:point>
+      <live:cityId>FIXX0002</live:cityId>
+      <live:timezone>+0200</live:timezone>
+      <live:panel offsetx="0.0" offsety="0.0" pic="14">
+        <live:name>Helsinki</live:name>
+        <live:subname pattern="celsius">-8℃</live:subname>
+        <live:subname pattern="fahrenheit">18℉</live:subname>
+      </live:panel>
+      <live:media>
+        <live:thumbnail pubDate="Fri, 15 Jan 2010 11:40:30 +0000" type="image/jpeg" url="file://%s/data/plugins/live/NoImage_Thumb.jpg"/>
+      </live:media>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5iTo8GGdx9mr-H-afAvvToo7ci1Ig">Climate change impact of soil underestimated: study</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5iSNG0m4kxrYiSmFIUI_PYLVM3PLw">Nokia to cut up to 285 jobs in Finnish plant changes</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5iSk6sDlwQDt7KUwEBjr_QXw2wdKQ">Nokia says accused of securities fraud in US</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5hr2sG8mLcZhqtHSiBYuuVaNcJxcw">Ex-navy chief denies Russia dumped nuclear waste in Baltic Sea</live:item>
+      <live:item text="more" url="http://news.google.com/news?ned=us&amp;hl=en&amp;ned=us&amp;q=Helsinki"/>
+    </item>
+    <item>
+      <title>Hong Kong News</title>
+      <georss:point>22.283 114.15</georss:point>
+      <live:cityId>CHXX0049</live:cityId>
+      <live:timezone>+0800</live:timezone>
+      <live:panel offsetx="0.0" offsety="0.0" pic="29">
+        <live:name>Hong Kong</live:name>
+        <live:subname pattern="celsius">24℃</live:subname>
+        <live:subname pattern="fahrenheit">75℉</live:subname>
+      </live:panel>
+      <live:media>
+        <live:thumbnail pubDate="Fri, 15 Jan 2010 11:45:29 +0000" type="image/jpeg" url="file://%s/data/plugins/live/NoImage_Thumb.jpg"/>
+      </live:media>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5i6nASAyOUvMQY1D47Q464alIKU7Q">Australian miner admits China firm name mix-up</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5jFKKiNYyaVO0meUqzx--1KV-FIZg">China Power denies coal deal with Resourcehouse</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5jCIKkE34BlEAmNh9rc0jV_J6tU8A">Colourful Philippine election season kicks off</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5gFTSGnNNchgv_zJ4vGTmCec-GyYg">Australian PM 'sick' over tales of racism</live:item>
+      <live:item text="more" url="http://news.google.com/news?ned=us&amp;hl=en&amp;ned=us&amp;q=Hong+Kong"/>
+    </item>
+    <item>
+      <title>Houston News</title>
+      <georss:point>29.7599 -95.393</georss:point>
+      <live:cityId>USTX0617</live:cityId>
+      <live:timezone>-0600</live:timezone>
+      <live:panel offsetx="0.0" offsety="0.0" pic="26">
+        <live:name>Houston</live:name>
+        <live:subname pattern="celsius">5℃</live:subname>
+        <live:subname pattern="fahrenheit">41℉</live:subname>
+      </live:panel>
+      <live:media>
+        <live:thumbnail guid="70f25a68c0a3693e308d59ecfc1325fb" pubDate="Tue, 9 Feb 2010 12:30:15 +0000" ttl="300" type="image/jpeg" url="https://www.k2.cbe-world.com/acfs/noauth/lwp/FLWP00001/2470124811913737e6f69583b30f4338a96c97c93169f63b/Houston_s.jpg"/>
+      </live:media>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5jroC8AZKfWYrdZdl71P-iWFnFxoQ">Jackson doctor to appear in court</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5hXEzzcQRZKUs7b1qGvfv8NQO5lSg">Public invited to question NASA astronauts via Twitter</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5hjh4mTGtYGFImw_38Hlt0vCsjbDA">Jackson doctor negotiating surrender: lawyer</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5gAuMdpsjM2xHh82DlRBD03rHVFbA">Jackson doctor to be charged Monday: prosecutors</live:item>
+      <live:item text="more" url="http://news.google.com/news?ned=us&amp;hl=en&amp;ned=us&amp;q=Houston"/>
+    </item>
+    <item>
+      <title>Islamabad News</title>
+      <georss:point>33.7 73.167</georss:point>
+      <live:cityId>PKXX0006</live:cityId>
+      <live:timezone>+0500</live:timezone>
+      <live:panel offsetx="0.0" offsety="0.0" pic="30">
+        <live:name>Islamabad</live:name>
+        <live:subname pattern="celsius">13℃</live:subname>
+        <live:subname pattern="fahrenheit">55℉</live:subname>
+      </live:panel>
+      <live:media>
+        <live:thumbnail guid="d01b42d91e32390ae8f894dcc4c29995" pubDate="Tue, 9 Feb 2010 12:00:15 +0000" ttl="300" type="image/jpeg" url="https://www.k2.cbe-world.com/acfs/noauth/lwp/FLWP00001/24701248119137374eedb775195e4adc9c9491cf1b48cd65/Islamabad_s.jpg"/>
+      </live:media>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5jYCZ5CMz277F6HhvVn1B990rkL8Q">UN calls for aid pledges for displaced Pakistanis</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5j-Y38kNJOtrQI_uyTNZIwGFnyruA">India 'tests nuclear-capable missile'</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5gTFg9Is-dOlNtxEDp9P6tqr8H5Pw">Indian govt hails test of nuclear-capable missile</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5iSVHabc3lQzJR0CSmdoQ5mT8lgdg">Mood gloomy in Kashmir over India-Pakistan talks</live:item>
+      <live:item text="more" url="http://news.google.com/news?ned=us&amp;hl=en&amp;ned=us&amp;q=Islamabad"/>
+    </item>
+    <item>
+      <title>Istanbul News</title>
+      <georss:point>41.017 28.967</georss:point>
+      <live:cityId>TUXX0014</live:cityId>
+      <live:timezone>+0200</live:timezone>
+      <live:panel offsetx="0.0" offsety="0.0" pic="28">
+        <live:name>Istanbul</live:name>
+        <live:subname pattern="celsius">2℃</live:subname>
+        <live:subname pattern="fahrenheit">36℉</live:subname>
+      </live:panel>
+      <live:media>
+        <live:thumbnail pubDate="Fri, 15 Jan 2010 11:40:32 +0000" type="image/jpeg" url="file://%s/data/plugins/live/NoImage_Thumb.jpg"/>
+      </live:media>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5jphYmKV18mHAOkRljI29fPJ-_jjg">Horror movie terrifies Italian kids, angers politicians</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5hRo28Ype3Iccc-5-CGaXoQga3Vpw">Iran arrests seven ahead of revolution anniversary</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5g8ceYiSC4HPcofeaI9EaH3s_q35Q">Afghans flee ahead of major anti-Taliban offensive</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5gZb39dwrIUuF_p6TPQKjqfssiBOg">G7 to continue stimulus until global economy on track</live:item>
+      <live:item text="more" url="http://news.google.com/news?ned=us&amp;hl=en&amp;ned=us&amp;q=Istanbul"/>
+    </item>
+    <item>
+      <title>Jakarta News</title>
+      <georss:point>-6.167 106.806</georss:point>
+      <live:cityId>IDXX0022</live:cityId>
+      <live:timezone>+0700</live:timezone>
+      <live:panel offsetx="0.0" offsety="0.0" pic="29">
+        <live:name>Jakarta</live:name>
+        <live:subname pattern="celsius">28℃</live:subname>
+        <live:subname pattern="fahrenheit">82℉</live:subname>
+      </live:panel>
+      <live:media>
+        <live:thumbnail pubDate="Fri, 15 Jan 2010 11:45:33 +0000" type="image/jpeg" url="file://%s/data/plugins/live/NoImage_Thumb.jpg"/>
+      </live:media>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5hkMH85Ylf3dFSkf4J2Wii_zlwsXw">Aceh reconstruction offers hope for Haiti</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5h9cpWjTlk1OZ1BF8G0gBVdJPkJiw">Indonesian Islamists block horror film: producers</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5jM7K7i4TemFCNv59lTXdhJx5TQ5A">Indonesia to remove Obama statue from public park</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5ioeDuIWyyzQ_n7bWekwk1_3r5D1Q">Indonesia bans buffalo after protest hurts president</live:item>
+      <live:item text="more" url="http://news.google.com/news?ned=us&amp;hl=en&amp;ned=us&amp;q=Jakarta"/>
+    </item>
+    <item>
+      <title>Johannesburg News</title>
+      <georss:point>-26.1951 28.0339</georss:point>
+      <live:cityId>SFXX0023</live:cityId>
+      <live:timezone>+0200</live:timezone>
+      <live:panel offsetx="0.0" offsety="0.0" pic="34">
+        <live:name>Johannesburg</live:name>
+        <live:subname pattern="celsius">26℃</live:subname>
+        <live:subname pattern="fahrenheit">79℉</live:subname>
+      </live:panel>
+      <live:media>
+        <live:thumbnail pubDate="Tue, 9 Feb 2010 13:15:17 +0000" type="image/jpeg" url="file://%s/data/plugins/live/NoImage_Thumb.jpg"/>
+      </live:media>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5gthCYj_hNwKv5tzreC6sS1sbW_4Q">Steyn credits performance to planning</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5iB15G0mwghOTAiw4fIIeyMbboO4g">South Africans celebrate Mandela, worry about future</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5hvFZ8cIE2PAGpInIRS5OFyywwIlA">Spaniard Lopez ends long ATP trophy drought</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5gygLZrPu_o_3PyKNeu0baNpE2FpQ">South Africa's Amla earns all-round praise</live:item>
+      <live:item text="more" url="http://news.google.com/news?ned=us&amp;hl=en&amp;ned=us&amp;q=Johannesburg"/>
+    </item>
+    <item>
+      <title>Kuala Lumpur News</title>
+      <georss:point>3.167 101.708</georss:point>
+      <live:cityId>MYXX0008</live:cityId>
+      <live:timezone>+0800</live:timezone>
+      <live:panel offsetx="0.0" offsety="0.0" pic="4">
+        <live:name>Kuala Lumpur</live:name>
+        <live:subname pattern="celsius">31℃</live:subname>
+        <live:subname pattern="fahrenheit">88℉</live:subname>
+      </live:panel>
+      <live:media>
+        <live:thumbnail pubDate="Tue, 9 Feb 2010 13:15:17 +0000" type="image/jpeg" url="file://%s/data/plugins/live/NoImage_Thumb.jpg"/>
+      </live:media>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5jGhVo_2XzpcA6IBtDQEuT9wZVPdQ">Malaysia calls on Myanmar to free Suu Kyi ahead of polls</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5ijLZwP4JyaZZrNyUw2Nxs10vxcxg">Malaysia's Anwar seeks to remove sodomy case judge</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5gbIJ7NLNm1NZGn_XppdfQoFjKfyw">Three Iranians arrested in Malaysia for drug smuggling</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5jlmv0nOHHGhZ1adOT8cKxSRdgZwg">Malaysia's missing jet engines 'found in Uruguay'</live:item>
+      <live:item text="more" url="http://news.google.com/news?ned=us&amp;hl=en&amp;ned=us&amp;q=Kuala+Lumpur"/>
+    </item>
+    <item>
+      <title>Kuwait City News</title>
+      <georss:point>29.37 47.978</georss:point>
+      <live:cityId>KUXX0003</live:cityId>
+      <live:timezone>+0300</live:timezone>
+      <live:panel offsetx="0.0" offsety="0.0" pic="34">
+        <live:name>Kuwait City</live:name>
+        <live:subname pattern="celsius">17℃</live:subname>
+        <live:subname pattern="fahrenheit">63℉</live:subname>
+      </live:panel>
+      <live:media>
+        <live:thumbnail pubDate="Tue, 9 Feb 2010 13:15:17 +0000" type="image/jpeg" url="file://%s/data/plugins/live/NoImage_Thumb.jpg"/>
+      </live:media>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5hXrt3E6wE0dJUfe9KYitqqEeiQVQ">Kuwait to post 24 billion-dollar budget surplus: forecast</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5jp3-SbuzRDUnQQAgtfcP-aoVb8gA">Kuwait's Zain telecom CEO resigns</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5iXM958YLWhv4LhrMI2fXtNQbgAQA">Kuwait adopts $100 billion spending plan</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5hmLru080EiliuJNczOVL_fIj7M0g">Moody's downgrades Kuwait's Gulf Bank ratings</live:item>
+      <live:item text="more" url="http://news.google.com/news?ned=us&amp;hl=en&amp;ned=us&amp;q=Kuwait"/>
+    </item>
+    <item>
+      <title>Lima News</title>
+      <georss:point>-12.0931 -77.0465</georss:point>
+      <live:cityId>PEXX0011</live:cityId>
+      <live:timezone>-0500</live:timezone>
+      <live:panel offsetx="0.0" offsety="0.0" pic="26">
+        <live:name>Lima</live:name>
+        <live:subname pattern="celsius">23℃</live:subname>
+        <live:subname pattern="fahrenheit">73℉</live:subname>
+      </live:panel>
+      <live:media>
+        <live:thumbnail pubDate="Tue, 9 Feb 2010 13:15:17 +0000" type="image/jpeg" url="file://%s/data/plugins/live/NoImage_Thumb.jpg"/>
+      </live:media>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5jFaBJcKVTNgFh6YRp8WEEv0UsL-Q">Peru toasts pisco boom in annual cocktail day</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5htHkCdlqfAqZR15PBNeDEux_Gehg">International Potato Center opens Asia branch in China</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5iyTFocki2VVM1kLssJ2HxtUUt1Uw">South Korea gives Peru planes for counter-drug ops</live:item>
+      <live:item text="more" url="http://news.google.com/news?ned=us&amp;hl=en&amp;ned=us&amp;q=Lima"/>
+    </item>
+    <item>
+      <title>London News</title>
+      <georss:point>51.5002 -0.1262</georss:point>
+      <live:cityId>UKXX0085</live:cityId>
+      <live:timezone>+0000</live:timezone>
+      <live:panel offsetx="0.0" offsety="0.0" pic="28">
+        <live:name>London</live:name>
+        <live:subname pattern="celsius">3℃</live:subname>
+        <live:subname pattern="fahrenheit">37℉</live:subname>
+      </live:panel>
+      <live:media>
+        <live:thumbnail guid="b3ada373b6ece530de3eece0c47c64be" pubDate="Tue, 9 Feb 2010 13:00:15 +0000" ttl="300" type="image/jpeg" url="https://www.k2.cbe-world.com/acfs/noauth/lwp/FLWP00001/247012481191373754ed3b06249d445a93fb4cbe90071dcb/London_s.jpg"/>
+      </live:media>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5i8DGdIatpbMiiq1FRCFTiLphuyOA">Apology after London bus driver stops to pray</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5gPMHigzhbR-b67-8ROfoPK8MNP8g">Pitt, Jolie sue British paper over split claims</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5i0n4HN-UesoGsFgsZd60l3_sikuQ">'Brangelina' sue News of the World for split claim</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5j5OzH9gZtXx79sgEVFpGsO_95rTg">Ice likely to have caused BA crash landing in 2008</live:item>
+      <live:item text="more" url="http://news.google.com/news?ned=us&amp;hl=en&amp;ned=us&amp;q=London"/>
+    </item>
+    <item>
+      <title>Los Angeles News</title>
+      <georss:point>34.0452 -118.284</georss:point>
+      <live:cityId>USCA0638</live:cityId>
+      <live:timezone>-0800</live:timezone>
+      <live:panel offsetx="0.0" offsety="0.0" pic="27">
+        <live:name>Los Angeles</live:name>
+        <live:subname pattern="celsius">12℃</live:subname>
+        <live:subname pattern="fahrenheit">54℉</live:subname>
+      </live:panel>
+      <live:media>
+        <live:thumbnail guid="d6c9f6568784709075fac9c83f759bdc" pubDate="Tue, 9 Feb 2010 11:00:16 +0000" ttl="300" type="image/jpeg" url="https://www.k2.cbe-world.com/acfs/noauth/lwp/FLWP00001/2470124811913737e6f69583b30f4338a96c97c93169f63b/LosAngeles_s.jpg"/>
+      </live:media>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5jkAlDNnbO3Tu5mRqFquCluAyqv1w">China-born aerospace engineer gets 15 years for spying</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5gfBFH3Efy02sA086Z1pDF-6qy_UA">Kaman replaces Roy for All Star Game</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5gc5KN-UiJby5p3aURbOCfY9BLD5Q">Sam Worthington to star in 'Texas Killing Fields'</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5jzXjAtRgrIbMAJ5QpQ3T_AjFVvOA">Taylor Lautner in 'Stretch Armstrong' movie: studio</live:item>
+      <live:item text="more" url="http://news.google.com/news?ned=us&amp;hl=en&amp;ned=us&amp;q=Los+Angeles"/>
+    </item>
+    <item>
+      <title>Madrid News</title>
+      <georss:point>40.4167 -3.7032</georss:point>
+      <live:cityId>SPXX0050</live:cityId>
+      <live:timezone>+0100</live:timezone>
+      <live:panel offsetx="0.0" offsety="0.0" pic="30">
+        <live:name>Madrid</live:name>
+        <live:subname pattern="celsius">10℃</live:subname>
+        <live:subname pattern="fahrenheit">50℉</live:subname>
+      </live:panel>
+      <live:media>
+        <live:thumbnail pubDate="Tue, 9 Feb 2010 13:15:17 +0000" type="image/jpeg" url="file://%s/data/plugins/live/NoImage_Thumb.jpg"/>
+      </live:media>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5jUxDb25VOVL76uBsZxmObMIqOWxw">ETA seeking to move bomb-making to Portugal: Madrid</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5ih-jZSaUArSkQ2-c6qURbCN7Ut6A">Dark day for Negredo as Sevilla taste Zaragoza defeat</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5jNVAM8Vjjfb3RuZ6c6KT2uE-clrQ">Kaka ends barren spell as Real close gap</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5h0xe_2qY6KlwEE4xasrGRZZ1CKWg">Three-star Robben strikes as Bayern draw level</live:item>
+      <live:item text="more" url="http://news.google.com/news?ned=us&amp;hl=en&amp;ned=us&amp;q=Madrid"/>
+    </item>
+    <item>
+      <title>Manila News</title>
+      <georss:point>14.583 121.0</georss:point>
+      <live:cityId>RPXX0017</live:cityId>
+      <live:timezone>+0800</live:timezone>
+      <live:panel offsetx="0.0" offsety="0.0" pic="29">
+        <live:name>Manila</live:name>
+        <live:subname pattern="celsius">28℃</live:subname>
+        <live:subname pattern="fahrenheit">82℉</live:subname>
+      </live:panel>
+      <live:media>
+        <live:thumbnail guid="a7e29e78322be8659341133c4ec3850b" pubDate="Tue, 9 Feb 2010 10:30:18 +0000" ttl="300" type="image/jpeg" url="https://www.k2.cbe-world.com/acfs/noauth/lwp/FLWP00001/24701248119137374eedb775195e4adc9c9491cf1b48cd65/Manila_s.jpg"/>
+      </live:media>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5iNJaC3hTn25jWZFp-yHVtwC-oGvA">197 people charged with murder over Philippine massacre</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5jCIKkE34BlEAmNh9rc0jV_J6tU8A">Colourful Philippine election season kicks off</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5ikufMNRHsqDrifBya2qwvDIhj4Ig">Philippine police kill eight armed men</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5jQ2TvkBzqkf_cJf8BadOpCJ9EmwA">Philippine automated vote system 'almost perfect': officials</live:item>
+      <live:item text="more" url="http://news.google.com/news?ned=us&amp;hl=en&amp;ned=us&amp;q=Manila"/>
+    </item>
+    <item>
+      <title>Melbourne News</title>
+      <georss:point>-37.817 144.967</georss:point>
+      <live:cityId>ASXX0075</live:cityId>
+      <live:timezone>+1100</live:timezone>
+      <live:panel offsetx="0.0" offsety="0.0" pic="33">
+        <live:name>Melbourne</live:name>
+        <live:subname pattern="celsius">24℃</live:subname>
+        <live:subname pattern="fahrenheit">75℉</live:subname>
+      </live:panel>
+      <live:media>
+        <live:thumbnail guid="0fd83c752afcf7ce4ef2ca903039b45e" pubDate="Tue, 9 Feb 2010 10:45:15 +0000" ttl="300" type="image/jpeg" url="https://www.k2.cbe-world.com/acfs/noauth/lwp/FLWP00001/247012481191373726e671106a164959ae285004a8719c15/Melbourne_s.jpg"/>
+      </live:media>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5gFTSGnNNchgv_zJ4vGTmCec-GyYg">Race motive 'clear' in some Indian attacks: Australian FM</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5gxssc16-ExeW3ozZFQQHoT4nCX5A">Swedish ace Soderling too good for Serra</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5ibG1fYCyhonVNwwmlT-LEPY2p9OA">Warne tells Aussies to take part in IPL</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5gj7TfAiVruSLQ4PHWiHQ7iPIzB3A">Stosur leads Australia to Fed Cup victory over Spain</live:item>
+      <live:item text="more" url="http://news.google.com/news?ned=us&amp;hl=en&amp;ned=us&amp;q=Melbourne"/>
+    </item>
+    <item>
+      <title>Miami News</title>
+      <georss:point>25.7652 -80.273</georss:point>
+      <live:cityId>USFL0316</live:cityId>
+      <live:timezone>-0500</live:timezone>
+      <live:panel offsetx="0.0" offsety="0.0" pic="27">
+        <live:name>Miami</live:name>
+        <live:subname pattern="celsius">19℃</live:subname>
+        <live:subname pattern="fahrenheit">67℉</live:subname>
+      </live:panel>
+      <live:media>
+        <live:thumbnail guid="4c07e95ec27b8baf4bb9b9e383139f0b" pubDate="Tue, 9 Feb 2010 12:45:11 +0000" ttl="300" type="image/jpeg" url="https://www.k2.cbe-world.com/acfs/noauth/lwp/FLWP00001/2470124811913737292763b53d594ba3bbe7c615462be728/Miami_s.jpg"/>
+      </live:media>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5jW2DeyAktHKPVH-zf-EGQ87Ns-sQ">Angelina Jolie visits Haitian quake refugees</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5jLSUCu3L1QZ7bt5TWPOxNx8b99ew">No more Manning miracles as Colts fall to Saints</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5iiR3Cvou49PoUaMUNJuWeoqDsO6g">Saints go marching in with Super Bowl win over Colts</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5iZQEx0LfiMg4yR8XW2OMYC3LfUZQ">New Orleans explodes with joy after Saints win</live:item>
+      <live:item text="more" url="http://news.google.com/news?ned=us&amp;hl=en&amp;ned=us&amp;q=Miami"/>
+    </item>
+    <item>
+      <title>Minneapolis News</title>
+      <georss:point>44.9775 -93.2644</georss:point>
+      <live:cityId>USMN0503</live:cityId>
+      <live:timezone>-0600</live:timezone>
+      <live:panel offsetx="0.0" offsety="0.0" pic="14">
+        <live:name>Minneapolis</live:name>
+        <live:subname pattern="celsius">-6℃</live:subname>
+        <live:subname pattern="fahrenheit">21℉</live:subname>
+      </live:panel>
+      <live:media>
+        <live:thumbnail pubDate="Tue, 9 Feb 2010 13:15:17 +0000" type="image/jpeg" url="file://%s/data/plugins/live/NoImage_Thumb.jpg"/>
+      </live:media>
+      <live:item text="more" url="http://news.google.com/news?ned=us&amp;hl=en&amp;ned=us&amp;q=Minneapolis"/>
+    </item>
+    <item>
+      <title>Montreal News</title>
+      <georss:point>45.5455 -73.6391</georss:point>
+      <live:cityId>CAXX0301</live:cityId>
+      <live:timezone>-0500</live:timezone>
+      <live:panel offsetx="0.0" offsety="0.0" pic="27">
+        <live:name>Montreal</live:name>
+        <live:subname pattern="celsius">-9℃</live:subname>
+        <live:subname pattern="fahrenheit">16℉</live:subname>
+      </live:panel>
+      <live:media>
+        <live:thumbnail pubDate="Tue, 9 Feb 2010 13:15:17 +0000" type="image/jpeg" url="file://%s/data/plugins/live/NoImage_Thumb.jpg"/>
+      </live:media>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5hDedj_r62r_nhX6OEvQ18z5f9pKw">In Canada's frozen north, G7 to gauge global outlook</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5hC9lDmiw5oOrsVG9kjG_cdcTvcog">Quebec to take in 3000 more Haitian immigrants</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5g_SwyDYumOzQqWevKnJ9J6s_FZDg">Record warm weather in Vancouver for Olympics</live:item>
+      <live:item text="more" url="http://news.google.com/news?ned=us&amp;hl=en&amp;ned=us&amp;q=Montreal"/>
+    </item>
+    <item>
+      <title>Moscow News</title>
+      <georss:point>55.7558 37.6176</georss:point>
+      <live:cityId>RSXX0063</live:cityId>
+      <live:timezone>+0300</live:timezone>
+      <live:panel offsetx="0.0" offsety="0.0" pic="14">
+        <live:name>Moscow</live:name>
+        <live:subname pattern="celsius">-8℃</live:subname>
+        <live:subname pattern="fahrenheit">18℉</live:subname>
+      </live:panel>
+      <live:media>
+        <live:thumbnail pubDate="Fri, 15 Jan 2010 11:40:33 +0000" type="image/jpeg" url="file://%s/data/plugins/live/NoImage_Thumb.jpg"/>
+      </live:media>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5gr_OMk2wB5C5iOGSkHhUBudaVTDg">NATO remains 'serious' threat to Russia: official</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5gLKbeFy8zIZDX-9Xg22wfivU-J2w">Estonia's eurozone moves raise concern in Latvia</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5haMm3jPMlGNWBrEnZsEllazNYzxQ">Russian tycoon sues over Litvinenko murder claim</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5gDk_kPAo1RvXXoZ5EQNS_ZFTYLSQ">Key powers push for tougher sanctions against Iran</live:item>
+      <live:item text="more" url="http://news.google.com/news?ned=us&amp;hl=en&amp;ned=us&amp;q=Moscow"/>
+    </item>
+    <item>
+      <title>Munich News</title>
+      <georss:point>48.1391 11.5802</georss:point>
+      <live:cityId>GMXX0087</live:cityId>
+      <live:timezone>+0100</live:timezone>
+      <live:panel offsetx="0.0" offsety="0.0" pic="26">
+        <live:name>Munich</live:name>
+        <live:subname pattern="celsius">-4℃</live:subname>
+        <live:subname pattern="fahrenheit">24℉</live:subname>
+      </live:panel>
+      <live:media>
+        <live:thumbnail guid="32958a67f7fa2c1aa7d48218be61defb" pubDate="Tue, 9 Feb 2010 11:30:16 +0000" ttl="300" type="image/jpeg" url="https://www.k2.cbe-world.com/acfs/noauth/lwp/FLWP00001/247012481191373754ed3b06249d445a93fb4cbe90071dcb/Munich_s.jpg"/>
+      </live:media>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5gr_OMk2wB5C5iOGSkHhUBudaVTDg">NATO remains 'serious' threat to Russia: official</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5gI_xMTAwXZiPeO-pqV5RdzGrGCWQ">Israel minister denies saying sorry to Saudi diplomat</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5jy95gS5bRSYO4k6g2J6Q7-okb9_w">Clinton defends US policy of engagement</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5jzZrehQziM_XN_CqZFekTpYJQjpQ">Keane on target to seal Celtic win</live:item>
+      <live:item text="more" url="http://news.google.com/news?ned=us&amp;hl=en&amp;ned=us&amp;q=Munich"/>
+    </item>
+    <item>
+      <title>Muscat News</title>
+      <georss:point>23.6158 58.6044</georss:point>
+      <live:cityId>MUXX0003</live:cityId>
+      <live:timezone>+0400</live:timezone>
+      <live:panel offsetx="0.0" offsety="0.0" pic="30">
+        <live:name>Muscat</live:name>
+        <live:subname pattern="celsius">22℃</live:subname>
+        <live:subname pattern="fahrenheit">72℉</live:subname>
+      </live:panel>
+      <live:media>
+        <live:thumbnail pubDate="Tue, 9 Feb 2010 13:15:17 +0000" type="image/jpeg" url="file://%s/data/plugins/live/NoImage_Thumb.jpg"/>
+      </live:media>
+      <live:item text="more" url="http://news.google.com/news?ned=us&amp;hl=en&amp;ned=us&amp;q=Muscat"/>
+    </item>
+    <item>
+      <title>Nairobi News</title>
+      <georss:point>-1.283 36.817</georss:point>
+      <live:cityId>KEXX0009</live:cityId>
+      <live:timezone>+0300</live:timezone>
+      <live:panel offsetx="0.0" offsety="0.0" pic="30">
+        <live:name>Nairobi</live:name>
+        <live:subname pattern="celsius">26℃</live:subname>
+        <live:subname pattern="fahrenheit">79℉</live:subname>
+      </live:panel>
+      <live:media>
+        <live:thumbnail pubDate="Tue, 9 Feb 2010 13:15:17 +0000" type="image/jpeg" url="file://%s/data/plugins/live/NoImage_Thumb.jpg"/>
+      </live:media>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5hwM6czv6iI8mvU80PVAjmmQ5wIsQ">MSF denounces 'indiscriminate' Mogadishu shelling</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5i-TYj7H_GKBScN_cYMcEWcxB7xSw">Amnesty urges probe into Madagascar killings</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5gYfgR2g8JSAXsyVcXSCJYpcwbBGQ">Kenyan PM rues missed Man City deal</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5jLCEOmgAK_JJDOSSW3Z3zBdFasCg">Death threats on Kenya post-poll violence witnesses</live:item>
+      <live:item text="more" url="http://news.google.com/news?ned=us&amp;hl=en&amp;ned=us&amp;q=Nairobi"/>
+    </item>
+    <item>
+      <title>New York News</title>
+      <georss:point>40.7488 -73.9846</georss:point>
+      <live:cityId>USNY0996</live:cityId>
+      <live:timezone>-0500</live:timezone>
+      <live:panel offsetx="0.0" offsety="0.0" pic="33">
+        <live:name>New York</live:name>
+        <live:subname pattern="celsius">-2℃</live:subname>
+        <live:subname pattern="fahrenheit">28℉</live:subname>
+      </live:panel>
+      <live:media>
+        <live:thumbnail guid="d47b2229baa4b967c2eefeed43b5c4b3" pubDate="Tue, 9 Feb 2010 11:15:12 +0000" ttl="300" type="image/jpeg" url="https://www.k2.cbe-world.com/acfs/noauth/lwp/FLWP00001/2470124811913737292763b53d594ba3bbe7c615462be728/NewYork_s.jpg"/>
+      </live:media>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5jLESr_AcU8plupGaMb5f0YZLr2qg">EA in the red for 12th quarter in a row</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5j1cP1LPHT9QXSkZSC6db0M8fyBaQ">Toyota resumes production of suspended models in NAmerica</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5gc5KN-UiJby5p3aURbOCfY9BLD5Q">Sam Worthington to star in 'Texas Killing Fields'</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5ibejyLsFCBqbhw7JlgAelAxnsihg">Oil prices rise but stay below $72</live:item>
+      <live:item text="more" url="http://news.google.com/news?ned=us&amp;hl=en&amp;ned=us&amp;q=New+York"/>
+    </item>
+    <item>
+      <title>Oslo News</title>
+      <georss:point>59.917 10.7387</georss:point>
+      <live:cityId>NOXX0029</live:cityId>
+      <live:timezone>+0100</live:timezone>
+      <live:panel offsetx="0.0" offsety="0.0" pic="14">
+        <live:name>Oslo</live:name>
+        <live:subname pattern="celsius">-5℃</live:subname>
+        <live:subname pattern="fahrenheit">23℉</live:subname>
+      </live:panel>
+      <live:media>
+        <live:thumbnail pubDate="Fri, 15 Jan 2010 11:40:36 +0000" type="image/jpeg" url="file://%s/data/plugins/live/NoImage_Thumb.jpg"/>
+      </live:media>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5h50NBZoBDYXR-YTuShOUV-pGip4g">Afghan insecurity pushes gold price up, business down</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5jK5zICq8AN7hPUxPNdiCWi2YhMSA">Lagat breaks US record at Boston Indoor Games</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5i5vZOh5Sq4aGIzA80_J16PfjhGug">Skiing - a sport imbued with danger</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5j_GAKatVHWrVMMPtZHdnmJF6mPbg">Dibaba eyes record at Boston Indoor Games</live:item>
+      <live:item text="more" url="http://news.google.com/news?ned=us&amp;hl=en&amp;ned=us&amp;q=Oslo"/>
+    </item>
+    <item>
+      <title>Paris News</title>
+      <georss:point>48.8542 2.3449</georss:point>
+      <live:cityId>FRXX0076</live:cityId>
+      <live:timezone>+0100</live:timezone>
+      <live:panel offsetx="0.0" offsety="0.0" pic="14">
+        <live:name>Paris</live:name>
+        <live:subname pattern="celsius">-1℃</live:subname>
+        <live:subname pattern="fahrenheit">30℉</live:subname>
+      </live:panel>
+      <live:media>
+        <live:thumbnail guid="18f38bb59da6b07d3d385b9aaacc0695" pubDate="Tue, 9 Feb 2010 11:45:17 +0000" ttl="300" type="image/jpeg" url="https://www.k2.cbe-world.com/acfs/noauth/lwp/FLWP00001/247012481191373783abffaa072a41cfbfc53c75e5ed93b1/Paris_s.jpg"/>
+      </live:media>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5jsMmwJVeh6kpxX6drMOMDl4ydhyw">New Iran sanctions move likely 'within weeks': Gates</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5hw-21Nlc1kCY3ryx9dCUIoyGNLKw">From warzone to sports tourism, an Afghan dream</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5jFRjC4x4LPApxU6aw8AqQZXSyctw">French rugby coach looking for polished French finish</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5jFaW3uPgOpymPmp5ZMXvnp2saRdA">Mood drug inhibits breast cancer medication: study</live:item>
+      <live:item text="more" url="http://news.google.com/news?ned=us&amp;hl=en&amp;ned=us&amp;q=Paris"/>
+    </item>
+    <item>
+      <title>Phoenix News</title>
+      <georss:point>33.4979 -112.081</georss:point>
+      <live:cityId>USAZ0166</live:cityId>
+      <live:timezone>-0700</live:timezone>
+      <live:panel offsetx="0.0" offsety="0.0" pic="33">
+        <live:name>Phoenix</live:name>
+        <live:subname pattern="celsius">9℃</live:subname>
+        <live:subname pattern="fahrenheit">48℉</live:subname>
+      </live:panel>
+      <live:media>
+        <live:thumbnail guid="d077a1b3336a5fe9712f3a4238327729" pubDate="Tue, 9 Feb 2010 12:30:17 +0000" ttl="300" type="image/jpeg" url="https://www.k2.cbe-world.com/acfs/noauth/lwp/FLWP00001/2470124811913737e6f69583b30f4338a96c97c93169f63b/Phenix_s.jpg"/>
+      </live:media>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5gIoYY3eKxuA7clhjSYLyCB_44W8w">Taiwan to seek more arms despite improved China ties</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5h0XWmvVyDKSR7B3f8MgU5x3_INNA">Self-help guru arrested on murder charges</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5iOxxIFvNH8GrrHcnqFinD9_Zdi1g">Self-help guru awaiting trial on murder charges</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5hruRwG95qoqY54uOxw-9Xdc6PGCg">Nash powers Suns past Mavericks</live:item>
+      <live:item text="more" url="http://news.google.com/news?ned=us&amp;hl=en&amp;ned=us&amp;q=Phoenix"/>
+    </item>
+    <item>
+      <title>Rio de Janeiro News</title>
+      <georss:point>-22.9035 -43.2096</georss:point>
+      <live:cityId>BRXX0201</live:cityId>
+      <live:timezone>-0200</live:timezone>
+      <live:panel offsetx="0.0" offsety="0.0" pic="34">
+        <live:name>Zungle city</live:name>
+        <live:subname pattern="celsius">30℃</live:subname>
+        <live:subname pattern="fahrenheit">86℉</live:subname>
+      </live:panel>
+      <live:media>
+        <live:thumbnail guid="1f6ca5912ac984bf2b94faf8e8488782" pubDate="Tue, 9 Feb 2010 13:15:17 +0000" ttl="99999999999999" type="image/png" url="http://www.k2.cbe-world.com/websites/abc.png"/>
+      </live:media>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5hpYw97bkXRJC9RJ4vp5t3kZ3TSkA">Row over seven-year-old Brazilian samba queen</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5i0mbYkj928t9zqeBtNE7I9Nu5UrQ">Brazil scraps ban on Carnival religious signs</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5jV43H2UzVo9hHwraEem28WOb-z8A">Rio residents head to beach at night to escape heat</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5iO_x8Ko1nsAqQNJZYINKPEtLd7ag">Brazil Internet fest targeted by military, politicians</live:item>
+      <live:item text="more" url="http://news.google.com/news?ned=us&amp;hl=en&amp;ned=us&amp;q=Rio+de+Janeiro"/>
+    </item>
+    <item>
+      <title>Riyadh News</title>
+      <georss:point>24.672 46.713</georss:point>
+      <live:cityId>SAXX0017</live:cityId>
+      <live:timezone>+0300</live:timezone>
+      <live:panel offsetx="0.0" offsety="0.0" pic="34">
+        <live:name>Riyadh</live:name>
+        <live:subname pattern="celsius">22℃</live:subname>
+        <live:subname pattern="fahrenheit">72℉</live:subname>
+      </live:panel>
+      <live:media>
+        <live:thumbnail pubDate="Tue, 9 Feb 2010 13:15:17 +0000" type="image/jpeg" url="file://%s/data/plugins/live/NoImage_Thumb.jpg"/>
+      </live:media>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5gI_xMTAwXZiPeO-pqV5RdzGrGCWQ">Israel minister denies saying sorry to Saudi diplomat</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5iCoWIlICbmkwLCQ2bJTGTOtUoA1Q">Yemen rebels say Saudi air raids kill 14</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5gG0Uw3sl5j7ggTG6FwmVacH-0sxQ">Karzai, Saudi king discuss Afghan conflict</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5j_vxFD14wSn8PKT-mlKej-9RCJOw">Saudi: no special arrangements for Iran's Mecca pilgrims</live:item>
+      <live:item text="more" url="http://news.google.com/news?ned=us&amp;hl=en&amp;ned=us&amp;q=Riyadh"/>
+    </item>
+    <item>
+      <title>Rome News</title>
+      <georss:point>41.8955 12.483</georss:point>
+      <live:cityId>ITXX0067</live:cityId>
+      <live:timezone>+0100</live:timezone>
+      <live:panel offsetx="0.0" offsety="0.0" pic="30">
+        <live:name>Rome</live:name>
+        <live:subname pattern="celsius">10℃</live:subname>
+        <live:subname pattern="fahrenheit">50℉</live:subname>
+      </live:panel>
+      <live:media>
+        <live:thumbnail pubDate="Tue, 9 Feb 2010 13:15:17 +0000" type="image/jpeg" url="file://%s/data/plugins/live/NoImage_Thumb.jpg"/>
+      </live:media>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5joEMLDY3rNnZTbNqL7QxqgARDFdQ">England 6 Nations win excites Easter</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5glXMpiewRO-7oswVg1iM0YOtUtpg">US official: Iran uranium plan 'provocative'</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5jphYmKV18mHAOkRljI29fPJ-_jjg">Horror movie terrifies Italian kids, angers politicians</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5gOThJf6laYBHL1OuwuSyRwWVNh-A">'Dear John' dethrones box office king 'Avatar'</live:item>
+      <live:item text="more" url="http://news.google.com/news?ned=us&amp;hl=en&amp;ned=us&amp;q=Rome"/>
+    </item>
+    <item>
+      <title>San Francisco News</title>
+      <georss:point>37.7002 -122.406</georss:point>
+      <live:cityId>USCA0987</live:cityId>
+      <live:timezone>-0800</live:timezone>
+      <live:panel offsetx="0.0" offsety="0.0" pic="11">
+        <live:name>San Francisco</live:name>
+        <live:subname pattern="celsius">9℃</live:subname>
+        <live:subname pattern="fahrenheit">49℉</live:subname>
+      </live:panel>
+      <live:media>
+        <live:thumbnail guid="6b0b2920b69c605ff71f21bb88b12d94" pubDate="Tue, 9 Feb 2010 12:30:18 +0000" ttl="300" type="image/jpeg" url="https://www.k2.cbe-world.com/acfs/noauth/lwp/FLWP00001/2470124811913737e6f69583b30f4338a96c97c93169f63b/SanFrancisco_s.jpg"/>
+      </live:media>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5hK-bOdkeMEY_fmqk-pRuPzQF8x3Q">Intel, IBM roll out new computer network chips</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5jXb1lkyFUvKGDQ_yqUXqHxUrd0JQ">'Bioshock' sequel returns to morally-battered Rapture</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5iM8p88TMqv8KZeHWQD5w5OPhOUkw">Startup lets webcams detect people</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5i8K9exEWYKCP5mCudtqUA4mClnDA">Tearful Rice, Smith lead seven into NFL Hall of Fame</live:item>
+      <live:item text="more" url="http://news.google.com/news?ned=us&amp;hl=en&amp;ned=us&amp;q=San+Francisco"/>
+    </item>
+    <item>
+      <title>Santiago News</title>
+      <georss:point>-33.4691 -70.6419</georss:point>
+      <live:cityId>CIXX0020</live:cityId>
+      <live:timezone>-0400</live:timezone>
+      <live:panel offsetx="0.0" offsety="0.0" pic="34">
+        <live:name>Santiago</live:name>
+        <live:subname pattern="celsius">18℃</live:subname>
+        <live:subname pattern="fahrenheit">64℉</live:subname>
+      </live:panel>
+      <live:media>
+        <live:thumbnail guid="68d3b1d610d03d898c47d9452b9bc096" pubDate="Tue, 9 Feb 2010 13:00:17 +0000" ttl="300" type="image/jpeg" url="https://www.k2.cbe-world.com/acfs/noauth/lwp/FLWP00001/247012481191373754ed3b06249d445a93fb4cbe90071dcb/Santiago_s.jpg"/>
+      </live:media>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5jNVAM8Vjjfb3RuZ6c6KT2uE-clrQ">Resilient Barca win again to go eight clear</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5jzP8ubXdaGB5sMFiDwKLSoyDeSyA">Plane section falls from sky onto US mall parking lot</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5hVFl27FfOpciyCxLViagGk4AnAoA">Two Americans killed in Haiti-Dominican chopper crash: US</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5isSqGXHfGMT-wyCX9rxyPC8CDI3w">Hard labor for Haiti's mothers</live:item>
+      <live:item text="more" url="http://news.google.com/news?ned=us&amp;hl=en&amp;ned=us&amp;q=Santiago"/>
+    </item>
+    <item>
+      <title>Seattle News</title>
+      <georss:point>47.6014 -122.33</georss:point>
+      <live:cityId>USWA0395</live:cityId>
+      <live:timezone>-0800</live:timezone>
+      <live:panel offsetx="0.0" offsety="0.0" pic="20">
+        <live:name>Seattle</live:name>
+        <live:subname pattern="celsius">4℃</live:subname>
+        <live:subname pattern="fahrenheit">39℉</live:subname>
+      </live:panel>
+      <live:media>
+        <live:thumbnail guid="b11d60ef053da3889f637304f4575744" pubDate="Tue, 9 Feb 2010 12:30:20 +0000" ttl="300" type="image/jpeg" url="https://www.k2.cbe-world.com/acfs/noauth/lwp/FLWP00001/2470124811913737e6f69583b30f4338a96c97c93169f63b/Seattle_s.jpg"/>
+      </live:media>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5gXgacv26aXTLCw6NGzOylbNRAllA">Court quashes 'lenient' jail term for Qaeda bomber</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5jvWlhq4nwrhQWDFQcYaOe5-Xl7tQ">Amazon, Macmillan in public tussle over e-book prices</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5j8woH6bj8p9AsoReQaoHJqKl5m1A">Kindle helps Amazon book strong fourth quarter</live:item>
+      <live:item text="more" url="http://news.google.com/news?ned=us&amp;hl=en&amp;ned=us&amp;q=Seattle"/>
+    </item>
+    <item>
+      <title>Seoul News</title>
+      <georss:point>37.5139 127.0</georss:point>
+      <live:cityId>KSXX0037</live:cityId>
+      <live:timezone>+0900</live:timezone>
+      <live:panel offsetx="0.0" offsety="0.0" pic="20">
+        <live:name>Seoul</live:name>
+        <live:subname pattern="celsius">2℃</live:subname>
+        <live:subname pattern="fahrenheit">36℉</live:subname>
+      </live:panel>
+      <live:media>
+        <live:thumbnail pubDate="Tue, 9 Feb 2010 13:15:17 +0000" type="image/jpeg" url="file://%s/data/plugins/live/NoImage_Thumb.jpg"/>
+      </live:media>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5isfhAmgeVXM6oFOVwB3xfM7Se88Q">UN envoy arrives in N.Korea</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5jjYtrX7u8dZL2mk8KwuFrGOViMiQ">N.Korea accuses S.Korea of plot amid push for nuclear talks</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5j13sUyGx6mMf0YUVyKwBtGyWeLPw">Hyundai boss made to pay fine over losses to firm</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5j0J5y2WbzqNAho3iKeWrUtHMCoWg">Shares tumble in units of S.Korea's Kumho Asiana</live:item>
+      <live:item text="more" url="http://news.google.com/news?ned=us&amp;hl=en&amp;ned=us&amp;q=Seoul"/>
+    </item>
+    <item>
+      <title>Shanghai News</title>
+      <georss:point>31.109 121.368</georss:point>
+      <live:cityId>CHXX0116</live:cityId>
+      <live:timezone>+0800</live:timezone>
+      <live:panel offsetx="0.0" offsety="0.0" pic="11">
+        <live:name>Shanghai</live:name>
+        <live:subname pattern="celsius">18℃</live:subname>
+        <live:subname pattern="fahrenheit">64℉</live:subname>
+      </live:panel>
+      <live:media>
+        <live:thumbnail pubDate="Tue, 9 Feb 2010 13:15:17 +0000" type="image/jpeg" url="file://%s/data/plugins/live/NoImage_Thumb.jpg"/>
+      </live:media>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5i6nASAyOUvMQY1D47Q464alIKU7Q">Australian miner admits China firm name mix-up</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5i2XgikTMWKOrD76KoSJnBdubDHew">Shanghai pension deficit, retirement age raise plan</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5jMDmo8t_fo9BbuN9zdLyAxrWnA-w">Tainted milk powder still on sale in China: report</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5jZy_7bHU3KjwJDFT0xWwzRs2U3xw">China still has tonnes of tainted milk: report</live:item>
+      <live:item text="more" url="http://news.google.com/news?ned=us&amp;hl=en&amp;ned=us&amp;q=Shanghai"/>
+    </item>
+    <item>
+      <title>Singapore News</title>
+      <georss:point>1.293 103.856</georss:point>
+      <live:cityId>SNXX0006</live:cityId>
+      <live:timezone>+0800</live:timezone>
+      <live:panel offsetx="0.0" offsety="0.0" pic="27">
+        <live:name>Singapore</live:name>
+        <live:subname pattern="celsius">29℃</live:subname>
+        <live:subname pattern="fahrenheit">84℉</live:subname>
+      </live:panel>
+      <live:media>
+        <live:thumbnail pubDate="Tue, 9 Feb 2010 13:15:17 +0000" type="image/jpeg" url="file://%s/data/plugins/live/NoImage_Thumb.jpg"/>
+      </live:media>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5gweeZMvDtADt1iX4UjL-uC3EzGCA">Japan plane seat maker admits false safety data</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5jO0U3xAAFv0enNhVWgYTIEe5jo0A">Sugary soft drinks linked to pancreatic cancer: study</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5hTFWmCTpPbXSL-7XxQQc5Wl6KbFg">Shell denies Nigeria claim of pipeline attack</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5gTtqtDG6RZEn6TLPibi8nhR4TUFg">Open skies, budget travel: Asian airlines soar</live:item>
+      <live:item text="more" url="http://news.google.com/news?ned=us&amp;hl=en&amp;ned=us&amp;q=Singapore"/>
+    </item>
+    <item>
+      <title>Stockholm News</title>
+      <georss:point>59.333 18.05</georss:point>
+      <live:cityId>SWXX0031</live:cityId>
+      <live:timezone>+0100</live:timezone>
+      <live:panel offsetx="0.0" offsety="0.0" pic="13">
+        <live:name>Stockholm</live:name>
+        <live:subname pattern="celsius">-3℃</live:subname>
+        <live:subname pattern="fahrenheit">27℉</live:subname>
+      </live:panel>
+      <live:media>
+        <live:thumbnail pubDate="Tue, 9 Feb 2010 13:15:17 +0000" type="image/jpeg" url="file://%s/data/plugins/live/NoImage_Thumb.jpg"/>
+      </live:media>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5g3IyUjrNIegB5sZvzNDyDkL4e1XQ">Future Swedish prince denies grave illness</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5j-AXiU31SU6dfnYxIWaW2A7zoxaQ">Volvo trucks posts heavy loss, sees recovery ahead</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5gyHPmAUmRCko60V-7uWUy-nqQmrw">Swedish PM wants answers on Baltic Sea dumping</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5jR4n5WtIWpwChQjuHNHgmtbgVEeQ">McIlroy rides luck for joint lead at Dubai golf</live:item>
+      <live:item text="more" url="http://news.google.com/news?ned=us&amp;hl=en&amp;ned=us&amp;q=Stockholm"/>
+    </item>
+    <item>
+      <title>Sydney News</title>
+      <georss:point>-33.883 151.217</georss:point>
+      <live:cityId>ASXX0112</live:cityId>
+      <live:timezone>+1100</live:timezone>
+      <live:panel offsetx="0.0" offsety="0.0" pic="29">
+        <live:name>Sydney</live:name>
+        <live:subname pattern="celsius">25℃</live:subname>
+        <live:subname pattern="fahrenheit">77℉</live:subname>
+      </live:panel>
+      <live:media>
+        <live:thumbnail guid="a2c43406f6234b0e6602c1e687d78589" pubDate="Tue, 9 Feb 2010 10:45:16 +0000" ttl="300" type="image/jpeg" url="https://www.k2.cbe-world.com/acfs/noauth/lwp/FLWP00001/247012481191373726e671106a164959ae285004a8719c15/Sydney_s.jpg"/>
+      </live:media>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5jFElX43oszq254oIXJtZ7JWmB9lw">Gamer to pay Nintendo fine for illegal upload</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5i6nASAyOUvMQY1D47Q464alIKU7Q">Australian miner admits China firm name mix-up</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5gFTSGnNNchgv_zJ4vGTmCec-GyYg">Race motive 'clear' in some Indian attacks: Australian FM</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5jTxa1K2RW9l2wky7aqONllo-gm1g">Activists ambush Japanese whalers in Antarctic seas</live:item>
+      <live:item text="more" url="http://news.google.com/news?ned=us&amp;hl=en&amp;ned=us&amp;q=Sydney"/>
+    </item>
+    <item>
+      <title>Taipei News</title>
+      <georss:point>25.017 121.45</georss:point>
+      <live:cityId>TWXX0021</live:cityId>
+      <live:timezone>+0800</live:timezone>
+      <live:panel offsetx="0.0" offsety="0.0" pic="29">
+        <live:name>Taipei</live:name>
+        <live:subname pattern="celsius">22℃</live:subname>
+        <live:subname pattern="fahrenheit">72℉</live:subname>
+      </live:panel>
+      <live:media>
+        <live:thumbnail pubDate="Fri, 15 Jan 2010 12:00:25 +0000" type="image/jpeg" url="file://%s/data/plugins/live/NoImage_Thumb.jpg"/>
+      </live:media>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5hkBChEjgiNKoWeio2YW9M_ItjHBw">US businesses in Taiwan urge trade talks</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5guYOgWYahvc8Vyo6R1hHsU74i69Q">Taiwan to build bridge off China</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5isaICvsK236ZhBUpy9lnYafb5_dA">Taiwan court extends ex-leader's custody</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5g4_dzIvnkvR-o_9trDOKrnnNR8Rw">Taiwan envoy: China ties unaffected by arms sale</live:item>
+      <live:item text="more" url="http://news.google.com/news?ned=us&amp;hl=en&amp;ned=us&amp;q=Taipei"/>
+    </item>
+    <item>
+      <title>Tehran News</title>
+      <georss:point>35.672 51.424</georss:point>
+      <live:cityId>IRXX0018</live:cityId>
+      <live:timezone>+0330</live:timezone>
+      <live:panel offsetx="0.0" offsety="0.0" pic="28">
+        <live:name>Tehran</live:name>
+        <live:subname pattern="celsius">4℃</live:subname>
+        <live:subname pattern="fahrenheit">39℉</live:subname>
+      </live:panel>
+      <live:media>
+        <live:thumbnail pubDate="Tue, 9 Feb 2010 13:15:17 +0000" type="image/jpeg" url="file://%s/data/plugins/live/NoImage_Thumb.jpg"/>
+      </live:media>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5ihro_7a04omZxzIUTmxsCNwQwzYQ">Expect modest US gains from thaw with Syria: analysts</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5gsAnPsucJdrmQdc_-60BVkLdCkvw">Sarkozy, Gates want 'strong' sanctions against Iran: Elysee</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5hlr4apLHOzIOzTFvq0XSFTzdPkHA">Iran anniversary 'punch' will stun West: Khamenei</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5glXMpiewRO-7oswVg1iM0YOtUtpg">US official: Iran uranium plan 'provocative'</live:item>
+      <live:item text="more" url="http://news.google.com/news?ned=us&amp;hl=en&amp;ned=us&amp;q=Tehran"/>
+    </item>
+    <item>
+      <title>Tokyo News</title>
+      <georss:point>35.7 139.767</georss:point>
+      <live:cityId>JAXX0085</live:cityId>
+      <live:timezone>+0900</live:timezone>
+      <live:panel offsetx="0.0" offsety="0.0" pic="33">
+        <live:name>Tokyo</live:name>
+        <live:subname pattern="celsius">16℃</live:subname>
+        <live:subname pattern="fahrenheit">61℉</live:subname>
+      </live:panel>
+      <live:media>
+        <live:thumbnail guid="42c2310846c29f4ab4d2b2012af57ad3" pubDate="Tue, 9 Feb 2010 12:15:15 +0000" ttl="300" type="image/jpeg" url="https://www.k2.cbe-world.com/acfs/noauth/lwp/FLWP00001/247012481191373726e671106a164959ae285004a8719c15/Tokyo_s.jpg"/>
+      </live:media>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5gpdEiVPO4o81Y0eSYAsXfd8imIiA">JAL to stay with American Airlines, expand tie-up</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5jw7eEsQRt2L8COuK0VoRdf2NuynA">Toyota to recall new Prius, other hybrids in Japan</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5gweeZMvDtADt1iX4UjL-uC3EzGCA">Japan plane seat maker admits false safety data</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5j1cP1LPHT9QXSkZSC6db0M8fyBaQ">Toyota resumes production of suspended models in NAmerica</live:item>
+      <live:item text="more" url="http://news.google.com/news?ned=us&amp;hl=en&amp;ned=us&amp;q=Tokyo"/>
+    </item>
+    <item>
+      <title>Toronto News</title>
+      <georss:point>43.667 -79.417</georss:point>
+      <live:cityId>CAXX0504</live:cityId>
+      <live:timezone>-0500</live:timezone>
+      <live:panel offsetx="0.0" offsety="0.0" pic="27">
+        <live:name>Toronto</live:name>
+        <live:subname pattern="celsius">-7℃</live:subname>
+        <live:subname pattern="fahrenheit">19℉</live:subname>
+      </live:panel>
+      <live:media>
+        <live:thumbnail pubDate="Tue, 9 Feb 2010 13:15:17 +0000" type="image/jpeg" url="file://%s/data/plugins/live/NoImage_Thumb.jpg"/>
+      </live:media>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5iI2wfVT9aNBMnLzpfUAHGGp0H1tg">Ontario base commander charged in two murders</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5jFaW3uPgOpymPmp5ZMXvnp2saRdA">Mood drug inhibits breast cancer medication: study</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5h94gxI2yk280wv1pevxMU90bQfMQ">Canadian military commander charged in two murders</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5gZb39dwrIUuF_p6TPQKjqfssiBOg">G7 to continue stimulus until global economy on track</live:item>
+      <live:item text="more" url="http://news.google.com/news?ned=us&amp;hl=en&amp;ned=us&amp;q=Toronto"/>
+    </item>
+    <item>
+      <title>Vancouver News</title>
+      <georss:point>49.25 -123.133</georss:point>
+      <live:cityId>CAXX0518</live:cityId>
+      <live:timezone>-0800</live:timezone>
+      <live:panel offsetx="0.0" offsety="0.0" pic="29">
+        <live:name>Vancouver</live:name>
+        <live:subname pattern="celsius">2℃</live:subname>
+        <live:subname pattern="fahrenheit">36℉</live:subname>
+      </live:panel>
+      <live:media>
+        <live:thumbnail guid="eb80db7a660c2f1d1bca4799228dc094" pubDate="Tue, 9 Feb 2010 12:30:21 +0000" ttl="300" type="image/jpeg" url="https://www.k2.cbe-world.com/acfs/noauth/lwp/FLWP00001/2470124811913737e6f69583b30f4338a96c97c93169f63b/Vancouver_s.jpg"/>
+      </live:media>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5jbELs3nhnc4TQfqstRgl1rcUx6-A">Snow, Schwarzenegger keep Games focussed</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5gxivuNOT470fgV-x6-hffAXIT8dg">Global warming an Olympic worry, says Rogge</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5ixMJFBQ7rbYD0HR38QOVbQMvMO-w">Rogge concerned over Russian doping cases</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5iPn0R4n_YGz5n2h4rET8jkWzwwiw">Snow still being ferried to Cypress</live:item>
+      <live:item text="more" url="http://news.google.com/news?ned=us&amp;hl=en&amp;ned=us&amp;q=Vancouver"/>
+    </item>
+    <item>
+      <title>Washington News</title>
+      <georss:point>38.9048 -77.0354</georss:point>
+      <live:cityId>USDC0001</live:cityId>
+      <live:timezone>-0500</live:timezone>
+      <live:panel offsetx="0.0" offsety="0.0" pic="27">
+        <live:name>Washington</live:name>
+        <live:subname pattern="celsius">-4℃</live:subname>
+        <live:subname pattern="fahrenheit">25℉</live:subname>
+      </live:panel>
+      <live:media>
+        <live:thumbnail guid="884308c0a971fcbc8242699644709982" pubDate="Tue, 9 Feb 2010 11:15:14 +0000" ttl="300" type="image/jpeg" url="https://www.k2.cbe-world.com/acfs/noauth/lwp/FLWP00001/2470124811913737292763b53d594ba3bbe7c615462be728/Washington_s.jpg"/>
+      </live:media>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5jYCZ5CMz277F6HhvVn1B990rkL8Q">UN calls for aid pledges for displaced Pakistanis</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5gpdEiVPO4o81Y0eSYAsXfd8imIiA">Japan Airlines sticks with American Airlines</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5ick4VKIofvfM7pKnZ1TiECXpvyVA">Sri Lanka's presidential loser faces court martial</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5isfhAmgeVXM6oFOVwB3xfM7Se88Q">UN envoy arrives in N.Korea</live:item>
+      <live:item text="more" url="http://news.google.com/news?ned=us&amp;hl=en&amp;ned=us&amp;q=Washington"/>
+    </item>
+    <item>
+      <title>Lagos News</title>
+      <georss:point>6.4473 3.4393</georss:point>
+      <live:cityId>NIXX0012</live:cityId>
+      <live:timezone>+0100</live:timezone>
+      <live:panel offsetx="0.0" offsety="0.0" pic="28">
+        <live:name>Lagos</live:name>
+        <live:subname pattern="celsius">34℃</live:subname>
+        <live:subname pattern="fahrenheit">93℉</live:subname>
+      </live:panel>
+      <live:media>
+        <live:thumbnail guid="1adbb7a45edd9da986878df6d4600d9e" pubDate="Tue, 9 Feb 2010 13:00:18 +0000" ttl="300" type="image/jpeg" url="https://www.k2.cbe-world.com/acfs/noauth/lwp/FLWP00001/247012481191373754ed3b06249d445a93fb4cbe90071dcb/Lagos_s.jpg"/>
+      </live:media>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5jOe03gY0ojAZN9z2wSBAtnTFqEvw">Nigeria depletes excess crude coffers: official</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5hTFWmCTpPbXSL-7XxQQc5Wl6KbFg">Shell denies Nigeria claim of pipeline attack</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5hKOgHoIiByRKU2aGo_O4BGZeByyw">US envoy visits Nigeria amid tension</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5hzyNEOwFl9_y5NXz5SZ9BeTCRbOQ">Nigeria add Egypt coach Shehata to shortlist</live:item>
+      <live:item text="more" url="http://news.google.com/news?ned=us&amp;hl=en&amp;ned=us&amp;q=Lagos"/>
+    </item>
+    <item>
+      <title>Las Vegas News</title>
+      <georss:point>36.127 -115.166</georss:point>
+      <live:cityId>USNV0049</live:cityId>
+      <live:timezone>-0800</live:timezone>
+      <live:panel offsetx="0.0" offsety="0.0" pic="26">
+        <live:name>Las Vegas</live:name>
+        <live:subname pattern="celsius">6℃</live:subname>
+        <live:subname pattern="fahrenheit">43℉</live:subname>
+      </live:panel>
+      <live:media>
+        <live:thumbnail guid="3d4f1cbdf6ac72dda7f2830205bca4fc" pubDate="Tue, 9 Feb 2010 12:30:22 +0000" ttl="300" type="image/jpeg" url="https://www.k2.cbe-world.com/acfs/noauth/lwp/FLWP00001/2470124811913737e6f69583b30f4338a96c97c93169f63b/LasVegas_s.jpg"/>
+      </live:media>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5isq3V6-Qpe5ZhasbU1LYSrNXWRHQ">Singapore approves Malaysian group's casino plan: regulator</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5j34C8gwLgW7MbDfCp8zFA1BS9Dew">Videogame star "Fallout 3" heading for Sin City</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5jOAV3pNQjuFyxHf4UXfbri-Lhs2Q">Mayweather to fight Mosley on May 1</live:item>
+      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5icBNqR3jsRttu_kIV4DClD0AnEPw">Viva Las Vegas! Obama apologizes to 'Sin City'</live:item>
+      <live:item text="more" url="http://news.google.com/news?ned=us&amp;hl=en&amp;ned=us&amp;q=Las Vegas"/>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,613 @@
+
+Querying snapshots...
+---> www.united-village.net/*
+
+-----> 81 snapshots to utilize
+
+Downloading snapshots...
+
+-----> Snapshots prepared
+
+-----> Starting worker: 1
+
+-----> Attempt: [1/1] Snapshot [1/81] - Worker: 1
+EXISTING    -> HTTP : 200 - OK
+            -> URL  : https://web.archive.org/web/20220511195603id_/http://www.united-village.net/cgi-sys/suspendedpage.cgi
+            -> FILE : /home/zungle/src/lwp-server/websites/united-village/waybackup_snapshots/www.united-village.net/cgi-sys/suspendedpage.cgi
+
+-----> Worker: 1 - Delay: 10 seconds
+
+-----> Attempt: [1/1] Snapshot [2/81] - Worker: 1
+REDIRECT    -> HTTP : 302 - Found (redirect)
+            -> FROM : https://web.archive.org/web/20220511195602id_/http://www.united-village.net/en/about.html
+            -> TO   : https://web.archive.org/web/20220511195602id_/http://www.united-village.net/cgi-sys/suspendedpage.cgi
+            -> TO   : https://web.archive.org/web/20220511195603id_/http://www.united-village.net/cgi-sys/suspendedpage.cgi
+SUCCESS     -> HTTP : 200 - OK
+            -> URL  : https://web.archive.org/web/20220511195602id_/http://www.united-village.net/en/about.html
+            -> FILE : /home/zungle/src/lwp-server/websites/united-village/waybackup_snapshots/www.united-village.net/en/about.html
+
+-----> Worker: 1 - Delay: 10 seconds
+
+-----> Attempt: [1/1] Snapshot [3/81] - Worker: 1
+SUCCESS     -> HTTP : 200 - OK
+            -> URL  : https://web.archive.org/web/20220509134751id_/http://united-village.net/cgi-sys/suspendedpage.cgi
+            -> FILE : /home/zungle/src/lwp-server/websites/united-village/waybackup_snapshots/united-village.net/cgi-sys/suspendedpage.cgi
+
+-----> Worker: 1 - Delay: 10 seconds
+
+-----> Attempt: [1/1] Snapshot [4/81] - Worker: 1
+REDIRECT    -> HTTP : 302 - Found (redirect)
+            -> FROM : https://web.archive.org/web/20220509134751id_/http://united-village.net/robots.txt
+            -> TO   : https://web.archive.org/web/20220509134751id_/http://united-village.net/cgi-sys/suspendedpage.cgi
+SUCCESS     -> HTTP : 200 - OK
+            -> URL  : https://web.archive.org/web/20220509134751id_/http://united-village.net/robots.txt
+            -> FILE : /home/zungle/src/lwp-server/websites/united-village/waybackup_snapshots/united-village.net/robots.txt
+
+-----> Worker: 1 - Delay: 10 seconds
+
+-----> Attempt: [1/1] Snapshot [5/81] - Worker: 1
+REDIRECT    -> HTTP : 302 - Found (redirect)
+            -> FROM : https://web.archive.org/web/20220501235619id_/http://www.united-village.net/favicon.ico
+            -> TO   : https://web.archive.org/web/20220501235619id_/http://www.united-village.net/cgi-sys/suspendedpage.cgi
+SUCCESS     -> HTTP : 200 - OK
+            -> URL  : https://web.archive.org/web/20220501235619id_/http://www.united-village.net/favicon.ico
+            -> FILE : /home/zungle/src/lwp-server/websites/united-village/waybackup_snapshots/www.united-village.net/favicon.ico
+
+-----> Worker: 1 - Delay: 10 seconds
+
+-----> Attempt: [1/1] Snapshot [6/81] - Worker: 1
+SUCCESS     -> HTTP : 200 - OK
+            -> URL  : https://web.archive.org/web/20220501235618id_/http://www.united-village.net/cgi-sys/suspendedpage.cgi?Content-Type=image
+            -> FILE : /home/zungle/src/lwp-server/websites/united-village/waybackup_snapshots/www.united-village.net/cgi-sys/suspendedpage.cgi?Content-Type=image
+
+-----> Worker: 1 - Delay: 10 seconds
+
+-----> Attempt: [1/1] Snapshot [7/81] - Worker: 1
+REDIRECT    -> HTTP : 302 - Found (redirect)
+            -> FROM : https://web.archive.org/web/20220501235618id_/http://www.united-village.net/en/about.html?Content-Type=image
+            -> TO   : https://web.archive.org/web/20220501235618id_/http://www.united-village.net/cgi-sys/suspendedpage.cgi?Content-Type=image
+SUCCESS     -> HTTP : 200 - OK
+            -> URL  : https://web.archive.org/web/20220501235618id_/http://www.united-village.net/en/about.html?Content-Type=image
+            -> FILE : /home/zungle/src/lwp-server/websites/united-village/waybackup_snapshots/www.united-village.net/en/about.html?Content-Type=image
+
+-----> Worker: 1 - Delay: 10 seconds
+
+-----> Attempt: [1/1] Snapshot [8/81] - Worker: 1
+REDIRECT    -> HTTP : 302 - Found (redirect)
+            -> FROM : https://web.archive.org/web/20220417062308id_/http://united-village.net/favicon.ico
+            -> TO   : https://web.archive.org/web/20220417062308id_/http://united-village.net/cgi-sys/suspendedpage.cgi
+            -> TO   : https://web.archive.org/web/20220422190823id_/http://www.united-village.net/cgi-sys/suspendedpage.cgi
+SUCCESS     -> HTTP : 200 - OK
+            -> URL  : https://web.archive.org/web/20220417062308id_/http://united-village.net/favicon.ico
+            -> FILE : /home/zungle/src/lwp-server/websites/united-village/waybackup_snapshots/united-village.net/favicon.ico
+
+-----> Worker: 1 - Delay: 10 seconds
+
+-----> Attempt: [1/1] Snapshot [9/81] - Worker: 1
+REDIRECT    -> HTTP : 302 - Found (redirect)
+            -> FROM : https://web.archive.org/web/20220323173458id_/https://united-village.net/robots.txt
+            -> TO   : https://web.archive.org/web/20220323173458id_/https://united-village.net/cgi-sys/suspendedpage.cgi
+            -> TO   : https://web.archive.org/web/20220318024906id_/https://united-village.net/cgi-sys/suspendedpage.cgi
+EXISTING    -> HTTP : 200 - OK
+            -> URL  : https://web.archive.org/web/20220323173458id_/https://united-village.net/robots.txt
+            -> FILE : /home/zungle/src/lwp-server/websites/united-village/waybackup_snapshots/united-village.net/robots.txt
+
+-----> Worker: 1 - Delay: 10 seconds
+
+-----> Attempt: [1/1] Snapshot [10/81] - Worker: 1
+EXISTING    -> HTTP : 200 - OK
+            -> URL  : https://web.archive.org/web/20220318024906id_/https://united-village.net/cgi-sys/suspendedpage.cgi
+            -> FILE : /home/zungle/src/lwp-server/websites/united-village/waybackup_snapshots/united-village.net/cgi-sys/suspendedpage.cgi
+
+-----> Worker: 1 - Delay: 10 seconds
+
+-----> Attempt: [1/1] Snapshot [11/81] - Worker: 1
+REDIRECT    -> HTTP : 302 - Found (redirect)
+            -> FROM : https://web.archive.org/web/20220313140949id_/http://www.united-village.net/robots.txt
+            -> TO   : https://web.archive.org/web/20220313140949id_/http://www.united-village.net/cgi-sys/suspendedpage.cgi
+            -> TO   : https://web.archive.org/web/20220312035029id_/http://www.united-village.net/cgi-sys/suspendedpage.cgi
+SUCCESS     -> HTTP : 200 - OK
+            -> URL  : https://web.archive.org/web/20220313140949id_/http://www.united-village.net/robots.txt
+            -> FILE : /home/zungle/src/lwp-server/websites/united-village/waybackup_snapshots/www.united-village.net/robots.txt
+
+-----> Worker: 1 - Delay: 10 seconds
+
+-----> Attempt: [1/1] Snapshot [12/81] - Worker: 1
+REDIRECT    -> HTTP : 302 - Found (redirect)
+            -> FROM : https://web.archive.org/web/20211228114600id_/http://united-village.net/
+            -> TO   : https://web.archive.org/web/20211228114600id_/http://united-village.net/cgi-sys/suspendedpage.cgi
+            -> TO   : https://web.archive.org/web/20211228114559id_/http://united-village.net/cgi-sys/suspendedpage.cgi
+SUCCESS     -> HTTP : 200 - OK
+            -> URL  : https://web.archive.org/web/20211228114600id_/http://united-village.net/
+            -> FILE : /home/zungle/src/lwp-server/websites/united-village/waybackup_snapshots/united-village.net/index.html
+
+-----> Worker: 1 - Delay: 10 seconds
+
+-----> Attempt: [1/1] Snapshot [13/81] - Worker: 1
+UNEXPECTED  -> HTTP : 301 - Moved Permanently
+            -> URL  : https://web.archive.org/web/20160306212341id_/http://united-village.net/en/about.html
+UNEXPECTED  -> HTTP : 301 - Moved Permanently
+            -> URL  : https://web.archive.org/web/20160306212341id_/http://united-village.net/en/about.html
+FAILED      ->      : append to failed_urls: https://web.archive.org/web/20160306212341id_/http://united-village.net/en/about.html
+
+-----> Attempt: [1/1] Snapshot [14/81] - Worker: 1
+SUCCESS     -> HTTP : 200 - OK
+            -> URL  : https://web.archive.org/web/20120314060550id_/http://www.united-village.net/images/site/en/btn_pc_japanese.gif
+            -> FILE : /home/zungle/src/lwp-server/websites/united-village/waybackup_snapshots/www.united-village.net/images/site/en/btn_pc_japanese.gif
+
+-----> Worker: 1 - Delay: 10 seconds
+
+-----> Attempt: [1/1] Snapshot [15/81] - Worker: 1
+SUCCESS     -> HTTP : 200 - OK
+            -> URL  : https://web.archive.org/web/20120314060547id_/http://www.united-village.net/stylesheets/pc.css
+            -> FILE : /home/zungle/src/lwp-server/websites/united-village/waybackup_snapshots/www.united-village.net/stylesheets/pc.css
+
+-----> Worker: 1 - Delay: 10 seconds
+
+-----> Attempt: [1/1] Snapshot [16/81] - Worker: 1
+SUCCESS     -> HTTP : 200 - OK
+            -> URL  : https://web.archive.org/web/20120314060532id_/http://www.united-village.net/images/common/HD/about/ml.jpg
+            -> FILE : /home/zungle/src/lwp-server/websites/united-village/waybackup_snapshots/www.united-village.net/images/common/HD/about/ml.jpg
+
+-----> Worker: 1 - Delay: 10 seconds
+
+-----> Attempt: [1/1] Snapshot [17/81] - Worker: 1
+SUCCESS     -> HTTP : 200 - OK
+            -> URL  : https://web.archive.org/web/20120314060519id_/http://www.united-village.net/images/common/HD/logo.png
+            -> FILE : /home/zungle/src/lwp-server/websites/united-village/waybackup_snapshots/www.united-village.net/images/common/HD/logo.png
+
+-----> Worker: 1 - Delay: 10 seconds
+
+-----> Attempt: [1/1] Snapshot [18/81] - Worker: 1
+SUCCESS     -> HTTP : 200 - OK
+            -> URL  : https://web.archive.org/web/20120314060410id_/http://www.united-village.net/images/common/HD/about/ke.jpg
+            -> FILE : /home/zungle/src/lwp-server/websites/united-village/waybackup_snapshots/www.united-village.net/images/common/HD/about/ke.jpg
+
+-----> Worker: 1 - Delay: 10 seconds
+
+-----> Attempt: [1/1] Snapshot [19/81] - Worker: 1
+SUCCESS     -> HTTP : 200 - OK
+            -> URL  : https://web.archive.org/web/20120314060403id_/http://www.united-village.net/images/common/HD/about/in.jpg
+            -> FILE : /home/zungle/src/lwp-server/websites/united-village/waybackup_snapshots/www.united-village.net/images/common/HD/about/in.jpg
+
+-----> Worker: 1 - Delay: 10 seconds
+
+-----> Attempt: [1/1] Snapshot [20/81] - Worker: 1
+SUCCESS     -> HTTP : 200 - OK
+            -> URL  : https://web.archive.org/web/20120314060345id_/http://www.united-village.net/images/common/HD/about/tv.jpg
+            -> FILE : /home/zungle/src/lwp-server/websites/united-village/waybackup_snapshots/www.united-village.net/images/common/HD/about/tv.jpg
+
+-----> Worker: 1 - Delay: 10 seconds
+
+-----> Attempt: [1/1] Snapshot [21/81] - Worker: 1
+SUCCESS     -> HTTP : 200 - OK
+            -> URL  : https://web.archive.org/web/20120314060341id_/http://www.united-village.net/stylesheets/base.css
+            -> FILE : /home/zungle/src/lwp-server/websites/united-village/waybackup_snapshots/www.united-village.net/stylesheets/base.css
+
+-----> Worker: 1 - Delay: 10 seconds
+
+-----> Attempt: [1/1] Snapshot [22/81] - Worker: 1
+SUCCESS     -> HTTP : 200 - OK
+            -> URL  : https://web.archive.org/web/20120314060316id_/http://www.united-village.net/images/common/HD/about/cu.jpg
+            -> FILE : /home/zungle/src/lwp-server/websites/united-village/waybackup_snapshots/www.united-village.net/images/common/HD/about/cu.jpg
+
+-----> Worker: 1 - Delay: 10 seconds
+
+-----> Attempt: [1/1] Snapshot [23/81] - Worker: 1
+SUCCESS     -> HTTP : 200 - OK
+            -> URL  : https://web.archive.org/web/20120314060245id_/http://www.united-village.net/images/common/HD/about/mx.jpg
+            -> FILE : /home/zungle/src/lwp-server/websites/united-village/waybackup_snapshots/www.united-village.net/images/common/HD/about/mx.jpg
+
+-----> Worker: 1 - Delay: 10 seconds
+
+-----> Attempt: [1/1] Snapshot [24/81] - Worker: 1
+SUCCESS     -> HTTP : 200 - OK
+            -> URL  : https://web.archive.org/web/20120314060235id_/http://www.united-village.net/images/site/en/pic_pc_contents1.gif
+            -> FILE : /home/zungle/src/lwp-server/websites/united-village/waybackup_snapshots/www.united-village.net/images/site/en/pic_pc_contents1.gif
+
+-----> Worker: 1 - Delay: 10 seconds
+
+-----> Attempt: [1/1] Snapshot [25/81] - Worker: 1
+SUCCESS     -> HTTP : 200 - OK
+            -> URL  : https://web.archive.org/web/20120314060220id_/http://www.united-village.net/images/common/HD/about/bg.jpg
+            -> FILE : /home/zungle/src/lwp-server/websites/united-village/waybackup_snapshots/www.united-village.net/images/common/HD/about/bg.jpg
+
+-----> Worker: 1 - Delay: 10 seconds
+
+-----> Attempt: [1/1] Snapshot [26/81] - Worker: 1
+SUCCESS     -> HTTP : 200 - OK
+            -> URL  : https://web.archive.org/web/20120314060209id_/http://www.united-village.net/images/site/en/title_pc_contents.gif
+            -> FILE : /home/zungle/src/lwp-server/websites/united-village/waybackup_snapshots/www.united-village.net/images/site/en/title_pc_contents.gif
+
+-----> Worker: 1 - Delay: 10 seconds
+
+-----> Attempt: [1/1] Snapshot [27/81] - Worker: 1
+SUCCESS     -> HTTP : 200 - OK
+            -> URL  : https://web.archive.org/web/20120314060205id_/http://www.united-village.net/images/common/HD/about/ye.jpg
+            -> FILE : /home/zungle/src/lwp-server/websites/united-village/waybackup_snapshots/www.united-village.net/images/common/HD/about/ye.jpg
+
+-----> Worker: 1 - Delay: 10 seconds
+
+-----> Attempt: [1/1] Snapshot [28/81] - Worker: 1
+SUCCESS     -> HTTP : 200 - OK
+            -> URL  : https://web.archive.org/web/20120314060148id_/http://www.united-village.net/images/site/en/title_pc_concept.gif
+            -> FILE : /home/zungle/src/lwp-server/websites/united-village/waybackup_snapshots/www.united-village.net/images/site/en/title_pc_concept.gif
+
+-----> Worker: 1 - Delay: 10 seconds
+
+-----> Attempt: [1/1] Snapshot [29/81] - Worker: 1
+SUCCESS     -> HTTP : 200 - OK
+            -> URL  : https://web.archive.org/web/20120314060141id_/http://www.united-village.net/images/site/en/title_pc_about.gif
+            -> FILE : /home/zungle/src/lwp-server/websites/united-village/waybackup_snapshots/www.united-village.net/images/site/en/title_pc_about.gif
+
+-----> Worker: 1 - Delay: 10 seconds
+
+-----> Attempt: [1/1] Snapshot [30/81] - Worker: 1
+SUCCESS     -> HTTP : 200 - OK
+            -> URL  : https://web.archive.org/web/20120314060133id_/http://www.united-village.net/images/site/en/pic_pc_contents2.jpg
+            -> FILE : /home/zungle/src/lwp-server/websites/united-village/waybackup_snapshots/www.united-village.net/images/site/en/pic_pc_contents2.jpg
+
+-----> Worker: 1 - Delay: 10 seconds
+
+-----> Attempt: [1/1] Snapshot [31/81] - Worker: 1
+SUCCESS     -> HTTP : 200 - OK
+            -> URL  : https://web.archive.org/web/20120314060110id_/http://www.united-village.net/images/site/en/title_pc_contentsimage.gif
+            -> FILE : /home/zungle/src/lwp-server/websites/united-village/waybackup_snapshots/www.united-village.net/images/site/en/title_pc_contentsimage.gif
+
+-----> Worker: 1 - Delay: 10 seconds
+
+-----> Attempt: [1/1] Snapshot [32/81] - Worker: 1
+SUCCESS     -> HTTP : 200 - OK
+            -> URL  : https://web.archive.org/web/20120314060100id_/http://www.united-village.net/images/common/HD/about/br.jpg
+            -> FILE : /home/zungle/src/lwp-server/websites/united-village/waybackup_snapshots/www.united-village.net/images/common/HD/about/br.jpg
+
+-----> Worker: 1 - Delay: 10 seconds
+
+-----> Attempt: [1/1] Snapshot [33/81] - Worker: 1
+SUCCESS     -> HTTP : 200 - OK
+            -> URL  : https://web.archive.org/web/20120314060056id_/http://www.united-village.net/images/common/HD/about/bd.jpg
+            -> FILE : /home/zungle/src/lwp-server/websites/united-village/waybackup_snapshots/www.united-village.net/images/common/HD/about/bd.jpg
+
+-----> Worker: 1 - Delay: 10 seconds
+
+-----> Attempt: [1/1] Snapshot [34/81] - Worker: 1
+SUCCESS     -> HTTP : 200 - OK
+            -> URL  : https://web.archive.org/web/20111015023754id_/http://www.united-village.net/ja/
+            -> FILE : /home/zungle/src/lwp-server/websites/united-village/waybackup_snapshots/www.united-village.net/ja/index.html
+
+-----> Worker: 1 - Delay: 10 seconds
+
+-----> Attempt: [1/1] Snapshot [35/81] - Worker: 1
+SUCCESS     -> HTTP : 200 - OK
+            -> URL  : https://web.archive.org/web/20111015023733id_/http://www.united-village.net/swf/topflash.swf
+            -> FILE : /home/zungle/src/lwp-server/websites/united-village/waybackup_snapshots/www.united-village.net/swf/topflash.swf
+
+-----> Worker: 1 - Delay: 10 seconds
+
+-----> Attempt: [1/1] Snapshot [36/81] - Worker: 1
+SUCCESS     -> HTTP : 200 - OK
+            -> URL  : https://web.archive.org/web/20111015023731id_/http://www.united-village.net/Scripts/swfobject_modified.js
+            -> FILE : /home/zungle/src/lwp-server/websites/united-village/waybackup_snapshots/www.united-village.net/Scripts/swfobject_modified.js
+
+-----> Worker: 1 - Delay: 10 seconds
+
+-----> Attempt: [1/1] Snapshot [37/81] - Worker: 1
+SUCCESS     -> HTTP : 200 - OK
+            -> URL  : https://web.archive.org/web/20111015023730id_/http://www.united-village.net/css/top.css
+            -> FILE : /home/zungle/src/lwp-server/websites/united-village/waybackup_snapshots/www.united-village.net/css/top.css
+
+-----> Worker: 1 - Delay: 10 seconds
+
+-----> Attempt: [1/1] Snapshot [38/81] - Worker: 1
+SUCCESS     -> HTTP : 200 - OK
+            -> URL  : https://web.archive.org/web/20111015023727id_/http://www.united-village.net/images/skip_btn.gif
+            -> FILE : /home/zungle/src/lwp-server/websites/united-village/waybackup_snapshots/www.united-village.net/images/skip_btn.gif
+
+-----> Worker: 1 - Delay: 10 seconds
+
+-----> Attempt: [1/1] Snapshot [39/81] - Worker: 1
+UNEXPECTED  -> HTTP : 404 - Not Found
+            -> URL  : https://web.archive.org/web/20111015023712id_/http://www.united-village.net/Scripts/AC_RunActiveContent.js
+UNEXPECTED  -> HTTP : 404 - Not Found
+            -> URL  : https://web.archive.org/web/20111015023712id_/http://www.united-village.net/Scripts/AC_RunActiveContent.js
+FAILED      ->      : append to failed_urls: https://web.archive.org/web/20111015023712id_/http://www.united-village.net/Scripts/AC_RunActiveContent.js
+
+-----> Attempt: [1/1] Snapshot [40/81] - Worker: 1
+SUCCESS     -> HTTP : 200 - OK
+            -> URL  : https://web.archive.org/web/20111015023710id_/http://www.united-village.net/
+            -> FILE : /home/zungle/src/lwp-server/websites/united-village/waybackup_snapshots/www.united-village.net/index.html
+
+-----> Worker: 1 - Delay: 10 seconds
+
+-----> Attempt: [1/1] Snapshot [41/81] - Worker: 1
+SUCCESS     -> HTTP : 200 - OK
+            -> URL  : https://web.archive.org/web/20110724120725id_/http://www.united-village.net/images/in/1/HD/02.jpg
+            -> FILE : /home/zungle/src/lwp-server/websites/united-village/waybackup_snapshots/www.united-village.net/images/in/1/HD/02.jpg
+
+-----> Worker: 1 - Delay: 10 seconds
+
+-----> Attempt: [1/1] Snapshot [42/81] - Worker: 1
+SUCCESS     -> HTTP : 200 - OK
+            -> URL  : https://web.archive.org/web/20110724120710id_/http://www.united-village.net/images/in/en/HD/title.gif
+            -> FILE : /home/zungle/src/lwp-server/websites/united-village/waybackup_snapshots/www.united-village.net/images/in/en/HD/title.gif
+
+-----> Worker: 1 - Delay: 10 seconds
+
+-----> Attempt: [1/1] Snapshot [43/81] - Worker: 1
+SUCCESS     -> HTTP : 200 - OK
+            -> URL  : https://web.archive.org/web/20110724120706id_/http://www.united-village.net/in/1/en/HD/
+            -> FILE : /home/zungle/src/lwp-server/websites/united-village/waybackup_snapshots/www.united-village.net/in/1/en/HD/index.html
+
+-----> Worker: 1 - Delay: 10 seconds
+
+-----> Attempt: [1/1] Snapshot [44/81] - Worker: 1
+SUCCESS     -> HTTP : 200 - OK
+            -> URL  : https://web.archive.org/web/20110724120700id_/http://www.united-village.net/stylesheets/about_HD.css
+            -> FILE : /home/zungle/src/lwp-server/websites/united-village/waybackup_snapshots/www.united-village.net/stylesheets/about_HD.css
+
+-----> Worker: 1 - Delay: 10 seconds
+
+-----> Attempt: [1/1] Snapshot [45/81] - Worker: 1
+SUCCESS     -> HTTP : 200 - OK
+            -> URL  : https://web.archive.org/web/20110724120651id_/http://www.united-village.net/site/en/HD/terms.html
+            -> FILE : /home/zungle/src/lwp-server/websites/united-village/waybackup_snapshots/www.united-village.net/site/en/HD/terms.html
+
+-----> Worker: 1 - Delay: 10 seconds
+
+-----> Attempt: [1/1] Snapshot [46/81] - Worker: 1
+SUCCESS     -> HTTP : 200 - OK
+            -> URL  : https://web.archive.org/web/20110724120646id_/http://www.united-village.net/images/bg/en/HD/title.gif
+            -> FILE : /home/zungle/src/lwp-server/websites/united-village/waybackup_snapshots/www.united-village.net/images/bg/en/HD/title.gif
+
+-----> Worker: 1 - Delay: 10 seconds
+
+-----> Attempt: [1/1] Snapshot [47/81] - Worker: 1
+SUCCESS     -> HTTP : 200 - OK
+            -> URL  : https://web.archive.org/web/20110724120638id_/http://www.united-village.net/images/bg/1/HD/03.jpg
+            -> FILE : /home/zungle/src/lwp-server/websites/united-village/waybackup_snapshots/www.united-village.net/images/bg/1/HD/03.jpg
+
+-----> Worker: 1 - Delay: 10 seconds
+
+-----> Attempt: [1/1] Snapshot [48/81] - Worker: 1
+SUCCESS     -> HTTP : 200 - OK
+            -> URL  : https://web.archive.org/web/20110724120629id_/http://www.united-village.net/images/bg/1/HD/mainphoto.jpg
+            -> FILE : /home/zungle/src/lwp-server/websites/united-village/waybackup_snapshots/www.united-village.net/images/bg/1/HD/mainphoto.jpg
+
+-----> Worker: 1 - Delay: 10 seconds
+
+-----> Attempt: [1/1] Snapshot [49/81] - Worker: 1
+SUCCESS     -> HTTP : 200 - OK
+            -> URL  : https://web.archive.org/web/20110724120611id_/http://www.united-village.net/images/bg/1/HD/02.jpg
+            -> FILE : /home/zungle/src/lwp-server/websites/united-village/waybackup_snapshots/www.united-village.net/images/bg/1/HD/02.jpg
+
+-----> Worker: 1 - Delay: 10 seconds
+
+-----> Attempt: [1/1] Snapshot [50/81] - Worker: 1
+SUCCESS     -> HTTP : 200 - OK
+            -> URL  : https://web.archive.org/web/20110724120540id_/http://www.united-village.net/images/bg/1/HD/01.jpg
+            -> FILE : /home/zungle/src/lwp-server/websites/united-village/waybackup_snapshots/www.united-village.net/images/bg/1/HD/01.jpg
+
+-----> Worker: 1 - Delay: 10 seconds
+
+-----> Attempt: [1/1] Snapshot [51/81] - Worker: 1
+SUCCESS     -> HTTP : 200 - OK
+            -> URL  : https://web.archive.org/web/20110724120528id_/http://www.united-village.net/images/bg/1/HD/04.jpg
+            -> FILE : /home/zungle/src/lwp-server/websites/united-village/waybackup_snapshots/www.united-village.net/images/bg/1/HD/04.jpg
+
+-----> Worker: 1 - Delay: 10 seconds
+
+-----> Attempt: [1/1] Snapshot [52/81] - Worker: 1
+SUCCESS     -> HTTP : 200 - OK
+            -> URL  : https://web.archive.org/web/20110724120525id_/http://www.united-village.net/bg/1/en/HD/
+            -> FILE : /home/zungle/src/lwp-server/websites/united-village/waybackup_snapshots/www.united-village.net/bg/1/en/HD/index.html
+
+-----> Worker: 1 - Delay: 10 seconds
+
+-----> Attempt: [1/1] Snapshot [53/81] - Worker: 1
+SUCCESS     -> HTTP : 200 - OK
+            -> URL  : https://web.archive.org/web/20110724120407id_/http://www.united-village.net/images/tv/1/HD/04.jpg
+            -> FILE : /home/zungle/src/lwp-server/websites/united-village/waybackup_snapshots/www.united-village.net/images/tv/1/HD/04.jpg
+
+-----> Worker: 1 - Delay: 10 seconds
+
+-----> Attempt: [1/1] Snapshot [54/81] - Worker: 1
+SUCCESS     -> HTTP : 200 - OK
+            -> URL  : https://web.archive.org/web/20110724120401id_/http://www.united-village.net/images/tv/1/HD/01.jpg
+            -> FILE : /home/zungle/src/lwp-server/websites/united-village/waybackup_snapshots/www.united-village.net/images/tv/1/HD/01.jpg
+
+-----> Worker: 1 - Delay: 10 seconds
+
+-----> Attempt: [1/1] Snapshot [55/81] - Worker: 1
+SUCCESS     -> HTTP : 200 - OK
+            -> URL  : https://web.archive.org/web/20110724120356id_/http://www.united-village.net/images/tv/1/HD/03.jpg
+            -> FILE : /home/zungle/src/lwp-server/websites/united-village/waybackup_snapshots/www.united-village.net/images/tv/1/HD/03.jpg
+
+-----> Worker: 1 - Delay: 10 seconds
+
+-----> Attempt: [1/1] Snapshot [56/81] - Worker: 1
+SUCCESS     -> HTTP : 200 - OK
+            -> URL  : https://web.archive.org/web/20110724120345id_/http://www.united-village.net/images/tv/1/HD/10.jpg
+            -> FILE : /home/zungle/src/lwp-server/websites/united-village/waybackup_snapshots/www.united-village.net/images/tv/1/HD/10.jpg
+
+-----> Worker: 1 - Delay: 10 seconds
+
+-----> Attempt: [1/1] Snapshot [57/81] - Worker: 1
+SUCCESS     -> HTTP : 200 - OK
+            -> URL  : https://web.archive.org/web/20110724120341id_/http://www.united-village.net/images/tv/en/HD/title.gif
+            -> FILE : /home/zungle/src/lwp-server/websites/united-village/waybackup_snapshots/www.united-village.net/images/tv/en/HD/title.gif
+
+-----> Worker: 1 - Delay: 10 seconds
+
+-----> Attempt: [1/1] Snapshot [58/81] - Worker: 1
+SUCCESS     -> HTTP : 200 - OK
+            -> URL  : https://web.archive.org/web/20110724120319id_/http://www.united-village.net/images/common/en/HD/btn_detail.gif
+            -> FILE : /home/zungle/src/lwp-server/websites/united-village/waybackup_snapshots/www.united-village.net/images/common/en/HD/btn_detail.gif
+
+-----> Worker: 1 - Delay: 10 seconds
+
+-----> Attempt: [1/1] Snapshot [59/81] - Worker: 1
+SUCCESS     -> HTTP : 200 - OK
+            -> URL  : https://web.archive.org/web/20110724120303id_/http://www.united-village.net/images/tv/1/HD/09.jpg
+            -> FILE : /home/zungle/src/lwp-server/websites/united-village/waybackup_snapshots/www.united-village.net/images/tv/1/HD/09.jpg
+
+-----> Worker: 1 - Delay: 10 seconds
+
+-----> Attempt: [1/1] Snapshot [60/81] - Worker: 1
+SUCCESS     -> HTTP : 200 - OK
+            -> URL  : https://web.archive.org/web/20110724120256id_/http://www.united-village.net/images/tv/1/HD/mainphoto.jpg
+            -> FILE : /home/zungle/src/lwp-server/websites/united-village/waybackup_snapshots/www.united-village.net/images/tv/1/HD/mainphoto.jpg
+
+-----> Worker: 1 - Delay: 10 seconds
+
+-----> Attempt: [1/1] Snapshot [61/81] - Worker: 1
+SUCCESS     -> HTTP : 200 - OK
+            -> URL  : https://web.archive.org/web/20110724120245id_/http://www.united-village.net/images/tv/1/HD/02.jpg
+            -> FILE : /home/zungle/src/lwp-server/websites/united-village/waybackup_snapshots/www.united-village.net/images/tv/1/HD/02.jpg
+
+-----> Worker: 1 - Delay: 10 seconds
+
+-----> Attempt: [1/1] Snapshot [62/81] - Worker: 1
+SUCCESS     -> HTTP : 200 - OK
+            -> URL  : https://web.archive.org/web/20110724120231id_/http://www.united-village.net/images/tv/1/HD/08.jpg
+            -> FILE : /home/zungle/src/lwp-server/websites/united-village/waybackup_snapshots/www.united-village.net/images/tv/1/HD/08.jpg
+
+-----> Worker: 1 - Delay: 10 seconds
+
+-----> Attempt: [1/1] Snapshot [63/81] - Worker: 1
+SUCCESS     -> HTTP : 200 - OK
+            -> URL  : https://web.archive.org/web/20110724120227id_/http://www.united-village.net/images/tv/1/HD/06.jpg
+            -> FILE : /home/zungle/src/lwp-server/websites/united-village/waybackup_snapshots/www.united-village.net/images/tv/1/HD/06.jpg
+
+-----> Worker: 1 - Delay: 10 seconds
+
+-----> Attempt: [1/1] Snapshot [64/81] - Worker: 1
+SUCCESS     -> HTTP : 200 - OK
+            -> URL  : https://web.archive.org/web/20110724120152id_/http://www.united-village.net/stylesheets/HD.css
+            -> FILE : /home/zungle/src/lwp-server/websites/united-village/waybackup_snapshots/www.united-village.net/stylesheets/HD.css
+
+-----> Worker: 1 - Delay: 10 seconds
+
+-----> Attempt: [1/1] Snapshot [65/81] - Worker: 1
+SUCCESS     -> HTTP : 200 - OK
+            -> URL  : https://web.archive.org/web/20110724120146id_/http://www.united-village.net/images/tv/1/HD/05.jpg
+            -> FILE : /home/zungle/src/lwp-server/websites/united-village/waybackup_snapshots/www.united-village.net/images/tv/1/HD/05.jpg
+
+-----> Worker: 1 - Delay: 10 seconds
+
+-----> Attempt: [1/1] Snapshot [66/81] - Worker: 1
+SUCCESS     -> HTTP : 200 - OK
+            -> URL  : https://web.archive.org/web/20110724120138id_/http://www.united-village.net/images/tv/1/HD/07.jpg
+            -> FILE : /home/zungle/src/lwp-server/websites/united-village/waybackup_snapshots/www.united-village.net/images/tv/1/HD/07.jpg
+
+-----> Worker: 1 - Delay: 10 seconds
+
+-----> Attempt: [1/1] Snapshot [67/81] - Worker: 1
+SUCCESS     -> HTTP : 200 - OK
+            -> URL  : https://web.archive.org/web/20110724120130id_/http://www.united-village.net/tv/1/en/HD/
+            -> FILE : /home/zungle/src/lwp-server/websites/united-village/waybackup_snapshots/www.united-village.net/tv/1/en/HD/index.html
+
+-----> Worker: 1 - Delay: 10 seconds
+
+-----> Attempt: [1/1] Snapshot [68/81] - Worker: 1
+EXISTING    -> HTTP : 200 - OK
+            -> URL  : https://web.archive.org/web/20100921183454id_/http://www.united-village.net:80/site/en/HD/terms.html
+            -> FILE : /home/zungle/src/lwp-server/websites/united-village/waybackup_snapshots/www.united-village.net/site/en/HD/terms.html
+
+-----> Worker: 1 - Delay: 10 seconds
+
+-----> Attempt: [1/1] Snapshot [69/81] - Worker: 1
+EXISTING    -> HTTP : 200 - OK
+            -> URL  : https://web.archive.org/web/20100921183434id_/http://www.united-village.net:80/in/1/en/HD/
+            -> FILE : /home/zungle/src/lwp-server/websites/united-village/waybackup_snapshots/www.united-village.net/in/1/en/HD/index.html
+
+-----> Worker: 1 - Delay: 10 seconds
+
+-----> Attempt: [1/1] Snapshot [70/81] - Worker: 1
+SUCCESS     -> HTTP : 200 - OK
+            -> URL  : https://web.archive.org/web/20100921183104id_/http://www.united-village.net:80/id/1/en/HD/
+            -> FILE : /home/zungle/src/lwp-server/websites/united-village/waybackup_snapshots/www.united-village.net/id/1/en/HD/index.html
+
+-----> Worker: 1 - Delay: 10 seconds
+
+-----> Attempt: [1/1] Snapshot [71/81] - Worker: 1
+SUCCESS     -> HTTP : 200 - OK
+            -> URL  : https://web.archive.org/web/20100921115043id_/http://www.united-village.net:80/ye/1/en/HD/
+            -> FILE : /home/zungle/src/lwp-server/websites/united-village/waybackup_snapshots/www.united-village.net/ye/1/en/HD/index.html
+
+-----> Worker: 1 - Delay: 10 seconds
+
+-----> Attempt: [1/1] Snapshot [72/81] - Worker: 1
+EXISTING    -> HTTP : 200 - OK
+            -> URL  : https://web.archive.org/web/20100921115005id_/http://www.united-village.net:80/tv/1/en/HD/
+            -> FILE : /home/zungle/src/lwp-server/websites/united-village/waybackup_snapshots/www.united-village.net/tv/1/en/HD/index.html
+
+-----> Worker: 1 - Delay: 10 seconds
+
+-----> Attempt: [1/1] Snapshot [73/81] - Worker: 1
+SUCCESS     -> HTTP : 200 - OK
+            -> URL  : https://web.archive.org/web/20100921114959id_/http://www.united-village.net:80/mx/1/en/HD/
+            -> FILE : /home/zungle/src/lwp-server/websites/united-village/waybackup_snapshots/www.united-village.net/mx/1/en/HD/index.html
+
+-----> Worker: 1 - Delay: 10 seconds
+
+-----> Attempt: [1/1] Snapshot [74/81] - Worker: 1
+SUCCESS     -> HTTP : 200 - OK
+            -> URL  : https://web.archive.org/web/20100921114955id_/http://www.united-village.net:80/ml/1/en/HD/
+            -> FILE : /home/zungle/src/lwp-server/websites/united-village/waybackup_snapshots/www.united-village.net/ml/1/en/HD/index.html
+
+-----> Worker: 1 - Delay: 10 seconds
+
+-----> Attempt: [1/1] Snapshot [75/81] - Worker: 1
+SUCCESS     -> HTTP : 200 - OK
+            -> URL  : https://web.archive.org/web/20100921114949id_/http://www.united-village.net:80/ke/1/en/HD/
+            -> FILE : /home/zungle/src/lwp-server/websites/united-village/waybackup_snapshots/www.united-village.net/ke/1/en/HD/index.html
+
+-----> Worker: 1 - Delay: 10 seconds
+
+-----> Attempt: [1/1] Snapshot [76/81] - Worker: 1
+SUCCESS     -> HTTP : 200 - OK
+            -> URL  : https://web.archive.org/web/20100921114944id_/http://www.united-village.net:80/cu/1/en/HD/
+            -> FILE : /home/zungle/src/lwp-server/websites/united-village/waybackup_snapshots/www.united-village.net/cu/1/en/HD/index.html
+
+-----> Worker: 1 - Delay: 10 seconds
+
+-----> Attempt: [1/1] Snapshot [77/81] - Worker: 1
+SUCCESS     -> HTTP : 200 - OK
+            -> URL  : https://web.archive.org/web/20100921114940id_/http://www.united-village.net:80/br/1/en/HD/
+            -> FILE : /home/zungle/src/lwp-server/websites/united-village/waybackup_snapshots/www.united-village.net/br/1/en/HD/index.html
+
+-----> Worker: 1 - Delay: 10 seconds
+
+-----> Attempt: [1/1] Snapshot [78/81] - Worker: 1
+EXISTING    -> HTTP : 200 - OK
+            -> URL  : https://web.archive.org/web/20100921114933id_/http://www.united-village.net:80/bg/1/en/HD/
+            -> FILE : /home/zungle/src/lwp-server/websites/united-village/waybackup_snapshots/www.united-village.net/bg/1/en/HD/index.html
+
+-----> Worker: 1 - Delay: 10 seconds
+
+-----> Attempt: [1/1] Snapshot [79/81] - Worker: 1
+SUCCESS     -> HTTP : 200 - OK
+            -> URL  : https://web.archive.org/web/20100921114928id_/http://www.united-village.net:80/bd/1/en/HD/
+            -> FILE : /home/zungle/src/lwp-server/websites/united-village/waybackup_snapshots/www.united-village.net/bd/1/en/HD/index.html
+
+-----> Worker: 1 - Delay: 10 seconds
+
+-----> Attempt: [1/1] Snapshot [80/81] - Worker: 1
+EXISTING    -> HTTP : 200 - OK
+            -> URL  : https://web.archive.org/web/20100920094215id_/http://www.united-village.net:80/en/about.html
+            -> FILE : /home/zungle/src/lwp-server/websites/united-village/waybackup_snapshots/www.united-village.net/en/about.html
+
+-----> Worker: 1 - Delay: 10 seconds
+
+-----> Attempt: [1/1] Snapshot [81/81] - Worker: 1
+SUCCESS     -> HTTP : 200 - OK
+            -> URL  : https://web.archive.org/web/20100115000552id_/http://www.united-village.net:80/ja/about.html
+            -> FILE : /home/zungle/src/lwp-server/websites/united-village/waybackup_snapshots/www.united-village.net/ja/about.html
+
+-----> Worker: 1 - Delay: 10 seconds
+
+-----> Worker: 1 - Retry Timeout: 15 seconds
+
+Files downloaded: 79
+Not downloaded: 2
+

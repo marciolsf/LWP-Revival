@@ -1,0 +1,192 @@
+@charset "utf-8";
+
+/* --------------------------------
+FILE NAME    Fbase.css
+LAST UPDATE  F2009.09.14
+-------------------------------- */
+
+div, p, dl, dt, dd, ul, ol, li, table, tr, th, td, h1, h2, h3, h4, h5, h6 {
+	vertical-align: baseline;
+}
+
+#header, #mainphoto, #information, #photo_area, #footer {
+	max-width: 760px;
+	margin: auto;
+}
+
+body {
+	background: #000000;
+	text-align: center;
+	color: #dddddd;
+	margin: auto;
+}
+
+ul,li {
+	list-style-type: none;
+}
+
+img {
+	font-size: 0;
+	border: none;
+	vertical-align: bottom;
+}
+
+a {
+	color: #278bbe;
+}
+
+/* -- header -- */
+
+#header {
+	/*margin: 0 4%;*/
+}
+
+#header:after {
+	content: "";
+	clear: both;
+	height: 0;
+	display: block;
+	visibility: hidden;
+}
+
+h1,h2 {
+	float: left;
+}
+
+.copyright {
+	color: #666666;
+}
+
+/* -- mainphoto -- */
+
+#mainphoto {
+	background: #151515;
+	padding: 1% 4%;
+}
+
+#mainphoto img {
+	margin-bottom: 5px;
+	width: 100%;
+}
+
+#mainphoto ul {
+	margin: 0 auto;
+	padding: 0;
+}
+
+#mainphoto ul:after {
+	content: "";
+	clear: both;
+	height: 0;
+	display: block;
+	visibility: hidden;
+}
+
+#mainphoto li.caption {
+	float: left;
+}
+
+#mainphoto li.copyright {
+	float: right;
+}
+
+/* -- information -- */
+
+#information {
+	margin: 0 auto;
+	padding: 2% 4%;
+	display: flex;
+}
+
+#information:after {
+	content: "";
+	clear: both;
+	height: 0;
+	display: block;
+	visibility: hidden;
+}
+
+#information #introduction {
+	float: left;
+	text-align: left;
+}
+
+#information #introduction:after {
+	content: "";
+	clear: both;
+	height: 0;
+	display: block;
+	visibility: hidden;
+}
+
+#information #introduction .magazine {
+	float: right;
+}
+
+#information #supplier {
+	float: right;
+	padding: 0 2% 0 2%;
+	background-color: #222;
+	margin-left: 2%;
+}
+
+#information #supplier p {
+	text-align: left;
+}
+
+/* -- photoarea -- */
+
+#photo_area {
+	background: #151515;
+	padding: 2% 4%;
+	margin-bottom: 30px !important;
+}
+
+#photo_area ul {
+	/*! margin: 0 auto; */
+	margin: 0;
+	padding: 0;
+}
+
+#photo_area li {
+	width: 365px;
+	margin: 15px 0 15px 10px;
+	float: left;
+	text-align: center;
+}
+
+#photo_area ul:after {
+	content: "";
+	clear: both;
+	height: 0;
+	display: block;
+	visibility: hidden;
+}
+
+#photo_area img {
+	margin-bottom: 10px;
+	width: 100%;
+}
+
+#photo_area .caption {
+	margin-bottom: 5px;
+}
+
+#photo_area .line {
+	width: 100%;
+	height: 10px;
+	background: #000000;
+}
+
+/* -- footer -- */
+
+#footer {
+	text-align: right;
+	color: #666666;
+	width: 760px;
+	font-size: 12px;
+	padding: 0 0 60px 0;
+}
+
+
+/* [EOF] CSS */

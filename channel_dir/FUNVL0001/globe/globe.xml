@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:fh="http://purl.org/syndication/history/1.0" xmlns:georss="http://www.georss.org/georss" xmlns:lwp="http://www.k2.cbe-world.com.com/lwp" xmlns:live="http://www.k2.cbe-world.com/lwp/live" > 
+	<channel>
+		<fh:incremental>false</fh:incremental>
+		<title>globe.xml</title>
+		<link>http://www.k2.cbe-world.com/lwp/united_village</link>
+		<description>United Village</description>
+		<ttl>1</ttl>
+
+		<live:pic id="copyright" url="http://www.k2.cbe-world.com/websites/FUNVL0001/copyright/copyright.png" type="image/png" pubDate="Thu, 1 May 2008 15:35:12 +0000" />
+		<live:pic id="copyright2" url="http://www.k2.cbe-world.com/websites/FUNVL0001/copyright/nothing.png" type="image/png" pubDate="Thu, 1 May 2008 15:35:12 +0000" />
+		<live:copyright pic="copyright" />
+		<live:copyright pic="copyright2" />
+
+		<live:text id="more">See details</live:text>
+
+		<live:style>
+			<live:bullet type="image/png" url="http://www.k2.cbe-world.com/websites/FUNVL0001/common/HD/bullet.png"/>
+		</live:style>
+
+		<item>
+			<title>Bangladesh</title>
+			<georss:point>23.6850 90.3563</georss:point>
+			<live:description>Our credo is to present vividly "a life" of people around the world living in diversified places; from your neighbours to countries far away. Please feel a sense of being there and share thoughts of adolescents who are bearers of the next generation.</live:description>
+			<live:item text="more" url="http://www.k2.cbe-world.com/websites/unitedvillage/bd/1/en/HD/index.html"/>
+			<live:media>
+				<live:thumbnail pubDate="Thu, 1 May 2008 15:35:12 +0000" type="image/jpeg" ttl="999999999999" url="http://www.k2.cbe-world.com/websites/unitedvillage/images/bd/1/HD/mainphoto.jpg" />
+			</live:media>
+
+			<live:panel>
+				<live:name>From a school around the world</live:name>
+				<live:subname pattern="">Bangladesh</live:subname>
+			</live:panel>
+		</item>
+
+		<item>
+			<title>Bali</title>
+			<georss:point>-8.4095 115.1889</georss:point>
+			<live:description>It’s really interesting that over seventy-percent of the people that I meet in cities, pretty much wherever I travel, would rather live in a rural area then in the city. It seems that there is a calling inside many of us to return to nature.</live:description>
+			<live:item text="more" url="http://www.k2.cbe-world.com/websites/unitedvillage/id/1/en/HD/index.html"/>
+			<live:media>
+				<live:thumbnail pubDate="Thu, 1 May 2008 15:35:12 +0000" type="image/jpeg" ttl="999999999999" url="http://www.k2.cbe-world.com/websites/unitedvillage/images/id/1/HD/mainphoto.jpg" />
+			</live:media>
+
+			<live:panel>
+				<live:name>Happy from Bali</live:name>
+			<live:subname pattern="">Bali</live:subname>
+			</live:panel>
+		</item>
+
+		<item>
+			<title>Brazil</title>
+			<georss:point>-14.2350 -51.9253</georss:point>
+			<live:description>Our credo is to present vividly "a life" of people around the world living in diversified places; from your neighbours to countries far away. Please feel a sense of being there and share thoughts of adolescents who are bearers of the next generation.</live:description>
+			<live:item text="more" url="http://www.k2.cbe-world.com/websites/unitedvillage/br/1/en/HD/index.html"/>
+			<live:media>
+				<live:thumbnail pubDate="Thu, 1 May 2008 15:35:12 +0000" type="image/jpeg" ttl="999999999999" url="http://www.k2.cbe-world.com/websites/unitedvillage/images/br/1/HD/mainphoto.jpg" />
+			</live:media>
+
+			<live:panel>
+				<live:name>From a school around the world</live:name>
+				<live:subname pattern="">Brazil</live:subname>
+			</live:panel>
+		</item>
+
+		<item>
+			<title>Bulgaria</title>
+			<georss:point>42.7339 25.4858</georss:point>
+			<live:description>Our credo is to present vividly "a life" of people around the world living in diversified places; from your neighbours to countries far away. Please feel a sense of being there and share thoughts of adolescents who are bearers of the next generation.</live:description>
+			<live:item text="more" url="http://www.k2.cbe-world.com/websites/unitedvillage/bg/1/en/HD/index.html"/>
+			<live:media>
+				<live:thumbnail pubDate="Thu, 1 May 2008 15:35:12 +0000" type="image/jpeg" ttl="999999999999" url="http://www.k2.cbe-world.com/websites/unitedvillage/images/bg/1/HD/mainphoto.jpg" />
+			</live:media>
+
+			<live:panel>
+				<live:name>From a school around the world</live:name>
+				<live:subname pattern="">Bulgaria</live:subname>
+			</live:panel>
+		</item>
+
+		<item>
+			<title>Cuba</title>
+			<live:description>Whenever I come to Cuba, I ask myself " what is the "quality of life"? Stunning beach, sugarcane field, expressive faces, advanced medical services/education/engineering, culture diversity, old town, "active" antique cars, and Fidel, absolutely! As the country might not be rich in the face of stats, it is one of the most charming places on the planet.</live:description>
+			<georss:point>21.5218 -77.7812</georss:point>
+			<live:item text="more" url="http://www.k2.cbe-world.com/websites/unitedvillage/cu/1/en/HD/index.html"/>
+			<live:media>
+				<live:thumbnail pubDate="Thu, 1 May 2008 15:35:12 +0000" type="image/jpeg" ttl="999999999999" url="http://www.k2.cbe-world.com/websites/unitedvillage/images/cu/1/HD/mainphoto.jpg" />
+			</live:media>
+
+			<live:panel>
+				<live:name>Life Scape on the earth</live:name>
+				<live:subname pattern="">Cuba</live:subname>
+			</live:panel>
+		</item>
+		
+		<item>
+			<title>India</title>
+			<georss:point>28.667 77.217</georss:point>
+			<live:description>Our credo is to present vividly "a life" of people around the world living in diversified places; from your neighbours to countries far away. Please feel a sense of being there and share thoughts of adolescents who are bearers of the next generation.</live:description>
+			<live:item text="more" url="http://www.k2.cbe-world.com/websites/unitedvillage/in/1/en/HD/index.html"/>
+			<live:media>
+				<live:thumbnail pubDate="Thu, 1 May 2008 15:35:12 +0000" type="image/jpeg" ttl="999999999999" url="http://www.k2.cbe-world.com/websites/unitedvillage/images/in/1/HD/mainphoto.jpg" />
+			</live:media>
+
+			<live:panel>
+				<live:name>From a school around the world</live:name>
+				<live:subname pattern="">India</live:subname>
+			</live:panel>
+		</item>
+
+		<item>
+			<title>Kenya</title>
+			<georss:point>-0.0236 37.9062</georss:point>
+			<live:description>Our credo is to present vividly "a life" of people around the world living in diversified places; from your neighbours to countries far away. Please feel a sense of being there and share thoughts of adolescents who are bearers of the next generation.</live:description>
+			<live:item text="more" url="http://www.k2.cbe-world.com/websites/unitedvillage/ke/1/en/HD/index.html"/>
+			<live:media>
+				<live:thumbnail pubDate="Thu, 1 May 2008 15:35:12 +0000" type="image/jpeg" ttl="999999999999" url="http://www.k2.cbe-world.com/websites/unitedvillage/images/ke/1/HD/mainphoto.jpg" />
+			</live:media>
+
+			<live:panel>
+				<live:name>From a school around the world</live:name>
+				<live:subname pattern="">Kenya</live:subname>
+			</live:panel>
+		</item>	
+
+		<item>
+			<title>Mali</title>
+			<georss:point>17.5707 -3.9962</georss:point>
+			<live:description>Our credo is to present vividly "a life" of people around the world living in diversified places; from your neighbours to countries far away. Please feel a sense of being there and share thoughts of adolescents who are bearers of the next generation.</live:description>
+			<live:item text="more" url="http://www.k2.cbe-world.com/websites/unitedvillage/ma/1/en/HD/index.html"/>
+			<live:media>
+				<live:thumbnail pubDate="Thu, 1 May 2008 15:35:12 +0000" type="image/jpeg" ttl="999999999999" url="http://www.k2.cbe-world.com/websites/unitedvillage/images/ma/1/HD/mainphoto.jpg" />
+			</live:media>
+
+			<live:panel>
+				<live:name>From a school around the world</live:name>
+				<live:subname pattern="">Mali</live:subname>
+			</live:panel>
+		</item>	
+
+		<item>
+			<title>Mexico</title>
+			<georss:point>23.6345 -102.5528</georss:point>
+			<live:description>Our credo is to present vividly "a life" of people around the world living in diversified places; from your neighbours to countries far away. Please feel a sense of being there and share thoughts of adolescents who are bearers of the next generation.</live:description>
+			<live:item text="more" url="http://www.k2.cbe-world.com/websites/unitedvillage/mx/1/en/HD/index.html"/>
+			<live:media>
+				<live:thumbnail pubDate="Thu, 1 May 2008 15:35:12 +0000" type="image/jpeg" ttl="999999999999" url="http://www.k2.cbe-world.com/websites/unitedvillage/images/mx/1/HD/mainphoto.jpg" />
+			</live:media>
+
+			<live:panel>
+				<live:name>From a school around the world</live:name>
+				<live:subname pattern="">Mexico</live:subname>
+			</live:panel>
+		</item>	
+	
+		<item>
+			<title>Tuvalu</title>
+			<georss:point>-7.1095 177.6493</georss:point>
+			<live:description>Tuvalu is an islands country consisting of 9 atolls in the South Pacific Ocean. It is one of the smallest countries with just 26㎢ area. Most of the land is just a few metre above sea level. As the climate change affects seriously, the country is facing a crisis of submersion.</live:description>
+			<live:item text="more" url="http://www.k2.cbe-world.com/websites/unitedvillage/tv/1/en/HD/index.html"/>
+			<live:media>
+				<live:thumbnail pubDate="Thu, 1 May 2008 15:35:12 +0000" type="image/jpeg" ttl="999999999999" url="http://www.k2.cbe-world.com/websites/unitedvillage/images/tv/1/HD/mainphoto.jpg" />
+			</live:media>
+
+			<live:panel>
+				<live:name>From a school around the world</live:name>
+				<live:subname pattern="">Tuvalu</live:subname>
+			</live:panel>
+		</item>	
+
+		<item>
+			<title>Yemen</title>
+			<georss:point>15.5527 48.5164</georss:point>
+			<live:description>Our credo is to present vividly "a life" of people around the world living in diversified places; from your neighbours to countries far away. Please feel a sense of being there and share thoughts of adolescents who are bearers of the next generation.</live:description>
+			<live:item text="more" url="http://www.k2.cbe-world.com/websites/unitedvillage/ye/1/en/HD/index.html"/>
+			<live:media>
+				<live:thumbnail pubDate="Thu, 1 May 2008 15:35:12 +0000" type="image/jpeg" ttl="999999999999" url="http://www.k2.cbe-world.com/websites/unitedvillage/images/ye/1/HD/mainphoto.jpg" />
+			</live:media>
+
+			<live:panel>
+				<live:name>From a school around the world</live:name>
+				<live:subname pattern="">Yemen</live:subname>
+			</live:panel>
+		</item>
+
+	</channel>
+</rss>
