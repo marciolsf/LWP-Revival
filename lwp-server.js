@@ -6,39 +6,18 @@ const fs = require('fs');
 const AdmZip = require('adm-zip');
 const axios = require('axios');
 const sharp = require('sharp');
-const RSS_PARSER = require('rss-parser');
-const parser = new RSS_PARSER();
-const cityMap = [
-  { 
-    name: "Tokyo,JP",  // This is how you add a city (add in city diff aswell!)
-    id: "JAXX0085",  // Important ID so the dynamic code works, has to match city diff
-    camUrl: 'http://182.171.234.126/SnapshotJPEG?Resolution=640x480', // your URL for the MJEPG cam source. Enter a "snapshot" or "image" link, NOT the mjepg stream
-    file: 'tokyo.jpg' // this is how the camURl will be called. You need to fix this and upper line on city diff aswell
-  },
-  { 
-    name: "Berlin,DE", 
-    id: "GMXX0007", 
-    camUrl: 'http://93.241.200.98:84/jpg/1/image.jpg',
-    file: 'berlin.jpg' 
-  },
-  {
-	name: "Paris,FR", 
-    id: "FRXX0076", 
-    camUrl: 'http://145.238.185.10/jpg/1/image.jpg', 
-    file: 'paris.jpg' 
-  },
-  {
-	name: "London,GB", 
-    id: "UKXX0085", 
-    camUrl: 'http://213.123.193.142/jpg/1/image.jpg', 
-    file: 'london.jpg' 
-  },
-  { 
-    name: "Delhi,IN", 
-    id: "INXX0038", 
-    camUrl: 'http://61.246.194.45/cgi-bin/viewer/video.jpg', 
-    file: 'delhi.jpg' 
+const RSSParser = require('rss-parser');
+const parser = new RSSParser({
+  headers: {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
   }
+});
+const cityMap = [
+  { id: "JAXX0085", name: "Tokyo", accKey: "226396", topic: "tokyo", file: 'tokyo.jpg', camUrl: 'http://182.171.234.126/SnapshotJPEG?Resolution=640x480' }, // this is how to add city, accKey is accuweather city id
+  { id: "GMXX0007", name: "Berlin", accKey: "178087", topic: "berlin", file: 'berlin.jpg', camUrl: 'http://imgproxy.windy.com/_/preview/plain/current/1666966383/original.jpg' },
+  { id: "FRXX0076", name: "Paris", accKey: "623", topic: "paris", file: 'paris.jpg', camUrl: 'http://145.238.185.10/jpg/1/image.jpg' },
+  { id: "UKXX0085", name: "London", accKey: "328328", topic: "london", file: 'london.jpg', camUrl: 'http://imgproxy.windy.com/_/preview/plain/current/1508413562/original.jpg' },
+  { id: "INXX0038", name: "new-delhi", accKey: "202396", topic: "india", file: 'delhi.jpg', camUrl: 'http://61.246.194.45/cgi-bin/viewer/video.jpg' }
 ];
 
 const options = {
@@ -178,81 +157,77 @@ app.get('/acfs/noauth/lwp/FLWP00001/:region/:subregion/city_info.xml.zip', (req,
   zipAndSend("city_info.xml", res, xmlPath);
 });
 
+// TOP OF YOUR FILE: Make sure your parser is configured like this!
+
 app.get('/acfs/noauth/lwp/FLWP00001/:region/:subregion/city_diff.xml.zip', async (req, res) => {
-    console.log("[XML] city_diff requested. Starting injection...");
+    console.log("[XML] city_diff requested. Injecting News & Weather...");
     const xmlPath = path.join(CHANNELDIR, 'FLWP00001', 'city_diff.xml');
-    const blacklist = ["valentine", "michelin", "best", "ideas", "deals", "guide", "gift", "collectibles"]; // Blacklist spaggy lifestyle "news"
 
     try {
         let xmlContent = fs.readFileSync(xmlPath, 'utf8');
-        const v = Date.now(); // The Magic Number that lets us bypass the cache
+        const v = Date.now(); 
 
-        // 1. After how many mins should the city diff change? (Weather, News, Cams are all dependent on this)
         xmlContent = xmlContent.replace(/<ttl>\d+<\/ttl>/g, `<ttl>15</ttl>`);
 
         for (const city of cityMap) {
             try {
-                // A. GATHER DATA
-                const weather = await getWeather(city.name);
-                const cityNameOnly = city.name.split(',')[0];
-                const feed = await parser.parseURL(`https://news.google.com/rss/search?q=${encodeURIComponent(cityNameOnly + ' news')}&hl=en-US&gl=US&ceid=US:en`);
-                const headlines = feed.items.slice(0, 4);
+                // A. WEATHER
+                const weather = await getWeather(city.accKey);
+                
+                // B. NEWS
+                let headlines = [];
+                try {
+                    const rssUrl = `http://localhost:1200/apnews/topics/${encodeURIComponent(city.name)}`;
+                    const feed = await parser.parseURL(rssUrl);
+                    headlines = feed.items.slice(0, 4);
+                } catch (e) {
+                    console.error(`[NEWS ERR] Feed failed for ${city.name}: ${e.message}`);
+                    // Fallback headlines
+                    headlines = [{ title: `Checking ${city.name} News...`, link: "https://apnews.com" }];
+                }
 
-                // B. ISOLATED REPLACEMENT
+                // C. INJECT INTO XML
                 const cityBlockRegex = new RegExp(`(<live:cityId>${city.id}<\/live:cityId>[\\s\\S]*?)(?=<live:cityId>|$)`, 'g');
 
                 xmlContent = xmlContent.replace(cityBlockRegex, (cityBlock) => {
-                    // C. GUID CHANGER (The "I am new" signal)
-                    // We create a unique GUID for this specific refresh: e.g., paris-1739387000
                     const newGuid = `${city.file.split('.')[0]}-${v}`;
                     let updated = cityBlock.replace(/guid=".*?"/g, `guid="${newGuid}"`);
-
-                    // D. CAMERA URL CHANGER (The "Fetch me" signal)
                     updated = updated.replace(new RegExp(city.file, 'g'), `${v}/${city.file}`);
 
-                    // E. WEATHER UPDATES
+                    // Weather
                     updated = updated.replace(/pic="\d+"/, `pic="${weather.icon}"`);
                     updated = updated.replace(/(pattern="celsius">).*?(<\/live:subname>)/, `$1${weather.c}℃$2`);
                     updated = updated.replace(/(pattern="fahrenheit">).*?(<\/live:subname>)/, `$1${weather.f}℉$2`);
 
-                    // F. NEWS UPDATES
+                    // News
                     let newsIndex = 0;
-                    const itemRegex = /<live:item.*?>([\s\S]*?)<\/live:item>/g;
-                    updated = updated.replace(itemRegex, (match) => {
-                        const newsItem = headlines[newsIndex] || { title: "Global Update", link: "" };
+                    updated = updated.replace(/<live:item.*?>([\s\S]*?)<\/live:item>/g, (match) => {
+                        const newsItem = headlines[newsIndex] || { title: "AP World News", link: "https://apnews.com" };
                         newsIndex++;
-                        const cleanHeadline = newsItem.title.split(' - ')[0].replace(/[<>&"']/g, '');
+
+                        const cleanHeadline = newsItem.title
+                            .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&apos;');
+
                         let tag = match.replace(/>.*?</, `>${cleanHeadline}<`);
-                        if (newsItem.link) tag = tag.replace(/url=".*?"/, `url="${newsItem.link}"`);
+                        if (newsItem.link) tag = tag.replace(/url=".*?"/, `url="${newsItem.link}"`); // adds News URL to the headline
                         return tag;
                     });
 
                     return updated;
                 });
 
-                console.log(`[LIVE] ${city.name} updated: GUID=${city.file.split('.')[0]}-${v} Weather, News and Camera Feed | Temp=${weather.c}°C`);
+                console.log(`[OK] ${city.name} updated.`);
             } catch (cityErr) {
-                console.error(`[ERR] Failed updating ${city.name}:`, cityErr.message);
+                console.error(`[SKIP] ${city.name} failed:`, cityErr.message);
             }
         }
 
-        // Final Zip and Send
         const zip = new AdmZip();
         zip.addFile("city_diff.xml", Buffer.from(xmlContent, "utf8"));
-        const zipBuffer = zip.toBuffer();
-
-        res.set({
-            'Content-Type': 'application/zip',
-            'Cache-Control': 'no-store, no-cache, must-revalidate',
-            'Pragma': 'no-cache',
-            'Expires': '0'
-        });
-
-        res.send(zipBuffer);
-        console.log(`[XML] city_diff.xml.zip delivered. Timestamp: ${v}`);
+        res.set({'Content-Type': 'application/zip', 'Cache-Control': 'no-store'}).send(zip.toBuffer());
 
     } catch (err) {
-        console.error("[DIFF ERROR]", err);
+        console.error("[FATAL ERROR]", err);
         res.sendStatus(500);
     }
 });
@@ -546,45 +521,29 @@ app.get('/:v/:filename', async (req, res) => {
 /* =========================
    WEATHER FEEDS
 ========================= */
-async function getWeather(cityName) {
-    const API_KEY = 'YOUR API LYNX'; // Please get your own API key from openweatherapp, its free!
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=metric&appid=${API_KEY}`; 
+const iconMap = {
+    1: 32, 2: 30, 3: 28, 4: 19, 5: 21, 6: 28, 7: 26, 8: 26, 
+    11: 20, 12: 9, 13: 39, 14: 39, 15: 17, 16: 38, 17: 38, 18: 11, 
+    19: 13, 20: 39, 21: 39, 22: 14, 23: 41, 24: 10, 25: 18, 26: 6, 
+    29: 5, 30: 36, 31: 32, 32: 23, 33: 31, 34: 29, 35: 27, 36: 29, 
+    37: 20, 38: 27, 39: 45, 40: 45, 41: 47, 42: 47, 43: 45, 44: 46
+};
+
+async function getWeather(accKey) {
+    const API_KEY = '6e30dc9ea2aa4d3eb99ad8f6630174cd'; 
+    const url = `http://api.accuweather.com/currentconditions/v1/${accKey}?apikey=${API_KEY}`;
 
     try {
         const res = await axios.get(url);
-        const data = res.data;
-        const isDay = data.dt >= data.sys.sunrise && data.dt < data.sys.sunset;
-        const code = data.weather[0].id;
-
-        let icon = 32; 
-        
-        // --- Openweatherapp weather codes converted to LWP weather icons ---
-        if (code === 800) icon = isDay ? 32 : 31; // isDay ? is for the icons that have a day/night variant
-        else if (code === 801) icon = isDay ? 30 : 29; 
-        else if (code === 802) icon = isDay ? 28 : 27;
-        else if (code === 803 || code === 804) icon = 26;
-        else if (code >= 200 && code < 300) icon = isDay ? 37 : 47;
-        else if (code >= 300 && code < 500) icon = 9; 
-        else if (code >= 500 && code < 511) icon = 11;
-        else if (code === 511) icon = 7;
-        else if (code >= 600 && code < 611) icon = 14;
-        else if (code >= 611 && code < 700) icon = 8;
-		else if (code >= 520 && code < 600) icon = 12;
-		else if (code >= 600 && code < 700) icon = 14;
-		
-        else if ([701, 711, 721, 741].includes(code)) {
-            icon = isDay ? 19 : (Math.random() > 0.5 ? 20 : 21);
-        } else if (code === 781 || code === 771) {
-            icon = 24; 
-        }
-
+        const data = res.data[0];
         return {
-            c: Math.round(data.main.temp),
-            f: Math.round(data.main.temp * 1.8 + 32), // For the americans
-            icon: icon
+            c: Math.round(data.Temperature.Metric.Value),
+            f: Math.round(data.Temperature.Imperial.Value),
+            icon: iconMap[data.WeatherIcon] || 32 
         };
     } catch (e) {
-        return { c: 10, f: 50, icon: 45 }; // Fallback if all goes wrong :(
+        console.error(`[WEATHER ERR] Key ${accKey}:`, e.message);
+        return { c: "--", f: "--", icon: 32 }; 
     }
 }
 /* =========================
