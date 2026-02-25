@@ -352,19 +352,17 @@ app.get('/lwp/united_village', (req, res) => {
 ========================= */
 app.get('/aas/client', (req, res) => {
   console.log("[AAS] GET", req.query.cmd || "no-cmd", req.originalUrl);
+  const nonce='8f3c9d8a4b1e2f7c1a5d0b7e9c0a6f2d'
   
   if (req.query.cmd === 'challenge') {
-    res.status(200)
-      .set({
-        'Content-Type': 'application/x-np-ticket',
-        'Connection': 'keep-alive'
-      })
-      .send(`nonce=aaaaa&JSESSIONID=${jsid}`);
+    res.status(200);
+    res.set('Content-Type', 'application/x-np-ticket');
+    res.send(`nonce=${nonce}`);
     return;
   }
   else if (req.query.cmd === 'logout') {
     console.log("[AAS] logout");
-    res.status(200).end('');
+    res.sendStatus(200);
     return;
   }
 
@@ -374,70 +372,91 @@ app.get('/aas/client', (req, res) => {
 app.post('/aas/client', (req, res) => {
   console.log("[AAS] POST", req.query.cmd || "no-cmd", req.originalUrl);
 
-  if (req.query.cmd == 'login') {
+  if (req.query.cmd == 'login' || req.query.cmd == 'createlogin') {
     const sid = req.query.JSESSIONID || jsid;
 
-    // BODY isnt needed
-    const body = `JSESSIONID=${sid}&cwsessionid=${sid}&status=1`;
-
-    res.status(200)
-      .set({
-        'Content-Type': 'application/x-np-ticket',
-        'Connection': 'Keep-Alive',
-        'Set-Cookie': `JSESSIONID=${sid}; Path=/`
-      })
-      .send('');
+    res.set('Date', new Date().toUTCString());
+    res.set('Content-Type', 'application/x-np-ticket');
+    res.set('Set-Cookie', `JSESSIONID=${sid}; Path=/;`);
+    res.set('recommended-timeout', '300');
+    return res.sendStatus(200);
   }
   else if (req.query.cmd == 'createaccount') {
-    res.setHeader('Content-Type', 'application/xml');
+    //res.setHeader('Content-Type', 'application/xml');
+    return res.sendStatus(200);
+  }
+  else if (req.query.cmd == 'createloginverify') {
+    res.set('Set-Cookie', `JSESSIONID=${sid}; Path=/;`);
+    res.set('recommended-timeout', '300');
+    res.set('entitlement-expire-time', String(Math.floor(Date.now()/1000) + 3600));
+    res.sendStatus(200);
 
-    /*return res.status(200).send(`<?xml version="1.0" encoding="utf-8"?>
-<aas>
-  <accountid>${req.query['cw-user-id'] || 'dummy'}</accountid>
-  <password>${req.query['cw-passwd'] || 'dummy'}</password>
-  <sessionid>${req.query['JSESSIONID'] || ''}</sessionid>
-  <status>1</status>
-</aas>`);*/
-
-    return res.status(200).send('');
-
+    return res.sendStatus(200);
   }
   else if (req.query.cmd == 'updatesession') {
-    return res.status(200).send('');
+    res.set('recommended-timeout', '300');
+    return res.sendStatus(200);
   }
 });
+
+/* =========================
+   CPS CLIENT
+========================= */
+app.post('/contribution/client', (req, res) => {
+  console.log("[CPS] POST", req.query.cmd || "no-cmd", req.originalUrl);
+
+  if (req.query.cmd == 'cs_getsaveuid') {
+    res.set('Content-Type', 'application/x-cs-request-param');
+    return res.send('save-uid=123123123123\r\nrecommended-access-interval=300');
+  }
+  else if (req.query.cmd == 'cs_inquirecontribution') {
+    res.set('Content-Type', 'application/x-cs-request-param');
+    return res.send('abs-value=123');
+  } else if (req.query.cmd == 'cs_uploadcontribution') {
+    res.set('Content-Type', 'application/x-cs-request-param');
+    return res.sendStatus(200);
+  }
+})
 
 /* =========================
    STATS / WATCHER
 ========================= */
 app.get('/stats/watcher', (req, res) => {
   console.log("[WSS] GET", req.query)
+  res.type('application/x-cw-watcher-status');
+  // c ug u g
 
-  if (req.query.cmd === 'g') {
-    res.status(200)
-      .set({
-        'Content-Type': 'application/x-cw-watcher-status',
-        'Connection': 'keep-alive'
-      })
-      .send(
-        `save-uid=${jsid}&delta-value=0&abs-value=1&country=en`
-      );
-    return;
+  if (req.query.cmd == 'c') {
+    console.log("[WSS] Sending hardcoded channel list");
+
+    //const reply = Buffer.alloc(16 + (count * 8));
+    const reply = fs.readFileSync(CHANNELDIR + '/wss/testwss_c.dat');
+    res.send(reply);
   }
 
-  if (req.query.cmd === 'c') {
-    res.type('text/xml');
-    fs.readFile(
-      path.join(CHANNELDIR, 'unitedvillage', 'default_city_info.xml'),
-      (err, data) => {
-        if (err) return res.sendStatus(500);
-        res.send(data);
-      }
-    );
-    return;
-  }
+  if(req.query.cmd == 'g') {
+    console.log("[WSS] Sending hardcoded channel versions");
 
-  res.sendStatus(400);
+    const reply = fs.readFileSync(CHANNELDIR + "/wss/testwss_g.dat");
+    res.end(reply);
+  }
+  
+  if(req.query.cmd == 'ug' || req.query.cmd == 'u') {
+     }
+  
+  //res.sendStatus(400);
+});
+
+app.post('/stats/watcher', (req, res) => {
+  console.log("[WSS] POST", req.query);
+  res.type('application/x-cw-watcher-status');
+ 
+  if(req.query.cmd = 'ug') {
+    console.log("[WSS] Sending placeholder update packet");
+
+    const reply = fs.readFileSync(CHANNELDIR + "/wss/testwss_g.dat");
+    res.end(reply);
+  }
 });
 
 /* =========================
@@ -445,18 +464,20 @@ app.get('/stats/watcher', (req, res) => {
 ========================= */
 app.get('/stats/location', (req, res) => {
   console.log("[LOCSTATS] GET", req.query)
+  // c kg r 
 
-  res.status(200)
-    .set('Set-Cookie', `cwsessionid=${jsid}; Path=/`)
-    .type('text/xml');
-
-  fs.readFile(
-    path.join(CHANNELDIR, 'testing', 'complete_location_list.loc'),
-    (err, data) => {
-      if (err) return res.sendStatus(500);
-      res.send(data);
+    if (req.query.cmd == 'c' || req.query.cmd == 'kg') {
+    if (req.query.cmd == 'c') {
+      console.log("[LOCSTATS] Create Session & sending locstats");
+    } else {
+      console.log("[LOCSTATS] Sending locstats");
     }
-  );
+
+    //const reply = Buffer.alloc(16 + (count * 8));
+    const reply = fs.readFileSync(CHANNELDIR + '/locstats.dat');
+    res.send(reply.slice(0x20));
+  }
+
 });
 
 /* =========================
