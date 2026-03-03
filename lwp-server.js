@@ -7,18 +7,21 @@ const AdmZip = require('adm-zip');
 const axios = require('axios');
 const sharp = require('sharp');
 const RSSParser = require('rss-parser');
+
+/* =========================
+   External files
+========================= */
+const cityMap = require('./CityMap');
+const getWeather = require('./Weather');
+const { zipAndSend } = require('./Functions');
+
+
 const parser = new RSSParser({
   headers: {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
   }
 });
-const cityMap = [
-  { id: "JAXX0085", name: "Tokyo", accKey: "226396", topic: "tokyo", file: 'tokyo.jpg', camUrl: 'http://182.171.234.126/SnapshotJPEG?Resolution=640x480' }, // this is how to add city, accKey is accuweather city id
-  { id: "GMXX0007", name: "Berlin", accKey: "178087", topic: "berlin", file: 'berlin.jpg', camUrl: 'http://imgproxy.windy.com/_/preview/plain/current/1666966383/original.jpg' },
-  { id: "FRXX0076", name: "Paris", accKey: "623", topic: "paris", file: 'paris.jpg', camUrl: 'http://145.238.185.10/jpg/1/image.jpg' },
-  { id: "UKXX0085", name: "London", accKey: "328328", topic: "london", file: 'london.jpg', camUrl: 'http://imgproxy.windy.com/_/preview/plain/current/1508413562/original.jpg' },
-  { id: "INXX0038", name: "new-delhi", accKey: "202396", topic: "india", file: 'delhi.jpg', camUrl: 'http://61.246.194.45/cgi-bin/viewer/video.jpg' }
-];
+
 
 const options = {
   key: fs.readFileSync('./key.pem'),
@@ -70,35 +73,7 @@ app.use((req, res, next) => {
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
-function zipAndSend(fileName, res, filePath) {
-    if (!fs.existsSync(filePath)) {
-        console.error(`[ZIP] File not found: ${filePath}`);
-        return res.sendStatus(404);
-    }
 
-    try {
-        const zip = new AdmZip();
-        const outZipName = fileName + ".zip";
-
-        // Add the file to the zip root
-        zip.addLocalFile(filePath, '');
-
-        const zipBuffer = zip.toBuffer();
-
-        console.log(`[ZIP] Compressing ${filePath} -> ${outZipName}`);
-
-        res.set({
-            'Content-Type': 'application/zip',
-            'Content-Disposition': `attachment; filename="${outZipName}"`,
-            'Content-Length': zipBuffer.length
-        });
-
-        res.send(zipBuffer);
-    } catch (err) {
-        console.error(`[ZIP] Error processing ${filePath}:`, err);
-        res.sendStatus(500);
-    }
-}
 
 // Hopeless attempts to tell the PS3 "dont save the image plsss"
 app.use((req, res, next) => {
@@ -518,34 +493,7 @@ app.get('/:v/:filename', async (req, res) => {
         res.status(404).send("Offline");
     }
 });
-/* =========================
-   WEATHER FEEDS
-========================= */
-const iconMap = {
-    1: 32, 2: 30, 3: 28, 4: 19, 5: 21, 6: 28, 7: 26, 8: 26, 
-    11: 20, 12: 9, 13: 39, 14: 39, 15: 17, 16: 38, 17: 38, 18: 11, 
-    19: 13, 20: 39, 21: 39, 22: 14, 23: 41, 24: 10, 25: 18, 26: 6, 
-    29: 5, 30: 36, 31: 32, 32: 23, 33: 31, 34: 29, 35: 27, 36: 29, 
-    37: 20, 38: 27, 39: 45, 40: 45, 41: 47, 42: 47, 43: 45, 44: 46
-};
 
-async function getWeather(accKey) {
-    const API_KEY = '6e30dc9ea2aa4d3eb99ad8f6630174cd'; 
-    const url = `http://api.accuweather.com/currentconditions/v1/${accKey}?apikey=${API_KEY}`;
-
-    try {
-        const res = await axios.get(url);
-        const data = res.data[0];
-        return {
-            c: Math.round(data.Temperature.Metric.Value),
-            f: Math.round(data.Temperature.Imperial.Value),
-            icon: iconMap[data.WeatherIcon] || 32 
-        };
-    } catch (e) {
-        console.error(`[WEATHER ERR] Key ${accKey}:`, e.message);
-        return { c: "--", f: "--", icon: 32 }; 
-    }
-}
 /* =========================
    FALLBACKS (LAST)
 ========================= */
@@ -557,7 +505,7 @@ app.all('*any', (req, res) => {
 /* =========================
    START SERVER
 ========================= */
-console.log('Life with PlayStation Custom Server OHP');
+console.log('Life with PlayStation-Revival 0.3');
 https.createServer(options, app).listen(443, HOST, () => {
   console.log(`Listening HTTPS on ${HOST}:443`);
 });
