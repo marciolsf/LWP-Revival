@@ -42,6 +42,9 @@ const PLUGINDIR = path.join(__dirname, 'plugins');
 const CHANNELDIR = path.join(__dirname, 'channel_dir');
 const WEBSITEDIR = path.join(__dirname, 'websites');
 
+const BASE_DOMAIN = 'www.k2.cbe-world.com';
+const CBE_DOMAIN = 'www.cbe-world.com';
+
 const jsid = 'ff80c0a6fc0307efe';
 
 app.use((req, res, next) => {
@@ -113,8 +116,10 @@ app.get('/data/plugins/live/live.xml', (req, res) => {
 app.get(['/lwp/info/:region/:subregion/channel_list.xml', '/acfs/lwp/info/:region/:subregion/channel_list.xml'], (req, res) => {
   res.type('text/xml');
   console.log("[CHANNELMAN] Got channel request! sending channel_list.xml");
-  fs.readFile(path.join(CHANNELDIR, 'channel_list.xml'), (err, data) => {
+  fs.readFile(path.join(CHANNELDIR, 'channel_list.xml'), 'utf8', (err, data) => {
     if (err) return res.sendStatus(500);
+    data = data.replace(/www\.k2\.cbe-world\.com/g, BASE_DOMAIN);
+    data = data.replace(/www\.cbe-world\.com/g, CBE_DOMAIN);
     res.send(data);
   });
 });
@@ -125,11 +130,21 @@ app.get(['/lwp/info/:region/:subregion/channel_list.xml', '/acfs/lwp/info/:regio
 
 // LIVE Channel
 app.get('/acfs/noauth/lwp/FLWP00001/:region/:subregion/city_info.xml.zip', (req, res) => {
-  res.type('text/xml');
   console.log("[CHANNEL] Live Channel city info requested!");
 
   const xmlPath = path.join(CHANNELDIR, 'FLWP00001', 'city_info.xml');
-  zipAndSend("city_info.xml", res, xmlPath);
+
+  try {
+    let xmlContent = fs.readFileSync(xmlPath, 'utf8');
+    xmlContent = xmlContent.replace(/www\.cbe-world\.com/g, CBE_DOMAIN);
+
+    const zip = new AdmZip();
+    zip.addFile("city_info.xml", Buffer.from(xmlContent, "utf8"));
+    res.set({'Content-Type': 'application/zip'}).send(zip.toBuffer());
+  } catch (err) {
+    console.error("[CITY_INFO ERROR]", err);
+    res.sendStatus(500);
+  }
 });
 
 // TOP OF YOUR FILE: Make sure your parser is configured like this!
@@ -140,6 +155,7 @@ app.get('/acfs/noauth/lwp/FLWP00001/:region/:subregion/city_diff.xml.zip', async
 
     try {
         let xmlContent = fs.readFileSync(xmlPath, 'utf8');
+        xmlContent = xmlContent.replace(/www\.cbe-world\.com/g, CBE_DOMAIN);
         const v = Date.now(); 
 
         xmlContent = xmlContent.replace(/<ttl>\d+<\/ttl>/g, `<ttl>15</ttl>`);
@@ -213,6 +229,7 @@ app.get('/acfs/noauth/lwp/FLWP00001/cloud.xml.zip', (req, res) => {
 
     try {
         let xmlContent = fs.readFileSync(xmlPath, 'utf8');
+        xmlContent = xmlContent.replace(/www\.cbe-world\.com/g, CBE_DOMAIN);
         const now = new Date().toUTCString();
         const v = Date.now(); 
 
@@ -277,11 +294,21 @@ app.get('/acfs/noauth/lwp/FLWP00001/cloud.jpg', async (req, res) => {
 
 // World Heritage channel
 app.get('/acfs/noauth/lwp/FUNVL0001/info/:region/:subregion/globe.xml.zip', (req, res) => {
-  res.type('text/xml');
   console.log("[CHANNEL] World Heritage globe info requested!");
 
-  const xmlPath = path.join(CHANNELDIR, 'FUNVL0001/globe/globe.xml')
-  zipAndSend("globe.xml", res, xmlPath);
+  const xmlPath = path.join(CHANNELDIR, 'FUNVL0001/globe/globe.xml');
+
+  try {
+    let xmlContent = fs.readFileSync(xmlPath, 'utf8');
+    xmlContent = xmlContent.replace(/www\.cbe-world\.com/g, CBE_DOMAIN);
+
+    const zip = new AdmZip();
+    zip.addFile("globe.xml", Buffer.from(xmlContent, "utf8"));
+    res.set({'Content-Type': 'application/zip'}).send(zip.toBuffer());
+  } catch (err) {
+    console.error("[GLOBE ERROR]", err);
+    res.sendStatus(500);
+  }
 });
 
 app.get('/acfs/noauth/lwp/FUNVL0001/contentPubDate.xml', (req, res) => {
@@ -289,8 +316,10 @@ app.get('/acfs/noauth/lwp/FUNVL0001/contentPubDate.xml', (req, res) => {
   console.log("[CHANNEL] World Heritage contentPubDate requested!")
   fs.readFile(
     path.join(CHANNELDIR, 'FUNVL0001', 'contentPubDate.xml'),
+    'utf8',
     (err, data) => {
       if (err) return res.sendStatus(500);
+      data = data.replace(/www\.cbe-world\.com/g, CBE_DOMAIN);
       res.send(data);
     }
   );
@@ -298,11 +327,21 @@ app.get('/acfs/noauth/lwp/FUNVL0001/contentPubDate.xml', (req, res) => {
 
 // Alpha Clock channel
 app.get('/tcfs/lwp/FALPL0001/info/:region/:subregion/globe.xml.zip', (req, res) => {
-  res.type('text/xml');
   console.log("[CHANNEL] Alpha Clock globe info requested!");
 
-  const xmlPath = path.join(CHANNELDIR, 'FALPL0001/globe/globe.xml')
-  zipAndSend("globe.xml", res, xmlPath);
+  const xmlPath = path.join(CHANNELDIR, 'FALPL0001/globe/globe.xml');
+
+  try {
+    let xmlContent = fs.readFileSync(xmlPath, 'utf8');
+    xmlContent = xmlContent.replace(/www\.cbe-world\.com/g, CBE_DOMAIN);
+
+    const zip = new AdmZip();
+    zip.addFile("globe.xml", Buffer.from(xmlContent, "utf8"));
+    res.set({'Content-Type': 'application/zip'}).send(zip.toBuffer());
+  } catch (err) {
+    console.error("[GLOBE ERROR]", err);
+    res.sendStatus(500);
+  }
 });
 
 app.get('/tcfs/lwp/FALPL0001/contentPubDate.xml', (req, res) => {
@@ -310,8 +349,10 @@ app.get('/tcfs/lwp/FALPL0001/contentPubDate.xml', (req, res) => {
   console.log("[ALPHACLK] contentPubDate!")
   fs.readFile(
     path.join(CHANNELDIR, 'FALPL0001', 'contentPubDate.xml'),
+    'utf8',
     (err, data) => {
       if (err) return res.sendStatus(500);
+      data = data.replace(/www\.cbe-world\.com/g, CBE_DOMAIN);
       res.send(data);
     }
   );
@@ -404,8 +445,10 @@ app.get('/stats/watcher', (req, res) => {
     res.type('text/xml');
     fs.readFile(
       path.join(CHANNELDIR, 'unitedvillage', 'default_city_info.xml'),
+      'utf8',
       (err, data) => {
         if (err) return res.sendStatus(500);
+        data = data.replace(/www\.cbe-world\.com/g, CBE_DOMAIN);
         res.send(data);
       }
     );
