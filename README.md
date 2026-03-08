@@ -40,7 +40,7 @@ openssl req -x509 -newkey rsa:2048 -keyout key.pem -out cert.pem -days 365 -node
 ```
 
 5. Create and Run the Startup Script
-Since the server listens on privileged ports (80 and 443), it requires elevated permissions. Create a bash script to run the server using the full path to your NVM-installed Node executable (find it with which node, e.g., /home/yourusername/.nvm/versions/node/v22.x.x/bin/node). Edit the script with a text editor like vim and add the following content (replace the Node path and script name as needed):
+Since the server listens on privileged ports (80 and 443), it requires elevated permissions. Create a bash script to run the server using the full path to your NVM-installed Node executable (your path and version may differ, find it with which command, e.g., /home/yourusername/.nvm/versions/node/v22.x.x/bin/node). Edit the script with a text editor like vim and add the following content (replace the Node path and script name as needed):
 
 ```
 #!/bin/bash

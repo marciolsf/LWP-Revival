@@ -7,18 +7,21 @@ const AdmZip = require('adm-zip');
 const axios = require('axios');
 const sharp = require('sharp');
 const RSSParser = require('rss-parser');
+
+/* =========================
+   External files
+========================= */
+const cityMap = require('./CityMap');
+const getWeather = require('./Weather');
+const { zipAndSend } = require('./Functions');
+
+
 const parser = new RSSParser({
   headers: {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
   }
 });
-const cityMap = [
-  { id: "JAXX0085", name: "Tokyo", accKey: "226396", topic: "tokyo", file: 'tokyo.jpg', camUrl: 'http://182.171.234.126/SnapshotJPEG?Resolution=640x480' }, // this is how to add city, accKey is accuweather city id
-  { id: "GMXX0007", name: "Berlin", accKey: "178087", topic: "berlin", file: 'berlin.jpg', camUrl: 'http://imgproxy.windy.com/_/preview/plain/current/1666966383/original.jpg' },
-  { id: "FRXX0076", name: "Paris", accKey: "623", topic: "paris", file: 'paris.jpg', camUrl: 'http://145.238.185.10/jpg/1/image.jpg' },
-  { id: "UKXX0085", name: "London", accKey: "328328", topic: "london", file: 'london.jpg', camUrl: 'http://imgproxy.windy.com/_/preview/plain/current/1508413562/original.jpg' },
-  { id: "INXX0038", name: "new-delhi", accKey: "202396", topic: "india", file: 'delhi.jpg', camUrl: 'http://61.246.194.45/cgi-bin/viewer/video.jpg' }
-];
+
 
 const options = {
   key: fs.readFileSync('./key.pem'),
@@ -38,6 +41,23 @@ const HOST = '0.0.0.0';
 const PLUGINDIR = path.join(__dirname, 'plugins');
 const CHANNELDIR = path.join(__dirname, 'channel_dir');
 const WEBSITEDIR = path.join(__dirname, 'websites');
+
+/*
+Enter your custom server URLs here! This is needed to replace the hardcoded URLs in the XML files that the PS3 fetches, 
+so that they point to your server instead of the original CBE servers.
+
+If you have a domain, use it here (with www if you use it). If you are hosting locally or using a tunneling service like ngrok, 
+put that URL here instead (without http/https).
+
+BASE_DOMAIN is used for the channel list and other general URLs, while CBE_DOMAIN is specifically for the weather icons and news links in the LIVE channel. You can set them to the same value if you want.
+BASE_DOMAIN used to be www.k2.cbe-world.com in the original XMLs, 
+and CBE_DOMAIN used to be www.cbe-world.com. 
+So if you want to find and replace in the XMLs, those are the original domains you should look for.
+
+
+*/
+const BASE_DOMAIN = 'www.k2.cbe-world.com';
+const CBE_DOMAIN = 'www.cbe-world.com';
 
 const jsid = 'ff80c0a6fc0307efe';
 
@@ -70,35 +90,7 @@ app.use((req, res, next) => {
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
-function zipAndSend(fileName, res, filePath) {
-    if (!fs.existsSync(filePath)) {
-        console.error(`[ZIP] File not found: ${filePath}`);
-        return res.sendStatus(404);
-    }
 
-    try {
-        const zip = new AdmZip();
-        const outZipName = fileName + ".zip";
-
-        // Add the file to the zip root
-        zip.addLocalFile(filePath, '');
-
-        const zipBuffer = zip.toBuffer();
-
-        console.log(`[ZIP] Compressing ${filePath} -> ${outZipName}`);
-
-        res.set({
-            'Content-Type': 'application/zip',
-            'Content-Disposition': `attachment; filename="${outZipName}"`,
-            'Content-Length': zipBuffer.length
-        });
-
-        res.send(zipBuffer);
-    } catch (err) {
-        console.error(`[ZIP] Error processing ${filePath}:`, err);
-        res.sendStatus(500);
-    }
-}
 
 // Hopeless attempts to tell the PS3 "dont save the image plsss"
 app.use((req, res, next) => {
@@ -138,8 +130,12 @@ app.get('/data/plugins/live/live.xml', (req, res) => {
 app.get(['/lwp/info/:region/:subregion/channel_list.xml', '/acfs/lwp/info/:region/:subregion/channel_list.xml'], (req, res) => {
   res.type('text/xml');
   console.log("[CHANNELMAN] Got channel request! sending channel_list.xml");
-  fs.readFile(path.join(CHANNELDIR, 'channel_list.xml'), (err, data) => {
+  fs.readFile(path.join(CHANNELDIR, 'channel_list.xml'), 'utf8', (err, data) => {
     if (err) return res.sendStatus(500);
+    data = data.replace(/www\.k2\.cbe-world\.com/g, BASE_DOMAIN);
+    console.log(`[URLMAN] Replaced www.k2.cbe-world.com with ${BASE_DOMAIN} in channel_list.xml`);
+    data = data.replace(/www\.cbe-world\.com/g, CBE_DOMAIN);
+    console.log(`[URLMAN] Replaced www.cbe-world.com with ${CBE_DOMAIN} in channel_list.xml`);
     res.send(data);
   });
 });
@@ -150,11 +146,24 @@ app.get(['/lwp/info/:region/:subregion/channel_list.xml', '/acfs/lwp/info/:regio
 
 // LIVE Channel
 app.get('/acfs/noauth/lwp/FLWP00001/:region/:subregion/city_info.xml.zip', (req, res) => {
-  res.type('text/xml');
   console.log("[CHANNEL] Live Channel city info requested!");
 
   const xmlPath = path.join(CHANNELDIR, 'FLWP00001', 'city_info.xml');
-  zipAndSend("city_info.xml", res, xmlPath);
+
+  try {
+    let xmlContent = fs.readFileSync(xmlPath, 'utf8');
+    xmlContent = xmlContent.replace(/www\.k2\.cbe-world\.com/g, BASE_DOMAIN);
+    console.log(`[URLMAN] Replaced www.k2.cbe-world.com with ${BASE_DOMAIN} in FLWP00001 city_info.xml`);
+    xmlContent = xmlContent.replace(/www\.cbe-world\.com/g, CBE_DOMAIN);
+    console.log(`[URLMAN] Replaced www.cbe-world.com with ${CBE_DOMAIN} in FLWP00001 city_info.xml`);
+
+    const zip = new AdmZip();
+    zip.addFile("city_info.xml", Buffer.from(xmlContent, "utf8"));
+    res.set({'Content-Type': 'application/zip'}).send(zip.toBuffer());
+  } catch (err) {
+    console.error("[CITY_INFO ERROR]", err);
+    res.sendStatus(500);
+  }
 });
 
 // TOP OF YOUR FILE: Make sure your parser is configured like this!
@@ -165,6 +174,10 @@ app.get('/acfs/noauth/lwp/FLWP00001/:region/:subregion/city_diff.xml.zip', async
 
     try {
         let xmlContent = fs.readFileSync(xmlPath, 'utf8');
+        xmlContent = xmlContent.replace(/www\.k2\.cbe-world\.com/g, BASE_DOMAIN);
+        console.log(`[URLMAN] Replaced www.k2.cbe-world.com with ${BASE_DOMAIN} in FLWP00001 city_diff.xml`);
+        xmlContent = xmlContent.replace(/www\.cbe-world\.com/g, CBE_DOMAIN);
+        console.log(`[URLMAN] Replaced www.cbe-world.com with ${CBE_DOMAIN} in FLWP00001 city_diff.xml`);
         const v = Date.now(); 
 
         xmlContent = xmlContent.replace(/<ttl>\d+<\/ttl>/g, `<ttl>15</ttl>`);
@@ -238,6 +251,10 @@ app.get('/acfs/noauth/lwp/FLWP00001/cloud.xml.zip', (req, res) => {
 
     try {
         let xmlContent = fs.readFileSync(xmlPath, 'utf8');
+        xmlContent = xmlContent.replace(/www\.k2\.cbe-world\.com/g, BASE_DOMAIN);
+        console.log(`[URLMAN] Replaced www.k2.cbe-world.com with ${BASE_DOMAIN} in FLWP00001 cloud.xml`);
+        xmlContent = xmlContent.replace(/www\.cbe-world\.com/g, CBE_DOMAIN);
+        console.log(`[URLMAN] Replaced www.cbe-world.com with ${CBE_DOMAIN} in FLWP00001 cloud.xml`);
         const now = new Date().toUTCString();
         const v = Date.now(); 
 
@@ -302,11 +319,24 @@ app.get('/acfs/noauth/lwp/FLWP00001/cloud.jpg', async (req, res) => {
 
 // World Heritage channel
 app.get('/acfs/noauth/lwp/FUNVL0001/info/:region/:subregion/globe.xml.zip', (req, res) => {
-  res.type('text/xml');
   console.log("[CHANNEL] World Heritage globe info requested!");
 
-  const xmlPath = path.join(CHANNELDIR, 'FUNVL0001/globe/globe.xml')
-  zipAndSend("globe.xml", res, xmlPath);
+  const xmlPath = path.join(CHANNELDIR, 'FUNVL0001/globe/globe.xml');
+
+  try {
+    let xmlContent = fs.readFileSync(xmlPath, 'utf8');
+    xmlContent = xmlContent.replace(/www\.k2\.cbe-world\.com/g, BASE_DOMAIN);
+    console.log(`[URLMAN] Replaced www.k2.cbe-world.com with ${BASE_DOMAIN} in FUNVL0001 globe.xml`);
+    xmlContent = xmlContent.replace(/www\.cbe-world\.com/g, CBE_DOMAIN);
+    console.log(`[URLMAN] Replaced www.cbe-world.com with ${CBE_DOMAIN} in FUNVL0001 globe.xml`);
+
+    const zip = new AdmZip();
+    zip.addFile("globe.xml", Buffer.from(xmlContent, "utf8"));
+    res.set({'Content-Type': 'application/zip'}).send(zip.toBuffer());
+  } catch (err) {
+    console.error("[GLOBE ERROR]", err);
+    res.sendStatus(500);
+  }
 });
 
 app.get('/acfs/noauth/lwp/FUNVL0001/contentPubDate.xml', (req, res) => {
@@ -314,8 +344,11 @@ app.get('/acfs/noauth/lwp/FUNVL0001/contentPubDate.xml', (req, res) => {
   console.log("[CHANNEL] World Heritage contentPubDate requested!")
   fs.readFile(
     path.join(CHANNELDIR, 'FUNVL0001', 'contentPubDate.xml'),
+    'utf8',
     (err, data) => {
       if (err) return res.sendStatus(500);
+      data = data.replace(/www\.cbe-world\.com/g, CBE_DOMAIN);
+      console.log(`[URLMAN] Replaced www.cbe-world.com with ${CBE_DOMAIN} in FUNVL0001 contentPubDate.xml`);
       res.send(data);
     }
   );
@@ -323,11 +356,24 @@ app.get('/acfs/noauth/lwp/FUNVL0001/contentPubDate.xml', (req, res) => {
 
 // Alpha Clock channel
 app.get('/tcfs/lwp/FALPL0001/info/:region/:subregion/globe.xml.zip', (req, res) => {
-  res.type('text/xml');
   console.log("[CHANNEL] Alpha Clock globe info requested!");
 
-  const xmlPath = path.join(CHANNELDIR, 'FALPL0001/globe/globe.xml')
-  zipAndSend("globe.xml", res, xmlPath);
+  const xmlPath = path.join(CHANNELDIR, 'FALPL0001/globe/globe.xml');
+
+  try {
+    let xmlContent = fs.readFileSync(xmlPath, 'utf8');
+    xmlContent = xmlContent.replace(/www\.k2\.cbe-world\.com/g, BASE_DOMAIN);
+    console.log(`[URLMAN] Replaced www.k2.cbe-world.com with ${BASE_DOMAIN} in FALPL0001 globe.xml`);
+    xmlContent = xmlContent.replace(/www\.cbe-world\.com/g, CBE_DOMAIN);
+    console.log(`[URLMAN] Replaced www.cbe-world.com with ${CBE_DOMAIN} in FALPL0001 globe.xml`);
+
+    const zip = new AdmZip();
+    zip.addFile("globe.xml", Buffer.from(xmlContent, "utf8"));
+    res.set({'Content-Type': 'application/zip'}).send(zip.toBuffer());
+  } catch (err) {
+    console.error("[GLOBE ERROR]", err);
+    res.sendStatus(500);
+  }
 });
 
 app.get('/tcfs/lwp/FALPL0001/contentPubDate.xml', (req, res) => {
@@ -335,8 +381,11 @@ app.get('/tcfs/lwp/FALPL0001/contentPubDate.xml', (req, res) => {
   console.log("[ALPHACLK] contentPubDate!")
   fs.readFile(
     path.join(CHANNELDIR, 'FALPL0001', 'contentPubDate.xml'),
+    'utf8',
     (err, data) => {
       if (err) return res.sendStatus(500);
+      data = data.replace(/www\.cbe-world\.com/g, CBE_DOMAIN);
+      console.log(`[URLMAN] Replaced www.cbe-world.com with ${CBE_DOMAIN} in FALPL0001 contentPubDate.xml`);
       res.send(data);
     }
   );
@@ -429,8 +478,11 @@ app.get('/stats/watcher', (req, res) => {
     res.type('text/xml');
     fs.readFile(
       path.join(CHANNELDIR, 'unitedvillage', 'default_city_info.xml'),
+      'utf8',
       (err, data) => {
         if (err) return res.sendStatus(500);
+        data = data.replace(/www\.cbe-world\.com/g, CBE_DOMAIN);
+        console.log(`[URLMAN] Replaced www.cbe-world.com with ${CBE_DOMAIN} in unitedvillage default_city_info.xml`);
         res.send(data);
       }
     );
@@ -518,34 +570,7 @@ app.get('/:v/:filename', async (req, res) => {
         res.status(404).send("Offline");
     }
 });
-/* =========================
-   WEATHER FEEDS
-========================= */
-const iconMap = {
-    1: 32, 2: 30, 3: 28, 4: 19, 5: 21, 6: 28, 7: 26, 8: 26, 
-    11: 20, 12: 9, 13: 39, 14: 39, 15: 17, 16: 38, 17: 38, 18: 11, 
-    19: 13, 20: 39, 21: 39, 22: 14, 23: 41, 24: 10, 25: 18, 26: 6, 
-    29: 5, 30: 36, 31: 32, 32: 23, 33: 31, 34: 29, 35: 27, 36: 29, 
-    37: 20, 38: 27, 39: 45, 40: 45, 41: 47, 42: 47, 43: 45, 44: 46
-};
 
-async function getWeather(accKey) {
-    const API_KEY = '6e30dc9ea2aa4d3eb99ad8f6630174cd'; 
-    const url = `http://api.accuweather.com/currentconditions/v1/${accKey}?apikey=${API_KEY}`;
-
-    try {
-        const res = await axios.get(url);
-        const data = res.data[0];
-        return {
-            c: Math.round(data.Temperature.Metric.Value),
-            f: Math.round(data.Temperature.Imperial.Value),
-            icon: iconMap[data.WeatherIcon] || 32 
-        };
-    } catch (e) {
-        console.error(`[WEATHER ERR] Key ${accKey}:`, e.message);
-        return { c: "--", f: "--", icon: 32 }; 
-    }
-}
 /* =========================
    FALLBACKS (LAST)
 ========================= */
@@ -557,7 +582,7 @@ app.all('*any', (req, res) => {
 /* =========================
    START SERVER
 ========================= */
-console.log('Life with PlayStation Custom Server OHP');
+console.log('Life with PlayStation-Revival 0.3');
 https.createServer(options, app).listen(443, HOST, () => {
   console.log(`Listening HTTPS on ${HOST}:443`);
 });

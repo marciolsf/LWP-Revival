@@ -68,11 +68,11 @@
       <live:media>
         <live:thumbnail type="image/jpeg" guid="tokyo_refresh_002" pubDate="Tue, 9 Feb 2010 13:15:17 +0000" ttl="300" url="http://www.k2.cbe-world.com/tokyo.jpg"/>
       </live:media>
-      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5gpdEiVPO4o81Y0eSYAsXfd8imIiA">JAL to stay with American Airlines, expand tie-up</live:item>
-      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5jw7eEsQRt2L8COuK0VoRdf2NuynA">Toyota to recall new Prius, other hybrids in Japan</live:item>
-      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5gweeZMvDtADt1iX4UjL-uC3EzGCA">Japan plane seat maker admits false safety data</live:item>
-      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5j1cP1LPHT9QXSkZSC6db0M8fyBaQ">Toyota resumes production of suspended models in NAmerica</live:item>
-      <live:item text="more" url="http://news.google.com/news?ned=us&amp;hl=en&amp;ned=us&amp;q=Tokyo"/>
+      <live:item url="https://www.google.com/hostednews/afp/article/ALeqM5gpdEiVPO4o81Y0eSYAsXfd8imIiA">JAL to stay with American Airlines, expand tie-up</live:item>
+      <live:item url="https://www.google.com/hostednews/afp/article/ALeqM5jw7eEsQRt2L8COuK0VoRdf2NuynA">Toyota to recall new Prius, other hybrids in Japan</live:item>
+      <live:item url="https://www.google.com/hostednews/afp/article/ALeqM5gweeZMvDtADt1iX4UjL-uC3EzGCA">Japan plane seat maker admits false safety data</live:item>
+      <live:item url="https://www.google.com/hostednews/afp/article/ALeqM5j1cP1LPHT9QXSkZSC6db0M8fyBaQ">Toyota resumes production of suspended models in NAmerica</live:item>
+      <live:item text="more" url="https://news.google.com/news?ned=us&amp;hl=en&amp;ned=us&amp;q=Tokyo"/>
     </item>
 	 <item>
       <title>Berlin News</title>
@@ -87,11 +87,11 @@
       <live:media>
         <live:thumbnail guid="465958065fb18f7ad3c6fe87fd03d4be" pubDate="Tue, 9 Feb 2010 11:30:12 +0000" ttl="300" type="image/jpeg" url="http://www.k2.cbe-world.com/berlin.jpg"/>
       </live:media>
-      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5hJ9EbI2ZdIGLw1Qszbch4pXa_bKw">Berlin film festival rolls out 3-D red carpet</live:item>
-      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5gYIIMcVr1SD-itSZGozAR3vZatIQ">Berlin film fest looks back at 60 years of scandal</live:item>
-      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5gTvGj0gECxj0YppfkyqbCp2U-nUg">SAP names two new co-CEOs</live:item>
-      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5iz7X6cDy6CsH3u5V0Sm0zc01Yu3Q">Kostner to finish season as Wolfsburg coach</live:item>
-      <live:item text="more" url="http://news.google.com/news?ned=us&amp;hl=en&amp;ned=us&amp;q=Berlin"/>
+      <live:item url="https://www.google.com/hostednews/afp/article/ALeqM5hJ9EbI2ZdIGLw1Qszbch4pXa_bKw">Berlin film festival rolls out 3-D red carpet</live:item>
+      <live:item url="https://www.google.com/hostednews/afp/article/ALeqM5gYIIMcVr1SD-itSZGozAR3vZatIQ">Berlin film fest looks back at 60 years of scandal</live:item>
+      <live:item url="https://www.google.com/hostednews/afp/article/ALeqM5gTvGj0gECxj0YppfkyqbCp2U-nUg">SAP names two new co-CEOs</live:item>
+      <live:item url="https://www.google.com/hostednews/afp/article/ALeqM5iz7X6cDy6CsH3u5V0Sm0zc01Yu3Q">Kostner to finish season as Wolfsburg coach</live:item>
+      <live:item text="more" url="https://news.google.com/news?ned=us&amp;hl=en&amp;ned=us&amp;q=Berlin"/>
     </item>
 	    <item>
       <title>Paris News</title>
@@ -106,11 +106,11 @@
       <live:media>
         <live:thumbnail guid="18f38bb59da6b07d3d385b9aaacc0695" pubDate="Tue, 9 Feb 2010 11:45:17 +0000" ttl="300" type="image/jpeg" url="http://www.k2.cbe-world.com/paris.jpg"/>
       </live:media>
-      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5jsMmwJVeh6kpxX6drMOMDl4ydhyw">New Iran sanctions move likely 'within weeks': Gates</live:item>
-      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5hw-21Nlc1kCY3ryx9dCUIoyGNLKw">From warzone to sports tourism, an Afghan dream</live:item>
-      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5jFRjC4x4LPApxU6aw8AqQZXSyctw">French rugby coach looking for polished French finish</live:item>
-      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5jFaW3uPgOpymPmp5ZMXvnp2saRdA">Mood drug inhibits breast cancer medication: study</live:item>
-      <live:item text="more" url="http://news.google.com/news?ned=us&amp;hl=en&amp;ned=us&amp;q=Paris"/>
+      <live:item url="https://www.google.com/hostednews/afp/article/ALeqM5jsMmwJVeh6kpxX6drMOMDl4ydhyw">New Iran sanctions move likely 'within weeks': Gates</live:item>
+      <live:item url="https://www.google.com/hostednews/afp/article/ALeqM5hw-21Nlc1kCY3ryx9dCUIoyGNLKw">From warzone to sports tourism, an Afghan dream</live:item>
+      <live:item url="https://www.google.com/hostednews/afp/article/ALeqM5jFRjC4x4LPApxU6aw8AqQZXSyctw">French rugby coach looking for polished French finish</live:item>
+      <live:item url="https://www.google.com/hostednews/afp/article/ALeqM5jFaW3uPgOpymPmp5ZMXvnp2saRdA">Mood drug inhibits breast cancer medication: study</live:item>
+      <live:item text="more" url="https://news.google.com/news?ned=us&amp;hl=en&amp;ned=us&amp;q=Paris"/>
     </item>
 	    <item>
       <title>London News</title>
@@ -125,11 +125,11 @@
       <live:media>
         <live:thumbnail guid="b3ada373b6ece530de3eece0c47c64be" pubDate="Tue, 9 Feb 2010 13:00:15 +0000" ttl="300" type="image/jpeg" url="http://www.k2.cbe-world.com/london.jpg"/>
       </live:media>
-      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5i8DGdIatpbMiiq1FRCFTiLphuyOA">Apology after London bus driver stops to pray</live:item>
-      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5gPMHigzhbR-b67-8ROfoPK8MNP8g">Pitt, Jolie sue British paper over split claims</live:item>
-      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5i0n4HN-UesoGsFgsZd60l3_sikuQ">'Brangelina' sue News of the World for split claim</live:item>
-      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5j5OzH9gZtXx79sgEVFpGsO_95rTg">Ice likely to have caused BA crash landing in 2008</live:item>
-      <live:item text="more" url="http://news.google.com/news?ned=us&amp;hl=en&amp;ned=us&amp;q=London"/>
+      <live:item url="https://www.google.com/hostednews/afp/article/ALeqM5i8DGdIatpbMiiq1FRCFTiLphuyOA">Apology after London bus driver stops to pray</live:item>
+      <live:item url="https://www.google.com/hostednews/afp/article/ALeqM5gPMHigzhbR-b67-8ROfoPK8MNP8g">Pitt, Jolie sue British paper over split claims</live:item>
+      <live:item url="https://www.google.com/hostednews/afp/article/ALeqM5i0n4HN-UesoGsFgsZd60l3_sikuQ">'Brangelina' sue News of the World for split claim</live:item>
+      <live:item url="https://www.google.com/hostednews/afp/article/ALeqM5j5OzH9gZtXx79sgEVFpGsO_95rTg">Ice likely to have caused BA crash landing in 2008</live:item>
+      <live:item text="more" url="https://news.google.com/news?ned=us&amp;hl=en&amp;ned=us&amp;q=London"/>
     </item>
 	    <item>
       <title>Delhi News</title>
@@ -144,11 +144,11 @@
       <live:media>
         <live:thumbnail guid="b3ada373b6ece530de3eec70c47c64be" pubDate="Tue, 9 Feb 2010 13:15:17 +0000" ttl="300" type="image/jpeg" url="http://www.k2.cbe-world.com/delhi.jpg"/>
       </live:media>
-      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5iVjK60XsLIy5fr0a9_Mr4g7hvtZw">India car sales hit record high lifted by recovery</live:item>
-      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5hVz1smV5iJBYZGiV_WWKvv5OiPiw">India's top tycoon denies bid for Liverpool</live:item>
-      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5istF5_zJ6RPeeKVMmDCzDHC44Lsg">India's top tycoon denies bid for Liverpool FC</live:item>
-      <live:item url="http://www.google.com/hostednews/afp/article/ALeqM5j-h30I5WlRJ5gc3dz5KL7pZ9IpVw">India's Ambani group denies bid for Liverpool</live:item>
-      <live:item text="more" url="http://news.google.com/news?ned=us&amp;hl=en&amp;ned=us&amp;q=Delhi"/>
+      <live:item url="https://www.google.com/hostednews/afp/article/ALeqM5iVjK60XsLIy5fr0a9_Mr4g7hvtZw">India car sales hit record high lifted by recovery</live:item>
+      <live:item url="https://www.google.com/hostednews/afp/article/ALeqM5hVz1smV5iJBYZGiV_WWKvv5OiPiw">India's top tycoon denies bid for Liverpool</live:item>
+      <live:item url="https://www.google.com/hostednews/afp/article/ALeqM5istF5_zJ6RPeeKVMmDCzDHC44Lsg">India's top tycoon denies bid for Liverpool FC</live:item>
+      <live:item url="https://www.google.com/hostednews/afp/article/ALeqM5j-h30I5WlRJ5gc3dz5KL7pZ9IpVw">India's Ambani group denies bid for Liverpool</live:item>
+      <live:item text="more" url="https://news.google.com/news?ned=us&amp;hl=en&amp;ned=us&amp;q=Delhi"/>
     </item>
   </channel>
 </rss>
