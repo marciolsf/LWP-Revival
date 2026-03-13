@@ -5,7 +5,7 @@
 		<title>globe.xml</title>
 		<link>http://www.k2.cbe-world.com/lwp/alpha_clock</link>
 		<description>Alpha Clock</description>
-		<ttl>1</ttl>
+		<ttl>75</ttl>
 
 		<live:pic id="copyright" url="http://www.k2.cbe-world.com/websites/FALPL0001/copyright/%R/copyright.png" type="image/png" pubDate="Thu, 1 May 2008 15:35:12 +0000" />
 		<live:pic id="copyright2" url="http://www.k2.cbe-world.com/websites/FALPL0001/copyright/%R/copyright2.png" type="image/png" pubDate="Thu, 1 May 2008 15:35:12 +0000" />

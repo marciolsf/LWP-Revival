@@ -132,10 +132,10 @@ app.get(['/lwp/info/:region/:subregion/channel_list.xml', '/acfs/lwp/info/:regio
   console.log("[CHANNELMAN] Got channel request! sending channel_list.xml");
   fs.readFile(path.join(CHANNELDIR, 'channel_list.xml'), 'utf8', (err, data) => {
     if (err) return res.sendStatus(500);
-    data = data.replace(/www\.k2\.cbe-world\.com/g, BASE_DOMAIN);
-    console.log(`[URLMAN] Replaced www.k2.cbe-world.com with ${BASE_DOMAIN} in channel_list.xml`);
-    data = data.replace(/www\.cbe-world\.com/g, CBE_DOMAIN);
-    console.log(`[URLMAN] Replaced www.cbe-world.com with ${CBE_DOMAIN} in channel_list.xml`);
+    //data = data.replace(/www\.k2\.cbe-world\.com/g, BASE_DOMAIN);
+    //console.log(`[URLMAN] Replaced www.k2.cbe-world.com with ${BASE_DOMAIN} in channel_list.xml`);
+    //data = data.replace(/www\.cbe-world\.com/g, CBE_DOMAIN);
+    //console.log(`[URLMAN] Replaced www.cbe-world.com with ${CBE_DOMAIN} in channel_list.xml`);
     res.send(data);
   });
 });
@@ -152,10 +152,10 @@ app.get('/acfs/noauth/lwp/FLWP00001/:region/:subregion/city_info.xml.zip', (req,
 
   try {
     let xmlContent = fs.readFileSync(xmlPath, 'utf8');
-    xmlContent = xmlContent.replace(/www\.k2\.cbe-world\.com/g, BASE_DOMAIN);
-    console.log(`[URLMAN] Replaced www.k2.cbe-world.com with ${BASE_DOMAIN} in FLWP00001 city_info.xml`);
-    xmlContent = xmlContent.replace(/www\.cbe-world\.com/g, CBE_DOMAIN);
-    console.log(`[URLMAN] Replaced www.cbe-world.com with ${CBE_DOMAIN} in FLWP00001 city_info.xml`);
+    //xmlContent = xmlContent.replace(/www\.k2\.cbe-world\.com/g, BASE_DOMAIN);
+    //console.log(`[URLMAN] Replaced www.k2.cbe-world.com with ${BASE_DOMAIN} in FLWP00001 city_info.xml`);
+    //xmlContent = xmlContent.replace(/www\.cbe-world\.com/g, CBE_DOMAIN);
+    //console.log(`[URLMAN] Replaced www.cbe-world.com with ${CBE_DOMAIN} in FLWP00001 city_info.xml`);
 
     const zip = new AdmZip();
     zip.addFile("city_info.xml", Buffer.from(xmlContent, "utf8"));
@@ -174,10 +174,10 @@ app.get('/acfs/noauth/lwp/FLWP00001/:region/:subregion/city_diff.xml.zip', async
 
     try {
         let xmlContent = fs.readFileSync(xmlPath, 'utf8');
-        xmlContent = xmlContent.replace(/www\.k2\.cbe-world\.com/g, BASE_DOMAIN);
-        console.log(`[URLMAN] Replaced www.k2.cbe-world.com with ${BASE_DOMAIN} in FLWP00001 city_diff.xml`);
-        xmlContent = xmlContent.replace(/www\.cbe-world\.com/g, CBE_DOMAIN);
-        console.log(`[URLMAN] Replaced www.cbe-world.com with ${CBE_DOMAIN} in FLWP00001 city_diff.xml`);
+        //xmlContent = xmlContent.replace(/www\.k2\.cbe-world\.com/g, BASE_DOMAIN);
+        //console.log(`[URLMAN] Replaced www.k2.cbe-world.com with ${BASE_DOMAIN} in FLWP00001 city_diff.xml`);
+        //xmlContent = xmlContent.replace(/www\.cbe-world\.com/g, CBE_DOMAIN);
+        //console.log(`[URLMAN] Replaced www.cbe-world.com with ${CBE_DOMAIN} in FLWP00001 city_diff.xml`);
         const v = Date.now(); 
 
         xmlContent = xmlContent.replace(/<ttl>\d+<\/ttl>/g, `<ttl>15</ttl>`);
@@ -251,10 +251,10 @@ app.get('/acfs/noauth/lwp/FLWP00001/cloud.xml.zip', (req, res) => {
 
     try {
         let xmlContent = fs.readFileSync(xmlPath, 'utf8');
-        xmlContent = xmlContent.replace(/www\.k2\.cbe-world\.com/g, BASE_DOMAIN);
-        console.log(`[URLMAN] Replaced www.k2.cbe-world.com with ${BASE_DOMAIN} in FLWP00001 cloud.xml`);
-        xmlContent = xmlContent.replace(/www\.cbe-world\.com/g, CBE_DOMAIN);
-        console.log(`[URLMAN] Replaced www.cbe-world.com with ${CBE_DOMAIN} in FLWP00001 cloud.xml`);
+        //xmlContent = xmlContent.replace(/www\.k2\.cbe-world\.com/g, BASE_DOMAIN);
+        //console.log(`[URLMAN] Replaced www.k2.cbe-world.com with ${BASE_DOMAIN} in FLWP00001 cloud.xml`);
+        //xmlContent = xmlContent.replace(/www\.cbe-world\.com/g, CBE_DOMAIN);
+        //console.log(`[URLMAN] Replaced www.cbe-world.com with ${CBE_DOMAIN} in FLWP00001 cloud.xml`);
         const now = new Date().toUTCString();
         const v = Date.now(); 
 
@@ -325,10 +325,10 @@ app.get('/acfs/noauth/lwp/FUNVL0001/info/:region/:subregion/globe.xml.zip', (req
 
   try {
     let xmlContent = fs.readFileSync(xmlPath, 'utf8');
-    xmlContent = xmlContent.replace(/www\.k2\.cbe-world\.com/g, BASE_DOMAIN);
-    console.log(`[URLMAN] Replaced www.k2.cbe-world.com with ${BASE_DOMAIN} in FUNVL0001 globe.xml`);
-    xmlContent = xmlContent.replace(/www\.cbe-world\.com/g, CBE_DOMAIN);
-    console.log(`[URLMAN] Replaced www.cbe-world.com with ${CBE_DOMAIN} in FUNVL0001 globe.xml`);
+    //xmlContent = xmlContent.replace(/www\.k2\.cbe-world\.com/g, BASE_DOMAIN);
+    //console.log(`[URLMAN] Replaced www.k2.cbe-world.com with ${BASE_DOMAIN} in FUNVL0001 globe.xml`);
+    //xmlContent = xmlContent.replace(/www\.cbe-world\.com/g, CBE_DOMAIN);
+    //console.log(`[URLMAN] Replaced www.cbe-world.com with ${CBE_DOMAIN} in FUNVL0001 globe.xml`);
 
     const zip = new AdmZip();
     zip.addFile("globe.xml", Buffer.from(xmlContent, "utf8"));
@@ -362,10 +362,10 @@ app.get('/tcfs/lwp/FALPL0001/info/:region/:subregion/globe.xml.zip', (req, res) 
 
   try {
     let xmlContent = fs.readFileSync(xmlPath, 'utf8');
-    xmlContent = xmlContent.replace(/www\.k2\.cbe-world\.com/g, BASE_DOMAIN);
-    console.log(`[URLMAN] Replaced www.k2.cbe-world.com with ${BASE_DOMAIN} in FALPL0001 globe.xml`);
-    xmlContent = xmlContent.replace(/www\.cbe-world\.com/g, CBE_DOMAIN);
-    console.log(`[URLMAN] Replaced www.cbe-world.com with ${CBE_DOMAIN} in FALPL0001 globe.xml`);
+    //xmlContent = xmlContent.replace(/www\.k2\.cbe-world\.com/g, BASE_DOMAIN);
+    //console.log(`[URLMAN] Replaced www.k2.cbe-world.com with ${BASE_DOMAIN} in FALPL0001 globe.xml`);
+    //xmlContent = xmlContent.replace(/www\.cbe-world\.com/g, CBE_DOMAIN);
+    //console.log(`[URLMAN] Replaced www.cbe-world.com with ${CBE_DOMAIN} in FALPL0001 globe.xml`);
 
     const zip = new AdmZip();
     zip.addFile("globe.xml", Buffer.from(xmlContent, "utf8"));
