@@ -347,8 +347,8 @@ app.get('/acfs/noauth/lwp/FUNVL0001/contentPubDate.xml', (req, res) => {
     'utf8',
     (err, data) => {
       if (err) return res.sendStatus(500);
-      data = data.replace(/www\.cbe-world\.com/g, CBE_DOMAIN);
-      console.log(`[URLMAN] Replaced www.cbe-world.com with ${CBE_DOMAIN} in FUNVL0001 contentPubDate.xml`);
+      //data = data.replace(/www\.cbe-world\.com/g, CBE_DOMAIN);
+      //console.log(`[URLMAN] Replaced www.cbe-world.com with ${CBE_DOMAIN} in FUNVL0001 contentPubDate.xml`);
       res.send(data);
     }
   );
@@ -384,8 +384,8 @@ app.get('/tcfs/lwp/FALPL0001/contentPubDate.xml', (req, res) => {
     'utf8',
     (err, data) => {
       if (err) return res.sendStatus(500);
-      data = data.replace(/www\.cbe-world\.com/g, CBE_DOMAIN);
-      console.log(`[URLMAN] Replaced www.cbe-world.com with ${CBE_DOMAIN} in FALPL0001 contentPubDate.xml`);
+      //data = data.replace(/www\.cbe-world\.com/g, CBE_DOMAIN);
+      //console.log(`[URLMAN] Replaced www.cbe-world.com with ${CBE_DOMAIN} in FALPL0001 contentPubDate.xml`);
       res.send(data);
     }
   );
@@ -481,8 +481,8 @@ app.get('/stats/watcher', (req, res) => {
       'utf8',
       (err, data) => {
         if (err) return res.sendStatus(500);
-        data = data.replace(/www\.cbe-world\.com/g, CBE_DOMAIN);
-        console.log(`[URLMAN] Replaced www.cbe-world.com with ${CBE_DOMAIN} in unitedvillage default_city_info.xml`);
+        //data = data.replace(/www\.cbe-world\.com/g, CBE_DOMAIN);
+        //console.log(`[URLMAN] Replaced www.cbe-world.com with ${CBE_DOMAIN} in unitedvillage default_city_info.xml`);
         res.send(data);
       }
     );
