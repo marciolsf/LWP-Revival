@@ -65,6 +65,7 @@ function zipAndSend(fileName, res, filePath) {
         const zip = new AdmZip();
         const outZipName = fileName + ".zip";
 
+        // Add the file to the zip root
         zip.addLocalFile(filePath, '');
 
         const zipBuffer = zip.toBuffer();

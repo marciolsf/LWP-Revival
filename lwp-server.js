@@ -13,7 +13,7 @@ const RSSParser = require('rss-parser');
 ========================= */
 const cityMap = require('./CityMap');
 const getWeather = require('./Weather');
-const { zipAndSend } = require('./Functions');
+const { zipAndSend, sendZippedFolder } = require('./Functions');
 
 
 const parser = new RSSParser({
@@ -72,7 +72,7 @@ app.use((req, res, next) => {
     `Path: ${req.path}`,
     `Query: ${JSON.stringify(req.query)}`,
     `Headers: ${JSON.stringify(req.headers)}`,
-    `Body: ${JSON.stringify(req.body)}`,
+    `Body: ${JSON.stringify(req.rawBody)}`,
     '------------------------------',
     '\n'
   ].join('\n');
@@ -130,7 +130,7 @@ app.get('/data/plugins/live/live.xml', (req, res) => {
 app.get(['/lwp/info/:region/:subregion/channel_list.xml', '/acfs/lwp/info/:region/:subregion/channel_list.xml'], (req, res) => {
   res.type('text/xml');
   console.log("[CHANNELMAN] Got channel request! sending channel_list.xml");
-  fs.readFile(path.join(CHANNELDIR, 'channel_list.xml'), 'utf8', (err, data) => {
+  fs.readFile(path.join(CHANNELDIR, 'channel_list.xml'), (err, data) => {
     if (err) return res.sendStatus(500);
     //data = data.replace(/www\.k2\.cbe-world\.com/g, BASE_DOMAIN);
     //console.log(`[URLMAN] Replaced www.k2.cbe-world.com with ${BASE_DOMAIN} in channel_list.xml`);
@@ -146,27 +146,12 @@ app.get(['/lwp/info/:region/:subregion/channel_list.xml', '/acfs/lwp/info/:regio
 
 // LIVE Channel
 app.get('/acfs/noauth/lwp/FLWP00001/:region/:subregion/city_info.xml.zip', (req, res) => {
+  res.type('text/xml');
   console.log("[CHANNEL] Live Channel city info requested!");
 
   const xmlPath = path.join(CHANNELDIR, 'FLWP00001', 'city_info.xml');
-
-  try {
-    let xmlContent = fs.readFileSync(xmlPath, 'utf8');
-    //xmlContent = xmlContent.replace(/www\.k2\.cbe-world\.com/g, BASE_DOMAIN);
-    //console.log(`[URLMAN] Replaced www.k2.cbe-world.com with ${BASE_DOMAIN} in FLWP00001 city_info.xml`);
-    //xmlContent = xmlContent.replace(/www\.cbe-world\.com/g, CBE_DOMAIN);
-    //console.log(`[URLMAN] Replaced www.cbe-world.com with ${CBE_DOMAIN} in FLWP00001 city_info.xml`);
-
-    const zip = new AdmZip();
-    zip.addFile("city_info.xml", Buffer.from(xmlContent, "utf8"));
-    res.set({'Content-Type': 'application/zip'}).send(zip.toBuffer());
-  } catch (err) {
-    console.error("[CITY_INFO ERROR]", err);
-    res.sendStatus(500);
-  }
+  zipAndSend("city_info.xml", res, xmlPath);
 });
-
-// TOP OF YOUR FILE: Make sure your parser is configured like this!
 
 app.get('/acfs/noauth/lwp/FLWP00001/:region/:subregion/city_diff.xml.zip', async (req, res) => {
     console.log("[XML] city_diff requested. Injecting News & Weather...");
@@ -401,19 +386,17 @@ app.get('/lwp/united_village', (req, res) => {
 ========================= */
 app.get('/aas/client', (req, res) => {
   console.log("[AAS] GET", req.query.cmd || "no-cmd", req.originalUrl);
+  const nonce='8f3c9d8a4b1e2f7c1a5d0b7e9c0a6f2d'
   
   if (req.query.cmd === 'challenge') {
-    res.status(200)
-      .set({
-        'Content-Type': 'application/x-np-ticket',
-        'Connection': 'keep-alive'
-      })
-      .send(`nonce=aaaaa&JSESSIONID=${jsid}`);
+    res.status(200);
+    res.set('Content-Type', 'application/x-np-ticket');
+    res.send(`nonce=${nonce}`);
     return;
   }
   else if (req.query.cmd === 'logout') {
     console.log("[AAS] logout");
-    res.status(200).end('');
+    res.sendStatus(200);
     return;
   }
 
@@ -422,37 +405,48 @@ app.get('/aas/client', (req, res) => {
 
 app.post('/aas/client', (req, res) => {
   console.log("[AAS] POST", req.query.cmd || "no-cmd", req.originalUrl);
+  const sid = req.query.JSESSIONID || jsid;
 
-  if (req.query.cmd == 'login') {
-    const sid = req.query.JSESSIONID || jsid;
-
-    // BODY isnt needed
-    const body = `JSESSIONID=${sid}&cwsessionid=${sid}&status=1`;
-
-    res.status(200)
-      .set({
-        'Content-Type': 'application/x-np-ticket',
-        'Connection': 'Keep-Alive',
-        'Set-Cookie': `JSESSIONID=${sid}; Path=/`
-      })
-      .send('');
+  if (req.query.cmd == 'login' || req.query.cmd == 'createlogin') {
+    res.set('Date', new Date().toUTCString());
+    res.set('Content-Type', 'application/x-np-ticket');
+    res.set('Set-Cookie', `JSESSIONID=${sid}; Path=/;`);
+    res.set('recommended-timeout', '300');
+    return res.sendStatus(200);
   }
   else if (req.query.cmd == 'createaccount') {
-    res.setHeader('Content-Type', 'application/xml');
+    //res.setHeader('Content-Type', 'application/xml');
+    return res.sendStatus(200);
+  }
+  else if (req.query.cmd == 'createloginverify') {
+    res.set('Set-Cookie', `JSESSIONID=${sid}; Path=/;`);
+    res.set('recommended-timeout', '300');
+    res.set('entitlement-expire-time', String(Math.floor(Date.now()/1000) + 3600));
 
-    /*return res.status(200).send(`<?xml version="1.0" encoding="utf-8"?>
-<aas>
-  <accountid>${req.query['cw-user-id'] || 'dummy'}</accountid>
-  <password>${req.query['cw-passwd'] || 'dummy'}</password>
-  <sessionid>${req.query['JSESSIONID'] || ''}</sessionid>
-  <status>1</status>
-</aas>`);*/
-
-    return res.status(200).send('');
-
+    return res.sendStatus(200);
   }
   else if (req.query.cmd == 'updatesession') {
-    return res.status(200).send('');
+    res.set('recommended-timeout', '300');
+    return res.sendStatus(200);
+  }
+});
+
+/* =========================
+   CPS CLIENT
+========================= */
+app.post('/contribution/client', (req, res) => {
+  console.log("[CPS] POST", req.query.cmd || "no-cmd", req.originalUrl);
+
+  if (req.query.cmd == 'cs_getsaveuid') {
+    res.set('Content-Type', 'application/x-cs-request-param');
+    return res.send('save-uid=123123123123\r\nrecommended-access-interval=300');
+  }
+  else if (req.query.cmd == 'cs_inquirecontribution') {
+    res.set('Content-Type', 'application/x-cs-request-param');
+    return res.send('abs-value=123\r\nrecommended-access-interval=300');
+  } else if (req.query.cmd == 'cs_uploadcontribution') {
+    res.set('Content-Type', 'application/x-cs-request-param');
+    return res.send('recommended-access-interval=300');
   }
 });
 
@@ -461,35 +455,49 @@ app.post('/aas/client', (req, res) => {
 ========================= */
 app.get('/stats/watcher', (req, res) => {
   console.log("[WSS] GET", req.query)
+  res.type('application/x-cw-watcher-status');
+  // c ug u g
 
-  if (req.query.cmd === 'g') {
-    res.status(200)
-      .set({
-        'Content-Type': 'application/x-cw-watcher-status',
-        'Connection': 'keep-alive'
-      })
-      .send(
-        `save-uid=${jsid}&delta-value=0&abs-value=1&country=en`
-      );
-    return;
+  if (req.query.cmd == 'c') {
+    console.log("[WSS] Sending hardcoded channel list");
+
+    //const reply = Buffer.alloc(16 + (count * 8));
+    const reply = fs.readFileSync(CHANNELDIR + '/wss/testwss_c.dat');
+    res.send(reply);
   }
 
-  if (req.query.cmd === 'c') {
-    res.type('text/xml');
-    fs.readFile(
-      path.join(CHANNELDIR, 'unitedvillage', 'default_city_info.xml'),
-      'utf8',
-      (err, data) => {
-        if (err) return res.sendStatus(500);
-        //data = data.replace(/www\.cbe-world\.com/g, CBE_DOMAIN);
-        //console.log(`[URLMAN] Replaced www.cbe-world.com with ${CBE_DOMAIN} in unitedvillage default_city_info.xml`);
-        res.send(data);
-      }
-    );
-    return;
-  }
+  if(req.query.cmd == 'g') {
+    console.log("[WSS] Sending hardcoded channel versions");
 
-  res.sendStatus(400);
+    const reply = fs.readFileSync(CHANNELDIR + "/wss/testwss_g.dat");
+    res.end(reply);
+  }
+  
+  //res.sendStatus(400);
+});
+
+app.post('/stats/watcher', (req, res) => {
+  console.log("[WSS] POST", req.query);
+  res.type('application/x-cw-watcher-status');
+
+  if(req.query.cmd == 'ug') {
+
+    const b = req.rawBody ?? Buffer.alloc(0);
+
+    console.log('ug bytes:', b.length);
+    console.log('ug hex :', b.toString('hex').match(/.{1,2}/g)?.join(' ') ?? '');
+
+    if (b.length >= 12) {
+      console.log('u16[0]=', b.readUInt16BE(0).toString(16)); // should be 0x000c
+      console.log('entrySize=', b.readUInt16BE(6));            // should be 8
+      console.log('count=', b.readUInt16BE(8));
+    }
+
+    console.log("[WSS] Sending placeholder update packet");
+
+    const reply = fs.readFileSync(CHANNELDIR + "/wss/testwss_c.dat");
+    res.end(reply);
+  }
 });
 
 /* =========================
@@ -497,18 +505,20 @@ app.get('/stats/watcher', (req, res) => {
 ========================= */
 app.get('/stats/location', (req, res) => {
   console.log("[LOCSTATS] GET", req.query)
+  // c kg r 
 
-  res.status(200)
-    .set('Set-Cookie', `cwsessionid=${jsid}; Path=/`)
-    .type('text/xml');
-
-  fs.readFile(
-    path.join(CHANNELDIR, 'testing', 'complete_location_list.loc'),
-    (err, data) => {
-      if (err) return res.sendStatus(500);
-      res.send(data);
+    if (req.query.cmd == 'c' || req.query.cmd == 'kg') {
+    if (req.query.cmd == 'c') {
+      console.log("[LOCSTATS] Create Session & sending locstats");
+    } else {
+      console.log("[LOCSTATS] Sending locstats");
     }
-  );
+
+    //const reply = Buffer.alloc(16 + (count * 8));
+    const reply = fs.readFileSync(CHANNELDIR + '/locstats.dat');
+    res.send(reply.slice(0x20));
+  }
+
 });
 
 /* =========================
@@ -576,13 +586,14 @@ app.get('/:v/:filename', async (req, res) => {
 ========================= */
 app.all('*any', (req, res) => {
   console.log("unk! " + req.originalUrl);
+  console.log(req.method);
   res.status(200).send('boo');
 });
 
 /* =========================
    START SERVER
 ========================= */
-console.log('Life with PlayStation-Revival 0.3');
+console.log('Life with PlayStation-Revival 0.4');
 https.createServer(options, app).listen(443, HOST, () => {
   console.log(`Listening HTTPS on ${HOST}:443`);
 });
