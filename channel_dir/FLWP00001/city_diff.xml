@@ -60,18 +60,18 @@
       <georss:point>35.7 139.767</georss:point>
       <live:cityId>JAXX0085</live:cityId>
       <live:timezone>+0900</live:timezone>
-      <live:panel offsetx="0.0" offsety="0.0" pic="33">
+      <live:panel offsetx="0.0" offsety="0.0" pic="28">
         <live:name>Tokyo</live:name>
-        <live:subname pattern="celsius">20℃</live:subname>
-        <live:subname pattern="fahrenheit">61℉</live:subname>
+        <live:subname pattern="celsius">8℃</live:subname>
+        <live:subname pattern="fahrenheit">46℉</live:subname>
       </live:panel>
       <live:media>
-        <live:thumbnail type="image/jpeg" guid="tokyo_refresh_002" pubDate="Tue, 9 Feb 2010 13:15:17 +0000" ttl="300" url="http://www.k2.cbe-world.com/tokyo.jpg"/>
+        <live:thumbnail type="image/jpeg" guid="tokyo-1773782599325" pubDate="Tue, 9 Feb 2010 13:15:17 +0000" ttl="300" url="http://www.k2.cbe-world.com/1773775817607/1773777167986/1773778074042/1773778977100/1773779885155/1773780788211/1773781691268/1773782599325/tokyo.jpg"/>
       </live:media>
-      <live:item url="https://www.google.com/hostednews/afp/article/ALeqM5gpdEiVPO4o81Y0eSYAsXfd8imIiA">JAL to stay with American Airlines, expand tie-up</live:item>
-      <live:item url="https://www.google.com/hostednews/afp/article/ALeqM5jw7eEsQRt2L8COuK0VoRdf2NuynA">Toyota to recall new Prius, other hybrids in Japan</live:item>
-      <live:item url="https://www.google.com/hostednews/afp/article/ALeqM5gweeZMvDtADt1iX4UjL-uC3EzGCA">Japan plane seat maker admits false safety data</live:item>
-      <live:item url="https://www.google.com/hostednews/afp/article/ALeqM5j1cP1LPHT9QXSkZSC6db0M8fyBaQ">Toyota resumes production of suspended models in NAmerica</live:item>
+      <live:item url="https://apnews.com/article/daiwa-co-ltd-josh-green-tokyo-japan-transportation-f974b8d8ee30765551bb004c17e86d3a">Does Japan hold the answer to fixing Honolulu’s rail system?</live:item>
+      <live:item url="https://apnews.com/article/japan-baseball-emperor-ohtani-a06a5818043b72ef8bc52d9896b33605">Even Japanese Emperor Naruhito and the royal family are Ohtani fans, make appearance at Tokyo Dome</live:item>
+      <live:item url="https://apnews.com/article/japan-canada-defense-economic-security-6498f3fe3d3a4804f8ce0165b4eebd51">Japan, Canada sign strategic agreement in defense and energy as war in Mideast fuels oil concerns</live:item>
+      <live:item url="https://apnews.com/article/softbank-ai-technology-japan-112f963825bb5409c937a4ac861f9811">Japan’s technology investor SoftBank Group sees profitability return on AI boom</live:item>
       <live:item text="more" url="https://news.google.com/news?ned=us&amp;hl=en&amp;ned=us&amp;q=Tokyo"/>
     </item>
 	 <item>
@@ -79,18 +79,18 @@
       <georss:point>52.517 13.4115</georss:point>
       <live:cityId>GMXX0007</live:cityId>
       <live:timezone>+0100</live:timezone>
-      <live:panel offsetx="0.0" offsety="0.0" pic="28">
+      <live:panel offsetx="0.0" offsety="0.0" pic="29">
         <live:name>Berlin</live:name>
-        <live:subname pattern="celsius">-4℃</live:subname>
-        <live:subname pattern="fahrenheit">25℉</live:subname>
+        <live:subname pattern="celsius">3℃</live:subname>
+        <live:subname pattern="fahrenheit">38℉</live:subname>
       </live:panel>
       <live:media>
-        <live:thumbnail guid="465958065fb18f7ad3c6fe87fd03d4be" pubDate="Tue, 9 Feb 2010 11:30:12 +0000" ttl="300" type="image/jpeg" url="http://www.k2.cbe-world.com/berlin.jpg"/>
+        <live:thumbnail guid="berlin-1773782599325" pubDate="Tue, 9 Feb 2010 11:30:12 +0000" ttl="300" type="image/jpeg" url="http://www.k2.cbe-world.com/1773775817607/1773777167986/1773778074042/1773778977100/1773779885155/1773780788211/1773781691268/1773782599325/berlin.jpg"/>
       </live:media>
-      <live:item url="https://www.google.com/hostednews/afp/article/ALeqM5hJ9EbI2ZdIGLw1Qszbch4pXa_bKw">Berlin film festival rolls out 3-D red carpet</live:item>
-      <live:item url="https://www.google.com/hostednews/afp/article/ALeqM5gYIIMcVr1SD-itSZGozAR3vZatIQ">Berlin film fest looks back at 60 years of scandal</live:item>
-      <live:item url="https://www.google.com/hostednews/afp/article/ALeqM5gTvGj0gECxj0YppfkyqbCp2U-nUg">SAP names two new co-CEOs</live:item>
-      <live:item url="https://www.google.com/hostednews/afp/article/ALeqM5iz7X6cDy6CsH3u5V0Sm0zc01Yu3Q">Kostner to finish season as Wolfsburg coach</live:item>
+      <live:item url="https://apnews.com/article/germany-lgbtq-ramadan-influencer-iftar-b7235de634d9139bdc5222b73e223fd3">With rising anti‑LGBTQ+ attacks, Muslim man hosts inclusive Ramadan meal</live:item>
+      <live:item url="https://apnews.com/article/harry-styles-review-kiss-all-time-disco-occasionally-a658f35d478debccce0123f6df63d595">Music Review: Harry Styles’ ‘Kiss All the Time. Disco, Occasionally’ swings, sweats and surprises</live:item>
+      <live:item url="https://apnews.com/article/germany-holocaust-memorial-stabbing-trial-verdict-berlin-38a831db3fb7ae0ad9a70f62059724b4">A Syrian man is convicted of stabbing a Spanish tourist at Berlin’s Holocaust Memorial</live:item>
+      <live:item url="https://apnews.com/article/berlin-film-festival-2026-romantic-comedies-a2c6d7b71d7c242fb09929c9c3c68af3">Love is found in unexpected places at the Berlin Film Festival</live:item>
       <live:item text="more" url="https://news.google.com/news?ned=us&amp;hl=en&amp;ned=us&amp;q=Berlin"/>
     </item>
 	    <item>
@@ -98,18 +98,18 @@
       <georss:point>48.8542 2.3449</georss:point>
       <live:cityId>FRXX0076</live:cityId>
       <live:timezone>+0100</live:timezone>
-      <live:panel offsetx="0.0" offsety="0.0" pic="14">
+      <live:panel offsetx="0.0" offsety="0.0" pic="29">
         <live:name>Paris</live:name>
-        <live:subname pattern="celsius">-1℃</live:subname>
-        <live:subname pattern="fahrenheit">30℉</live:subname>
+        <live:subname pattern="celsius">12℃</live:subname>
+        <live:subname pattern="fahrenheit">53℉</live:subname>
       </live:panel>
       <live:media>
-        <live:thumbnail guid="18f38bb59da6b07d3d385b9aaacc0695" pubDate="Tue, 9 Feb 2010 11:45:17 +0000" ttl="300" type="image/jpeg" url="http://www.k2.cbe-world.com/paris.jpg"/>
+        <live:thumbnail guid="paris-1773782599325" pubDate="Tue, 9 Feb 2010 11:45:17 +0000" ttl="300" type="image/jpeg" url="http://www.k2.cbe-world.com/1773775817607/1773777167986/1773778074042/1773778977100/1773779885155/1773780788211/1773781691268/1773782599325/paris.jpg"/>
       </live:media>
-      <live:item url="https://www.google.com/hostednews/afp/article/ALeqM5jsMmwJVeh6kpxX6drMOMDl4ydhyw">New Iran sanctions move likely 'within weeks': Gates</live:item>
-      <live:item url="https://www.google.com/hostednews/afp/article/ALeqM5hw-21Nlc1kCY3ryx9dCUIoyGNLKw">From warzone to sports tourism, an Afghan dream</live:item>
-      <live:item url="https://www.google.com/hostednews/afp/article/ALeqM5jFRjC4x4LPApxU6aw8AqQZXSyctw">French rugby coach looking for polished French finish</live:item>
-      <live:item url="https://www.google.com/hostednews/afp/article/ALeqM5jFaW3uPgOpymPmp5ZMXvnp2saRdA">Mood drug inhibits breast cancer medication: study</live:item>
+      <live:item url="https://apnews.com/article/france-paris-mayor-municipal-elections-far-right-34784eeeaf04f4735f7e8e3ed33c23ad">France’s far right makes gains in first-round municipal elections as major cities head to runoff</live:item>
+      <live:item url="https://apnews.com/article/france-sarkozy-trial-libya-campaign-financing-333554b4e531a0f93f891cb8442aedab">Ex-French president Sarkozy appeals conviction in Libyan campaign financing case</live:item>
+      <live:item url="https://apnews.com/article/paris-nice-vingegaard-f5bb9733d19dd8c74a6adbc8d4ece84a">Jonas Vingegaard dominates Paris-Nice with biggest winning margin since 1939</live:item>
+      <live:item url="https://apnews.com/article/china-us-trade-talks-paris-304947f60609fce139602b57b214c468">US-China trade talks open in Paris, paving the way for Trump-Xi summit</live:item>
       <live:item text="more" url="https://news.google.com/news?ned=us&amp;hl=en&amp;ned=us&amp;q=Paris"/>
     </item>
 	    <item>
@@ -117,18 +117,18 @@
       <georss:point>51.5002 -0.1262</georss:point>
       <live:cityId>UKXX0085</live:cityId>
       <live:timezone>+0000</live:timezone>
-      <live:panel offsetx="0.0" offsety="0.0" pic="28">
+      <live:panel offsetx="0.0" offsety="0.0" pic="29">
         <live:name>London</live:name>
-        <live:subname pattern="celsius">3℃</live:subname>
-        <live:subname pattern="fahrenheit">37℉</live:subname>
+        <live:subname pattern="celsius">12℃</live:subname>
+        <live:subname pattern="fahrenheit">53℉</live:subname>
       </live:panel>
       <live:media>
-        <live:thumbnail guid="b3ada373b6ece530de3eece0c47c64be" pubDate="Tue, 9 Feb 2010 13:00:15 +0000" ttl="300" type="image/jpeg" url="http://www.k2.cbe-world.com/london.jpg"/>
+        <live:thumbnail guid="london-1773782599325" pubDate="Tue, 9 Feb 2010 13:00:15 +0000" ttl="300" type="image/jpeg" url="http://www.k2.cbe-world.com/1773775817607/1773777167986/1773778074042/1773778977100/1773779885155/1773780788211/1773781691268/1773782599325/london.jpg"/>
       </live:media>
-      <live:item url="https://www.google.com/hostednews/afp/article/ALeqM5i8DGdIatpbMiiq1FRCFTiLphuyOA">Apology after London bus driver stops to pray</live:item>
-      <live:item url="https://www.google.com/hostednews/afp/article/ALeqM5gPMHigzhbR-b67-8ROfoPK8MNP8g">Pitt, Jolie sue British paper over split claims</live:item>
-      <live:item url="https://www.google.com/hostednews/afp/article/ALeqM5i0n4HN-UesoGsFgsZd60l3_sikuQ">'Brangelina' sue News of the World for split claim</live:item>
-      <live:item url="https://www.google.com/hostednews/afp/article/ALeqM5j5OzH9gZtXx79sgEVFpGsO_95rTg">Ice likely to have caused BA crash landing in 2008</live:item>
+      <live:item url="https://apnews.com/article/len-deighton-dead-9bc4558b04d5a962d17f00d0f9ab627d">Len Deighton, author of bestselling spy thrillers, dead at 97</live:item>
+      <live:item url="https://apnews.com/article/harry-meghan-tom-bower-royal-book-prince-87c0c1ae701335ec6925596f79371caf">Prince Harry and Meghan slam author of new book on royals for ‘deranged conspiracy’</live:item>
+      <live:item url="https://apnews.com/article/subway-heat-complaints-rise-study-1a164ba9a9d5c8c66bceaec6d6221666">Taking to social media to complain about hot subway rides? You’re not alone, study says</live:item>
+      <live:item url="https://apnews.com/article/gerry-adams-sinn-fein-ira-ireland-bomb-2667beee876a2356536de62eb69f5ec1">A 1-pound lawsuit puts Gerry Adams’ alleged IRA role on trial in London</live:item>
       <live:item text="more" url="https://news.google.com/news?ned=us&amp;hl=en&amp;ned=us&amp;q=London"/>
     </item>
 	    <item>
@@ -136,18 +136,18 @@
       <georss:point>28.667 77.217</georss:point>
       <live:cityId>INXX0038</live:cityId>
       <live:timezone>+0530</live:timezone>
-      <live:panel offsetx="0.0" offsety="0.0" pic="21">
+      <live:panel offsetx="0.0" offsety="0.0" pic="26">
         <live:name>Delhi</live:name>
-        <live:subname pattern="celsius">21℃</live:subname>
-        <live:subname pattern="fahrenheit">70℉</live:subname>
+        <live:subname pattern="celsius">19℃</live:subname>
+        <live:subname pattern="fahrenheit">66℉</live:subname>
       </live:panel>
       <live:media>
-        <live:thumbnail guid="b3ada373b6ece530de3eec70c47c64be" pubDate="Tue, 9 Feb 2010 13:15:17 +0000" ttl="300" type="image/jpeg" url="http://www.k2.cbe-world.com/delhi.jpg"/>
+        <live:thumbnail guid="delhi-1773782599325" pubDate="Tue, 9 Feb 2010 13:15:17 +0000" ttl="300" type="image/jpeg" url="http://www.k2.cbe-world.com/1773775817607/1773777167986/1773778074042/1773778977100/1773779885155/1773780788211/1773781691268/1773782599325/delhi.jpg"/>
       </live:media>
-      <live:item url="https://www.google.com/hostednews/afp/article/ALeqM5iVjK60XsLIy5fr0a9_Mr4g7hvtZw">India car sales hit record high lifted by recovery</live:item>
-      <live:item url="https://www.google.com/hostednews/afp/article/ALeqM5hVz1smV5iJBYZGiV_WWKvv5OiPiw">India's top tycoon denies bid for Liverpool</live:item>
-      <live:item url="https://www.google.com/hostednews/afp/article/ALeqM5istF5_zJ6RPeeKVMmDCzDHC44Lsg">India's top tycoon denies bid for Liverpool FC</live:item>
-      <live:item url="https://www.google.com/hostednews/afp/article/ALeqM5j-h30I5WlRJ5gc3dz5KL7pZ9IpVw">India's Ambani group denies bid for Liverpool</live:item>
+      <live:item url="https://apnews.com/article/iran-warship-iris-dena-india-14916ad657e50f048bbeb42b38224ecb">Iranian warship sunk by the US was sailing home after taking part in an exhibition hosted by India</live:item>
+      <live:item url="https://apnews.com/article/india-canada-modi-carney-trade-tariffs-diversify-83ee6bc8498e8c185b39b09b01dc55c7">Canadian Prime Minister Mark Carney arrives in India to repair a strained relationship</live:item>
+      <live:item url="https://apnews.com/article/air-ambulance-crash-india-8150d7a9539795a00878aa28867ef031">Air ambulance plunges into eastern India forest, killing 7</live:item>
+      <live:item url="https://apnews.com/article/pax-silica-india-us-trump-modi-994d1cea76275cae7649fb8dcec13125">India joins US-led initiative to build secure technology supply chains</live:item>
       <live:item text="more" url="https://news.google.com/news?ned=us&amp;hl=en&amp;ned=us&amp;q=Delhi"/>
     </item>
   </channel>

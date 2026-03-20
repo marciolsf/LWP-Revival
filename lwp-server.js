@@ -14,6 +14,7 @@ const RSSParser = require('rss-parser');
 const cityMap = require('./CityMap');
 const getWeather = require('./Weather');
 const { zipAndSend, sendZippedFolder } = require('./Functions');
+const { updateNews } = require('./NewsBuilder');
 
 
 const parser = new RSSParser({
@@ -145,92 +146,32 @@ app.get(['/lwp/info/:region/:subregion/channel_list.xml', '/acfs/lwp/info/:regio
    ========================= */
 
 // LIVE Channel
-app.get('/acfs/noauth/lwp/FLWP00001/:region/:subregion/city_info.xml.zip', (req, res) => {
+app.get('/acfs/noauth/lwp/FLWP00001/:region/:subregion/city_info.xml.zip', async (req, res) => {
   res.type('text/xml');
   console.log("[CHANNEL] Live Channel city info requested!");
 
   const xmlPath = path.join(CHANNELDIR, 'FLWP00001', 'city_info.xml');
-  zipAndSend("city_info.xml", res, xmlPath);
+  try {
+    await updateNews(xmlPath);
+    zipAndSend("city_info.xml", res, xmlPath);
+  } catch (err) {
+    console.error("[FATAL ERROR]", err);
+    res.sendStatus(500);
+  }
 });
 
-app.get('/acfs/noauth/lwp/FLWP00001/:region/:subregion/city_diff.xml.zip', (req, res) => {
+app.get('/acfs/noauth/lwp/FLWP00001/:region/:subregion/city_diff.xml.zip', async (req, res) => {
     res.type('text/xml');
     console.log("[CHANNEL] Live Channel city diff requested!");
 
     const xmlPath = path.join(CHANNELDIR, 'FLWP00001', 'city_diff.xml');
-    zipAndSend("city_diff.xml", res, xmlPath);
-
-    /*try {
-        let xmlContent = fs.readFileSync(xmlPath, 'utf8');
-        //xmlContent = xmlContent.replace(/www\.k2\.cbe-world\.com/g, BASE_DOMAIN);
-        //console.log(`[URLMAN] Replaced www.k2.cbe-world.com with ${BASE_DOMAIN} in FLWP00001 city_diff.xml`);
-        //xmlContent = xmlContent.replace(/www\.cbe-world\.com/g, CBE_DOMAIN);
-        //console.log(`[URLMAN] Replaced www.cbe-world.com with ${CBE_DOMAIN} in FLWP00001 city_diff.xml`);
-        const v = Date.now(); 
-
-        xmlContent = xmlContent.replace(/<ttl>\d+<\/ttl>/g, `<ttl>15</ttl>`);
-
-        for (const city of cityMap) {
-            try {
-                // A. WEATHER
-                const weather = await getWeather(city.accKey);
-                
-                // B. NEWS
-                let headlines = [];
-                try {
-                    const rssUrl = `http://localhost:1200/apnews/topics/${encodeURIComponent(city.name)}`;
-                    const feed = await parser.parseURL(rssUrl);
-                    headlines = feed.items.slice(0, 4);
-                } catch (e) {
-                    console.error(`[NEWS ERR] Feed failed for ${city.name}: ${e.message}`);
-                    // Fallback headlines
-                    headlines = [{ title: `Checking ${city.name} News...`, link: "https://apnews.com" }];
-                }
-
-                // C. INJECT INTO XML
-                const cityBlockRegex = new RegExp(`(<live:cityId>${city.id}<\/live:cityId>[\\s\\S]*?)(?=<live:cityId>|$)`, 'g');
-
-                xmlContent = xmlContent.replace(cityBlockRegex, (cityBlock) => {
-                    const newGuid = `${city.file.split('.')[0]}-${v}`;
-                    let updated = cityBlock.replace(/guid=".*?"/g, `guid="${newGuid}"`);
-                    updated = updated.replace(new RegExp(city.file, 'g'), `${v}/${city.file}`);
-
-                    // Weather
-                    updated = updated.replace(/pic="\d+"/, `pic="${weather.icon}"`);
-                    updated = updated.replace(/(pattern="celsius">).*?(<\/live:subname>)/, `$1${weather.c}℃$2`);
-                    updated = updated.replace(/(pattern="fahrenheit">).*?(<\/live:subname>)/, `$1${weather.f}℉$2`);
-
-                    // News
-                    let newsIndex = 0;
-                    updated = updated.replace(/<live:item.*?>([\s\S]*?)<\/live:item>/g, (match) => {
-                        const newsItem = headlines[newsIndex] || { title: "AP World News", link: "https://apnews.com" };
-                        newsIndex++;
-
-                        const cleanHeadline = newsItem.title
-                            .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&apos;');
-
-                        let tag = match.replace(/>.*?</, `>${cleanHeadline}<`);
-                        if (newsItem.link) tag = tag.replace(/url=".*?"/, `url="${newsItem.link}"`); // adds News URL to the headline
-                        return tag;
-                    });
-
-                    return updated;
-                });
-
-                console.log(`[OK] ${city.name} updated.`);
-            } catch (cityErr) {
-                console.error(`[SKIP] ${city.name} failed:`, cityErr.message);
-            }
-        }
-
-        const zip = new AdmZip();
-        zip.addFile("city_diff.xml", Buffer.from(xmlContent, "utf8"));
-        res.set({'Content-Type': 'application/zip', 'Cache-Control': 'no-store'}).send(zip.toBuffer());
-    
+    try {
+        await updateNews(xmlPath);
+        zipAndSend("city_diff.xml", res, xmlPath);
     } catch (err) {
         console.error("[FATAL ERROR]", err);
         res.sendStatus(500);
-    }*/
+    }
 });
 
 app.get('/acfs/noauth/lwp/FLWP00001/cloud.xml.zip', (req, res) => {
@@ -616,7 +557,7 @@ app.all('*any', (req, res) => {
 /* =========================
    START SERVER
 ========================= */
-console.log('Life with PlayStation-Revival 0.4');
+console.log('Life with PlayStation-Revival 0.4.2');
 https.createServer(options, app).listen(443, HOST, () => {
   console.log(`Listening HTTPS on ${HOST}:443`);
 });
