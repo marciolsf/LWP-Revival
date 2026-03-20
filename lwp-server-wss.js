@@ -312,22 +312,20 @@ app.get('/stats/watcher', (req, res) => {
   res.type('application/x-cw-watcher-status');
   // c ug u g
 
-  if (req.query.cmd == 'c') {
+  if (req.query.cmd === 'c') {
     console.log("[WSS] Sending hardcoded channel list");
 
     //const reply = Buffer.alloc(16 + (count * 8));
     const reply = fs.readFileSync(CHANNELDIR + '/wss/testwss_c.dat');
-    res.send(reply);
-  }
-
-  if(req.query.cmd == 'g') {
+    return res.send(reply);
+  } else if (req.query.cmd === 'g') {
     console.log("[WSS] Sending hardcoded channel versions");
 
     const reply = fs.readFileSync(CHANNELDIR + "/wss/testwss_g.dat");
-    res.end(reply);
+    return res.end(reply);
+  } else {
+    return res.sendStatus(400);
   }
-  
-  //res.sendStatus(400);
 });
 
 app.post('/stats/watcher', (req, res) => {
