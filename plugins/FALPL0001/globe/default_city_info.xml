@@ -6,7 +6,7 @@
     <link>http://www.cbe-world.com/lwp/live_channel</link>
     <description>channel all cites</description>
     <pubDate>Tue, 26 May 2009 01:28:46 +0000</pubDate>
-    <ttl>1</ttl>
+    <ttl>75</ttl>
     <item><title>Error: Could not connect to server.</title>
     <live:item>Error: Could not connect to server.</live:item>
     <georss:point>46.95 7.45</georss:point>

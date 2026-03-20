@@ -4,25 +4,6 @@ const express = require('express');
 const path = require('path');
 const fs = require('fs');
 const AdmZip = require('adm-zip');
-const axios = require('axios');
-const sharp = require('sharp');
-const RSSParser = require('rss-parser');
-
-/* =========================
-   External files
-========================= */
-const cityMap = require('./CityMap');
-const getWeather = require('./Weather');
-const { zipAndSend, sendZippedFolder } = require('./Functions');
-const { updateNews } = require('./NewsBuilder');
-
-
-const parser = new RSSParser({
-  headers: {
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
-  }
-});
-
 
 const options = {
   key: fs.readFileSync('./key.pem'),
@@ -42,23 +23,6 @@ const HOST = '0.0.0.0';
 const PLUGINDIR = path.join(__dirname, 'plugins');
 const CHANNELDIR = path.join(__dirname, 'channel_dir');
 const WEBSITEDIR = path.join(__dirname, 'websites');
-
-/*
-Enter your custom server URLs here! This is needed to replace the hardcoded URLs in the XML files that the PS3 fetches, 
-so that they point to your server instead of the original CBE servers.
-
-If you have a domain, use it here (with www if you use it). If you are hosting locally or using a tunneling service like ngrok, 
-put that URL here instead (without http/https).
-
-BASE_DOMAIN is used for the channel list and other general URLs, while CBE_DOMAIN is specifically for the weather icons and news links in the LIVE channel. You can set them to the same value if you want.
-BASE_DOMAIN used to be www.k2.cbe-world.com in the original XMLs, 
-and CBE_DOMAIN used to be www.cbe-world.com. 
-So if you want to find and replace in the XMLs, those are the original domains you should look for.
-
-
-*/
-const BASE_DOMAIN = 'www.k2.cbe-world.com';
-const CBE_DOMAIN = 'www.cbe-world.com';
 
 const jsid = 'ff80c0a6fc0307efe';
 
@@ -91,25 +55,62 @@ app.use((req, res, next) => {
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
+function zipAndSend(fileName, res, filePath) {
+    if (!fs.existsSync(filePath)) {
+        console.error(`[ZIP] File not found: ${filePath}`);
+        return res.sendStatus(404);
+    }
 
+    try {
+        const zip = new AdmZip();
+        const outZipName = fileName + ".zip";
 
-// Hopeless attempts to tell the PS3 "dont save the image plsss"
-app.use((req, res, next) => {
-    res.set('Cache-Control', 'no-store, no-cache, must-revalidate, proxy-revalidate');
-    res.set('Pragma', 'no-cache');
-    res.set('Expires', '0');
-    res.set('Surrogate-Control', 'no-store');
-    next();
-});
+        // Add the file to the zip root
+        zip.addLocalFile(filePath, '');
 
-// Example Camera Route
-app.get('/api/camera/:cityId', async (req, res) => {
-    const imgBuffer = await fetchFreshCam(req.params.cityId);
-    
-    // Force the content type so the PS3 knows it's an image
-    res.type('image/jpeg'); 
-    res.send(imgBuffer);
-});
+        const zipBuffer = zip.toBuffer();
+
+        console.log(`[ZIP] Compressing ${filePath} -> ${outZipName}`);
+
+        res.set({
+            'Content-Type': 'application/zip',
+            'Content-Disposition': `attachment; filename="${outZipName}"`,
+            'Content-Length': zipBuffer.length
+        });
+
+        res.send(zipBuffer);
+    } catch (err) {
+        console.error(`[ZIP] Error processing ${filePath}:`, err);
+        res.sendStatus(500);
+    }
+}
+
+function sendZippedFolder(folderName, res, folderPath) {
+    try {
+        if (!fs.existsSync(folderPath)) {
+            return res.status(404).send('Folder not found');
+        }
+
+        const zip = new AdmZip();
+        zip.addLocalFolder(folderPath, folderName);
+
+        const zipBuffer = zip.toBuffer();
+
+        console.log(`[ZIP] Compressing folder ${folderPath} -> ${folderName}`);
+
+        res.set({
+            'Content-Type': 'application/zip',
+            'Content-Disposition': `attachment; filename=${folderName}`,
+            'Content-Length': zipBuffer.length
+        });
+
+        return res.send(zipBuffer);
+
+    } catch (err) {
+        console.error(`Error zipping folder ${folderPath}:`, err);
+        return res.status(500).send('Error creating zip');
+    }
+}
 
 /* =========================
    Static Files
@@ -133,10 +134,6 @@ app.get(['/lwp/info/:region/:subregion/channel_list.xml', '/acfs/lwp/info/:regio
   console.log("[CHANNELMAN] Got channel request! sending channel_list.xml");
   fs.readFile(path.join(CHANNELDIR, 'channel_list.xml'), (err, data) => {
     if (err) return res.sendStatus(500);
-    //data = data.replace(/www\.k2\.cbe-world\.com/g, BASE_DOMAIN);
-    //console.log(`[URLMAN] Replaced www.k2.cbe-world.com with ${BASE_DOMAIN} in channel_list.xml`);
-    //data = data.replace(/www\.cbe-world\.com/g, CBE_DOMAIN);
-    //console.log(`[URLMAN] Replaced www.cbe-world.com with ${CBE_DOMAIN} in channel_list.xml`);
     res.send(data);
   });
 });
@@ -146,107 +143,34 @@ app.get(['/lwp/info/:region/:subregion/channel_list.xml', '/acfs/lwp/info/:regio
    ========================= */
 
 // LIVE Channel
-app.get('/acfs/noauth/lwp/FLWP00001/:region/:subregion/city_info.xml.zip', async (req, res) => {
+app.get('/acfs/noauth/lwp/FLWP00001/:region/:subregion/city_info.xml.zip', (req, res) => {
   res.type('text/xml');
   console.log("[CHANNEL] Live Channel city info requested!");
 
   const xmlPath = path.join(CHANNELDIR, 'FLWP00001', 'city_info.xml');
-  try {
-    await updateNews(xmlPath);
-    zipAndSend("city_info.xml", res, xmlPath);
-  } catch (err) {
-    console.error("[FATAL ERROR]", err);
-    res.sendStatus(500);
-  }
+  zipAndSend("city_info.xml", res, xmlPath);
 });
 
-app.get('/acfs/noauth/lwp/FLWP00001/:region/:subregion/city_diff.xml.zip', async (req, res) => {
-    res.type('text/xml');
-    console.log("[CHANNEL] Live Channel city diff requested!");
+app.get('/acfs/noauth/lwp/FLWP00001/:region/:subregion/city_diff.xml.zip', (req, res) => {
+  res.type('text/xml');
+  console.log("[CHANNEL] Live Channel city diff requested!");
 
-    const xmlPath = path.join(CHANNELDIR, 'FLWP00001', 'city_diff.xml');
-    try {
-        await updateNews(xmlPath);
-        zipAndSend("city_diff.xml", res, xmlPath);
-    } catch (err) {
-        console.error("[FATAL ERROR]", err);
-        res.sendStatus(500);
-    }
+  const xmlPath = path.join(CHANNELDIR, 'FLWP00001', 'city_diff.xml');
+  zipAndSend("city_diff.xml", res, xmlPath);
 });
 
 app.get('/acfs/noauth/lwp/FLWP00001/cloud.xml.zip', (req, res) => {
-    res.type('text/xml');
-    console.log("[CHANNEL] Live Channel cloud info requested!");
-    const xmlPath = path.join(CHANNELDIR, 'FLWP00001', 'cloud.xml');
-    zipAndSend("cloud.xml", res, xmlPath);
-    /*try {
-        let xmlContent = fs.readFileSync(xmlPath, 'utf8');
-        //xmlContent = xmlContent.replace(/www\.k2\.cbe-world\.com/g, BASE_DOMAIN);
-        //console.log(`[URLMAN] Replaced www.k2.cbe-world.com with ${BASE_DOMAIN} in FLWP00001 cloud.xml`);
-        //xmlContent = xmlContent.replace(/www\.cbe-world\.com/g, CBE_DOMAIN);
-        //console.log(`[URLMAN] Replaced www.cbe-world.com with ${CBE_DOMAIN} in FLWP00001 cloud.xml`);
-        const now = new Date().toUTCString();
-        const v = Date.now(); 
+  res.type('text/xml');
+  console.log("[CHANNEL] Live Channel cloud info requested!");
 
-        // Update the main channel date and TTL (Check for new clouds every 180 mins) (Provider updates only after 3 hours eitherway..)
-        xmlContent = xmlContent.replace(/<pubDate>.*?<\/pubDate>/g, `<pubDate>${now}</pubDate>`);
-        xmlContent = xmlContent.replace(/<ttl>\d+<\/ttl>/g, `<ttl>180</ttl>`);
-
-        // Generate a new unique GUID so the PS3 doesn't use its cache
-        const newGuid = Buffer.from(`cloud-${v}`).toString('hex');
-        
-        xmlContent = xmlContent.replace(/guid=".*?"/g, `guid="${newGuid}"`);
-        xmlContent = xmlContent.replace(/pubDate=".*?"/g, `pubDate="${now}"`);
-
-        const zip = new AdmZip();
-        zip.addFile("cloud.xml", Buffer.from(xmlContent, "utf8"));
-        const zipBuffer = zip.toBuffer();
-
-        res.set({
-            'Content-Type': 'application/zip',
-            'Cache-Control': 'no-cache, no-store, must-revalidate'
-        });
-        res.send(zipBuffer);
-        console.log(`[CLOUD] cloud.xml delivered (GUID: ${newGuid.substring(0,8)}...)`);
-        
-    } catch (err) {
-        console.error("[CLOUD XML ERROR]", err);
-        res.sendStatus(500);
-    }*/
+  const xmlPath = path.join(CHANNELDIR, 'FLWP00001', 'cloud.xml');
+  zipAndSend("cloud.xml", res, xmlPath);
 });
 
 app.get('/acfs/noauth/lwp/FLWP00001/cloud.jpg', (req, res) => {
   res.type('image/jpeg');
   console.log("[CHANNEL] Live Channel cloud sent!!!!");
-  /*  console.log("[CLOUD] Fetching 2K Matteason satellite overlay...");
-    const cloudUrl = `https://clouds.matteason.co.uk/images/2048x1024/clouds.jpg`;
 
-    try {
-        const response = await axios.get(cloudUrl, { 
-            responseType: 'arraybuffer',
-            timeout: 15000 
-        });
-
-        const cloudImage = await sharp(response.data)
-            .jpeg({ quality: 85 })
-            .toBuffer();
-
-        res.set({
-            'Content-Type': 'image/jpeg',
-            'Cache-Control': 'no-cache, no-store, must-revalidate',
-            'Pragma': 'no-cache',
-            'Expires': '0'
-        });
-
-        res.send(cloudImage);
-        console.log("[CLOUD] Live satellite clouds delivered.");
-    } catch (e) {
-        console.error("[CLOUD ERROR] Matteason fetch failed:", e.message);
-        // If internet fetch fails, try to send the local file as backup
-        const fallback = path.join(CHANNELDIR, 'FLWP00001', 'cloud.jpg');
-        if (fs.existsSync(fallback)) res.sendFile(fallback);
-        else res.sendStatus(404);
-    }*/
   fs.readFile(
     path.join(CHANNELDIR, 'FLWP00001', 'cloud.jpg'),
     (err, data) => {
@@ -263,21 +187,6 @@ app.get('/acfs/noauth/lwp/FUNVL0001/info/:region/:subregion/globe.xml.zip', (req
 
   const xmlPath = path.join(CHANNELDIR, 'FUNVL0001/globe/globe.xml')
   zipAndSend("globe.xml", res, xmlPath);
-
-  /*try {
-    let xmlContent = fs.readFileSync(xmlPath, 'utf8');
-    //xmlContent = xmlContent.replace(/www\.k2\.cbe-world\.com/g, BASE_DOMAIN);
-    //console.log(`[URLMAN] Replaced www.k2.cbe-world.com with ${BASE_DOMAIN} in FUNVL0001 globe.xml`);
-    //xmlContent = xmlContent.replace(/www\.cbe-world\.com/g, CBE_DOMAIN);
-    //console.log(`[URLMAN] Replaced www.cbe-world.com with ${CBE_DOMAIN} in FUNVL0001 globe.xml`);
-
-    const zip = new AdmZip();
-    zip.addFile("globe.xml", Buffer.from(xmlContent, "utf8"));
-    res.set({'Content-Type': 'application/zip'}).send(zip.toBuffer());
-  } catch (err) {
-    console.error("[GLOBE ERROR]", err);
-    res.sendStatus(500);
-  }*/
 });
 
 app.get('/acfs/noauth/lwp/FUNVL0001/contentPubDate.xml', (req, res) => {
@@ -287,8 +196,6 @@ app.get('/acfs/noauth/lwp/FUNVL0001/contentPubDate.xml', (req, res) => {
     path.join(CHANNELDIR, 'FUNVL0001', 'contentPubDate.xml'),
     (err, data) => {
       if (err) return res.sendStatus(500);
-      //data = data.replace(/www\.cbe-world\.com/g, CBE_DOMAIN);
-      //console.log(`[URLMAN] Replaced www.cbe-world.com with ${CBE_DOMAIN} in FUNVL0001 contentPubDate.xml`);
       res.send(data);
     }
   );
@@ -307,21 +214,6 @@ app.get('/tcfs/lwp/FALPL0001/info/:region/:subregion/globe.xml.zip', (req, res) 
 
   const xmlPath = path.join(CHANNELDIR, 'FALPL0001/globe/globe.xml')
   zipAndSend("globe.xml", res, xmlPath);
-
-  /*try {
-    let xmlContent = fs.readFileSync(xmlPath, 'utf8');
-    //xmlContent = xmlContent.replace(/www\.k2\.cbe-world\.com/g, BASE_DOMAIN);
-    //console.log(`[URLMAN] Replaced www.k2.cbe-world.com with ${BASE_DOMAIN} in FALPL0001 globe.xml`);
-    //xmlContent = xmlContent.replace(/www\.cbe-world\.com/g, CBE_DOMAIN);
-    //console.log(`[URLMAN] Replaced www.cbe-world.com with ${CBE_DOMAIN} in FALPL0001 globe.xml`);
-
-    const zip = new AdmZip();
-    zip.addFile("globe.xml", Buffer.from(xmlContent, "utf8"));
-    res.set({'Content-Type': 'application/zip'}).send(zip.toBuffer());
-  } catch (err) {
-    console.error("[GLOBE ERROR]", err);
-    res.sendStatus(500);
-  }*/
 });
 
 app.get('/tcfs/lwp/FALPL0001/contentPubDate.xml', (req, res) => {
@@ -331,8 +223,6 @@ app.get('/tcfs/lwp/FALPL0001/contentPubDate.xml', (req, res) => {
     path.join(CHANNELDIR, 'FALPL0001', 'contentPubDate.xml'),
     (err, data) => {
       if (err) return res.sendStatus(500);
-      //data = data.replace(/www\.cbe-world\.com/g, CBE_DOMAIN);
-      //console.log(`[URLMAN] Replaced www.cbe-world.com with ${CBE_DOMAIN} in FALPL0001 contentPubDate.xml`);
       res.send(data);
     }
   );
@@ -422,22 +312,20 @@ app.get('/stats/watcher', (req, res) => {
   res.type('application/x-cw-watcher-status');
   // c ug u g
 
-  if (req.query.cmd == 'c') {
+  if (req.query.cmd === 'c') {
     console.log("[WSS] Sending hardcoded channel list");
 
     //const reply = Buffer.alloc(16 + (count * 8));
     const reply = fs.readFileSync(CHANNELDIR + '/wss/testwss_c.dat');
-    res.send(reply);
-  }
-
-  if(req.query.cmd == 'g') {
+    return res.send(reply);
+  } else if (req.query.cmd === 'g') {
     console.log("[WSS] Sending hardcoded channel versions");
 
     const reply = fs.readFileSync(CHANNELDIR + "/wss/testwss_g.dat");
-    res.end(reply);
+    return res.end(reply);
+  } else {
+    return res.sendStatus(400);
   }
-  
-  //res.sendStatus(400);
 });
 
 app.post('/stats/watcher', (req, res) => {
@@ -498,52 +386,6 @@ app.get('/lwp/live.zip', (req, res) => {
     }
   );
 });
-/* =========================
-   LIVE CAMERA FEEDS
-========================= */
-app.get('/:v/:filename', async (req, res) => {
-    const { filename } = req.params;
-    
-    // Find the city that matches the requested filename
-    const city = cityMap.find(c => c.file === filename);
-    
-    if (!city || !city.camUrl) {
-        return res.status(404).send("Camera not configured");
-    }
-
-    console.log(`[CAM] Fetching ${city.name} for PS3...`);
-    
-    const controller = new AbortController();
-    const timeout = setTimeout(() => controller.abort(), 10000); // How long the server can wait for the cam to send its jpeg
-
-    try {
-        const response = await axios.get(city.camUrl, { 
-            responseType: 'arraybuffer',
-            signal: controller.signal
-        });
-
-        clearTimeout(timeout);
-
-        const resizedImage = await sharp(response.data)
-            .resize(240, 180) // We need to resize the image as 240x180 (what LWP only supports) is not a standard res for cameras..
-            .jpeg({ quality: 80 })
-            .toBuffer();
-
-        res.set({
-            'Content-Type': 'image/jpeg',
-            'Cache-Control': 'no-cache, no-store, must-revalidate',
-            'Pragma': 'no-cache',
-            'Expires': '0'
-        });
-
-        res.send(resizedImage);
-        console.log(`[CAM] ${city.name} frame delivered.`);
-    } catch (e) {
-        clearTimeout(timeout);
-        console.error(`[CAM ERROR] ${city.name} offline`);
-        res.status(404).send("Offline");
-    }
-});
 
 /* =========================
    FALLBACKS (LAST)
@@ -557,7 +399,7 @@ app.all('*any', (req, res) => {
 /* =========================
    START SERVER
 ========================= */
-console.log('Life with PlayStation-Revival 0.4.2');
+console.log('Life with PlayStation Custom Server POC');
 https.createServer(options, app).listen(443, HOST, () => {
   console.log(`Listening HTTPS on ${HOST}:443`);
 });
